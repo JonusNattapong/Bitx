@@ -307,7 +307,7 @@
 			"feature": "<bold>Beperkt tijd GRATIS stealth model</bold> - Code Supernova: Nu geüpgraded met een <bold>1M token contextvenster</bold>! Een veelzijdig agentisch codeermodel dat beeldinvoer ondersteunt, beschikbaar via Bitx Cloud.",
 			"note": "(Opmerking: prompts en aanvullingen worden gelogd door de modelmaker en gebruikt om het model te verbeteren)",
 			"connectButton": "Verbinden met Bitx Cloud",
-			"selectModel": "Selecteer <code>roo/code-supernova</code> van de Bitx Cloud provider in Instellingen om te beginnen.",
+			"selectModel": "Selecteer <code>bitx/code-supernova</code> van de Bitx Cloud provider in Instellingen om te beginnen.",
 			"goToSettingsButton": "Ga naar Instellingen"
 		},
 		"release": {

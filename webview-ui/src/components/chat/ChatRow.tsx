@@ -13,10 +13,10 @@ import type {
 	ClineSayTool,
 } from "@bitx/types"
 
-import { Mode } from "@roo/modes"
+import { Mode } from "@bitx/modes"
 
-import { COMMAND_OUTPUT_STRING } from "@roo/combineCommandSequences"
-import { safeJsonParse } from "@roo/core"
+import { COMMAND_OUTPUT_STRING } from "@bitx/combineCommandSequences"
+import { safeJsonParse } from "@bitx/core"
 
 import { useExtensionState } from "@src/context/ExtensionStateContext"
 import { findMatchingResourceOrTemplate } from "@src/utils/mcp"

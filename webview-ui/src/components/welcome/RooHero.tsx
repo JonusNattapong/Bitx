@@ -15,20 +15,20 @@ const RooHero = () => {
 			<div
 				style={{
 					backgroundColor: "var(--vscode-foreground)",
-					WebkitMaskImage: `url('${imagesBaseUri}/roo-logo.svg')`,
+					WebkitMaskImage: `url('${imagesBaseUri}/bitx-logo.svg')`,
 					WebkitMaskRepeat: "no-repeat",
 					WebkitMaskSize: "contain",
-					maskImage: `url('${imagesBaseUri}/roo-logo.svg')`,
+					maskImage: `url('${imagesBaseUri}/bitx-logo.svg')`,
 					maskRepeat: "no-repeat",
 					maskSize: "contain",
 					animation: isHovered ? "smooth-bounce 1s ease-in-out infinite" : "none",
 				}}
 				className="z-5 mr-auto translate-y-0 transition-transform duration-500">
-				<img src={imagesBaseUri + "/roo-logo.svg"} alt="Roo logo" className="h-8 opacity-0" />
+				<img src={imagesBaseUri + "/bitx-logo.svg"} alt="Roo logo" className="h-8 opacity-0" />
 			</div>
 			<div
 				className="w-[200%] -mt-0.25 h-0.5 overflow-hidden opacity-0 group-hover:opacity-70 transition-opacity duration-300"
-				data-testid="roo-hero-ground">
+				data-testid="bitx-hero-ground">
 				<div className="w-full border-b-1 group-hover:border-b-1 border-dashed border-vscode-foreground animate-ground-slide" />
 			</div>
 			<div className="z-4 bg-gradient-to-r from-transparent to-vscode-sideBar-background absolute top-0 right-0 bottom-0 w-10 opacity-100" />

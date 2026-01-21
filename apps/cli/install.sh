@@ -3,7 +3,7 @@
 # Usage: curl -fsSL https://raw.githubusercontent.com/RooCodeInc/Bitx/main/apps/cli/install.sh | sh
 #
 # Environment variables:
-#   ROO_INSTALL_DIR   - Installation directory (default: ~/.roo/cli)
+#   ROO_INSTALL_DIR   - Installation directory (default: ~/.bitx/cli)
 #   ROO_BIN_DIR       - Binary symlink directory (default: ~/.local/bin)
 #   ROO_VERSION       - Specific version to install (default: latest)
 #   ROO_LOCAL_TARBALL - Path to local tarball to install (skips download)
@@ -11,7 +11,7 @@
 set -e
 
 # Configuration
-INSTALL_DIR="${ROO_INSTALL_DIR:-$HOME/.roo/cli}"
+INSTALL_DIR="${ROO_INSTALL_DIR:-$HOME/.bitx/cli}"
 BIN_DIR="${ROO_BIN_DIR:-$HOME/.local/bin}"
 REPO="RooCodeInc/Bitx"
 MIN_NODE_VERSION=20
@@ -120,7 +120,7 @@ get_version() {
 
 # Download and extract
 download_and_install() {
-    TARBALL="roo-cli-${PLATFORM}.tar.gz"
+    TARBALL="bitx-cli-${PLATFORM}.tar.gz"
     
     # Create temp directory
     TMP_DIR=$(mktemp -d)
@@ -194,7 +194,7 @@ Available at: https://github.com/$REPO/releases"
     fi
     
     # Make executable
-    chmod +x "$INSTALL_DIR/bin/roo"
+    chmod +x "$INSTALL_DIR/bin/bitx"
     
     # Also make ripgrep executable if it exists
     if [ -f "$INSTALL_DIR/bin/rg" ]; then
@@ -207,12 +207,12 @@ setup_bin() {
     mkdir -p "$BIN_DIR"
     
     # Remove old symlink if exists
-    if [ -L "$BIN_DIR/roo" ] || [ -f "$BIN_DIR/roo" ]; then
-        rm -f "$BIN_DIR/roo"
+    if [ -L "$BIN_DIR/bitx" ] || [ -f "$BIN_DIR/bitx" ]; then
+        rm -f "$BIN_DIR/bitx"
     fi
     
-    ln -sf "$INSTALL_DIR/bin/roo" "$BIN_DIR/roo"
-    info "Created symlink: $BIN_DIR/roo"
+    ln -sf "$INSTALL_DIR/bin/bitx" "$BIN_DIR/bitx"
+    info "Created symlink: $BIN_DIR/bitx"
 }
 
 # Check if bin dir is in PATH and provide instructions
@@ -257,10 +257,10 @@ check_path() {
 
 # Verify installation
 verify_install() {
-    if [ -x "$BIN_DIR/roo" ]; then
+    if [ -x "$BIN_DIR/bitx" ]; then
         info "Verifying installation..."
         # Just check if it runs without error
-        "$BIN_DIR/roo" --version >/dev/null 2>&1 || true
+        "$BIN_DIR/bitx" --version >/dev/null 2>&1 || true
     fi
 }
 
@@ -270,15 +270,15 @@ print_success() {
     printf "${GREEN}${BOLD}✓ Bitx CLI installed successfully!${NC}\n"
     echo ""
     echo "  Installation: $INSTALL_DIR"
-    echo "  Binary: $BIN_DIR/roo"
+    echo "  Binary: $BIN_DIR/bitx"
     echo "  Version: $VERSION"
     echo ""
     echo "  ${BOLD}Get started:${NC}"
-    echo "    roo --help"
+    echo "    bitx --help"
     echo ""
     echo "  ${BOLD}Example:${NC}"
     echo "    export OPENROUTER_API_KEY=sk-or-v1-..."
-    echo "    roo ~/my-project -P \"What is this project?\""
+    echo "    bitx ~/my-project -P \"What is this project?\""
     echo ""
 }
 

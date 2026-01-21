@@ -6,7 +6,7 @@ export interface SystemPromptSettings {
 	todoListEnabled: boolean
 	browserToolEnabled?: boolean
 	useAgentRules: boolean
-	/** When true, recursively discover and load .roo/rules from subdirectories */
+	/** When true, recursively discover and load .bitx/rules from subdirectories */
 	enableSubfolderRules?: boolean
 	newTaskRequireTodos: boolean
 	/** When true, model should hide vendor/company identity in responses */

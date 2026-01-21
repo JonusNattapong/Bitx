@@ -53,7 +53,7 @@ vi.mock("../../common/Tab", () => ({
 
 // Mock RooHero
 vi.mock("../RooHero", () => ({
-	default: () => <div data-testid="roo-hero">Roo Hero</div>,
+	default: () => <div data-testid="bitx-hero">Roo Hero</div>,
 }))
 
 // Mock lucide-react icons
@@ -177,7 +177,7 @@ describe("WelcomeViewProvider", () => {
 
 			// Should now show provider selection screen with radio buttons
 			expect(screen.getByTestId("radio-group")).toBeInTheDocument()
-			expect(screen.getByTestId("radio-roo")).toBeInTheDocument()
+			expect(screen.getByTestId("radio-bitx")).toBeInTheDocument()
 			expect(screen.getByTestId("radio-custom")).toBeInTheDocument()
 			expect(screen.getByTestId("trans-welcome:providerSignup.chooseProvider")).toBeInTheDocument()
 		})
@@ -199,7 +199,7 @@ describe("WelcomeViewProvider", () => {
 			expect(screen.getByTestId("radio-group")).toBeInTheDocument()
 
 			// Should show both radio options
-			expect(screen.getByTestId("radio-roo")).toBeInTheDocument()
+			expect(screen.getByTestId("radio-bitx")).toBeInTheDocument()
 			expect(screen.getByTestId("radio-custom")).toBeInTheDocument()
 
 			// Should show Roo provider description
@@ -214,7 +214,7 @@ describe("WelcomeViewProvider", () => {
 			navigateToProviderSelection()
 
 			const radioGroup = screen.getByTestId("radio-group")
-			expect(radioGroup).toHaveAttribute("data-value", "roo")
+			expect(radioGroup).toHaveAttribute("data-value", "bitx")
 		})
 
 		it("does not show API options when Roo provider is selected", () => {
@@ -252,7 +252,7 @@ describe("WelcomeViewProvider", () => {
 				type: "upsertApiConfiguration",
 				text: "default",
 				apiConfiguration: {
-					apiProvider: "roo",
+					apiProvider: "bitx",
 				},
 			})
 		})

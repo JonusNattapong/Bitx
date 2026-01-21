@@ -191,7 +191,7 @@ The **single source of truth** for agent state, including the current mode. It:
 ```typescript
 const client = new ExtensionClient({
 	sendMessage: (msg) => extensionHost.sendToExtension(msg),
-	debug: true, // Writes to ~/.roo/cli-debug.log
+	debug: true, // Writes to ~/.bitx/cli-debug.log
 })
 
 // Query state at any time
@@ -317,16 +317,16 @@ if (isInteractiveAsk(ask)) {
 
 ## Debug Logging
 
-Enable with `-d` flag. Logs go to `~/.roo/cli-debug.log`:
+Enable with `-d` flag. Logs go to `~/.bitx/cli-debug.log`:
 
 ```bash
-roo -d -y -P "Build something" --no-tui
+bitx -d -y -P "Build something" --no-tui
 ```
 
 View logs:
 
 ```bash
-tail -f ~/.roo/cli-debug.log
+tail -f ~/.bitx/cli-debug.log
 ```
 
 Example output:

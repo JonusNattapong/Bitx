@@ -63,7 +63,7 @@ export async function run(promptArg: string | undefined, flagOptions: FlagOption
 	const effectiveModel = flagOptions.model || settings.model || DEFAULT_FLAGS.model
 	const effectiveReasoningEffort =
 		flagOptions.reasoningEffort || settings.reasoningEffort || DEFAULT_FLAGS.reasoningEffort
-	const effectiveProvider = flagOptions.provider ?? settings.provider ?? (rooToken ? "roo" : "openrouter")
+	const effectiveProvider = flagOptions.provider ?? settings.provider ?? (rooToken ? "bitx" : "openrouter")
 	const effectiveWorkspacePath = flagOptions.workspace ? path.resolve(flagOptions.workspace) : process.cwd()
 	const effectiveDangerouslySkipPermissions =
 		flagOptions.yes || flagOptions.dangerouslySkipPermissions || settings.dangerouslySkipPermissions || false
@@ -95,11 +95,11 @@ export async function run(promptArg: string | undefined, flagOptions: FlagOption
 		}
 
 		if (onboardingProviderChoice === OnboardingProviderChoice.Roo) {
-			extensionHostOptions.provider = "roo"
+			extensionHostOptions.provider = "bitx"
 		}
 	}
 
-	if (extensionHostOptions.provider === "roo") {
+	if (extensionHostOptions.provider === "bitx") {
 		if (rooToken) {
 			try {
 				const client = createClient({ url: SDK_BASE_URL, authToken: rooToken })
@@ -113,12 +113,12 @@ export async function run(promptArg: string | undefined, flagOptions: FlagOption
 				extensionHostOptions.user = me.user
 			} catch {
 				console.error("[CLI] Your Bitx Router token is not valid.")
-				console.error("[CLI] Please run: roo auth login")
+				console.error("[CLI] Please run: bitx auth login")
 				process.exit(1)
 			}
 		} else {
 			console.error("[CLI] Your Bitx Router token is missing.")
-			console.error("[CLI] Please run: roo auth login")
+			console.error("[CLI] Please run: bitx auth login")
 			process.exit(1)
 		}
 	}
@@ -138,9 +138,9 @@ export async function run(promptArg: string | undefined, flagOptions: FlagOption
 		extensionHostOptions.apiKey || flagOptions.apiKey || getApiKeyFromEnv(extensionHostOptions.provider)
 
 	if (!extensionHostOptions.apiKey) {
-		if (extensionHostOptions.provider === "roo") {
+		if (extensionHostOptions.provider === "bitx") {
 			console.error("[CLI] Error: Authentication with Bitx Cloud failed or was cancelled.")
-			console.error("[CLI] Please run: roo auth login")
+			console.error("[CLI] Please run: bitx auth login")
 			console.error("[CLI] Or use --api-key to provide your own API key.")
 		} else {
 			console.error(
@@ -179,14 +179,14 @@ export async function run(promptArg: string | undefined, flagOptions: FlagOption
 	// Output format only works with --print mode
 	if (outputFormat !== "text" && !flagOptions.print && isTuiSupported) {
 		console.error("[CLI] Error: --output-format requires --print mode")
-		console.error("[CLI] Usage: roo <prompt> --print --output-format json")
+		console.error("[CLI] Usage: bitx <prompt> --print --output-format json")
 		process.exit(1)
 	}
 
 	if (!isTuiEnabled) {
 		if (!prompt) {
 			console.error("[CLI] Error: prompt is required in print mode")
-			console.error("[CLI] Usage: roo <prompt> --print [options]")
+			console.error("[CLI] Usage: bitx <prompt> --print [options]")
 			console.error("[CLI] Run without -p for interactive mode")
 			process.exit(1)
 		}

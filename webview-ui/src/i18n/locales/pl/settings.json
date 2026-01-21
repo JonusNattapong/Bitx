@@ -204,7 +204,7 @@
 			},
 			"protected": {
 				"label": "Uwzględnij pliki chronione",
-				"description": "Pozwól Roo na tworzenie i edycję plików chronionych (takich jak .rooignore i pliki konfiguracyjne .roo/) bez konieczności zatwierdzania."
+				"description": "Pozwól Roo na tworzenie i edycję plików chronionych (takich jak .rooignore i pliki konfiguracyjne .bitx/) bez konieczności zatwierdzania."
 			}
 		},
 		"browser": {
@@ -472,7 +472,7 @@
 		"getUnboundApiKey": "Uzyskaj klucz API Unbound",
 		"unboundRefreshModelsSuccess": "Lista modeli zaktualizowana! Możesz teraz wybierać spośród najnowszych modeli.",
 		"unboundInvalidApiKey": "Nieprawidłowy klucz API. Sprawdź swój klucz API i spróbuj ponownie.",
-		"roo": {
+		"bitx": {
 			"authenticatedMessage": "Bezpiecznie uwierzytelniony przez twoje konto Bitx Cloud.",
 			"connectButton": "Połącz z Bitx Cloud"
 		},
@@ -704,7 +704,7 @@
 		},
 		"enableSubfolderRules": {
 			"label": "Włącz reguły podfolderów",
-			"description": "Rekursywnie odkrywaj i ładuj pliki .roo/rules i AGENTS.md z podkatalogów. Przydatne dla monorepo z regułami dla poszczególnych pakietów."
+			"description": "Rekursywnie odkrywaj i ładuj pliki .bitx/rules i AGENTS.md z podkatalogów. Przydatne dla monorepo z regułami dla poszczególnych pakietów."
 		}
 	},
 	"terminal": {
@@ -859,9 +859,9 @@
 		},
 		"CUSTOM_TOOLS": {
 			"name": "Włącz niestandardowe narzędzia",
-			"description": "Gdy włączone, Roo może ładować i używać niestandardowych narzędzi TypeScript/JavaScript z katalogu .roo/tools Twojego projektu lub ~/.roo/tools dla narzędzi globalnych. Uwaga: te narzędzia będą automatycznie zatwierdzane.",
+			"description": "Gdy włączone, Roo może ładować i używać niestandardowych narzędzi TypeScript/JavaScript z katalogu .bitx/tools Twojego projektu lub ~/.bitx/tools dla narzędzi globalnych. Uwaga: te narzędzia będą automatycznie zatwierdzane.",
 			"toolsHeader": "Dostępne niestandardowe narzędzia",
-			"noTools": "Nie załadowano niestandardowych narzędzi. Dodaj pliki .ts lub .js do katalogu .roo/tools swojego projektu lub ~/.roo/tools dla narzędzi globalnych.",
+			"noTools": "Nie załadowano niestandardowych narzędzi. Dodaj pliki .ts lub .js do katalogu .bitx/tools swojego projektu lub ~/.bitx/tools dla narzędzi globalnych.",
 			"refreshButton": "Odśwież",
 			"refreshing": "Odświeżanie...",
 			"refreshSuccess": "Narzędzia odświeżone pomyślnie",

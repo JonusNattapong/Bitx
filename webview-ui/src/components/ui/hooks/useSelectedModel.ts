@@ -354,9 +354,9 @@ function getSelectedModel({
 				routerModels["io-intelligence"]?.[id] ?? ioIntelligenceModels[id as keyof typeof ioIntelligenceModels]
 			return { id, info }
 		}
-		case "roo": {
-			const id = getValidatedModelId(apiConfiguration.apiModelId, routerModels.roo, defaultModelId)
-			const info = routerModels.roo?.[id]
+		case "bitx": {
+			const id = getValidatedModelId(apiConfiguration.apiModelId, routerModels.bitx, defaultModelId)
+			const info = routerModels.bitx?.[id]
 			return { id, info }
 		}
 		case "qwen-code": {

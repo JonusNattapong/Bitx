@@ -48,7 +48,7 @@ import {
 } from "@/lib/schemas"
 import { cn } from "@/lib/utils"
 
-import { loadRooLastModelSelection, saveRooLastModelSelection } from "@/lib/roo-last-model-selection"
+import { loadRooLastModelSelection, saveRooLastModelSelection } from "@/lib/bitx-last-model-selection"
 import { normalizeCreateRunForSubmit } from "@/lib/normalize-create-run"
 
 import { useOpenRouterModels } from "@/hooks/use-open-router-models"
@@ -108,7 +108,7 @@ export function NewRun() {
 	const modelSelectionsByProviderRef = useRef<Record<string, ModelSelection[]>>({})
 	const modelValueByProviderRef = useRef<Record<string, string>>({})
 
-	const [provider, setModelSource] = useState<"roo" | "openrouter" | "other">("other")
+	const [provider, setModelSource] = useState<"bitx" | "openrouter" | "other">("other")
 	const [executionMethod, setExecutionMethod] = useState<ExecutionMethod>("vscode")
 	const [commandExecutionTimeout, setCommandExecutionTimeout] = useState(20)
 	const [terminalShellIntegrationTimeout, setTerminalShellIntegrationTimeout] = useState(30) // seconds
@@ -276,7 +276,7 @@ export function NewRun() {
 
 	// When switching to Roo provider, restore last-used selection if current selection is empty
 	useEffect(() => {
-		if (provider !== "roo") return
+		if (provider !== "bitx") return
 		if (selectedModelIds.length > 0) return
 
 		const last = loadRooLastModelSelection()
@@ -287,7 +287,7 @@ export function NewRun() {
 
 	// Persist last-used Roo provider model selection
 	useEffect(() => {
-		if (provider !== "roo") return
+		if (provider !== "bitx") return
 		saveRooLastModelSelection(selectedModelIds)
 	}, [provider, selectedModelIds])
 
@@ -417,7 +417,7 @@ export function NewRun() {
 				const baseValues = normalizeCreateRunForSubmit(values, selectedExercises, suite)
 
 				// Validate jobToken for Bitx Cloud provider
-				if (provider === "roo" && !baseValues.jobToken?.trim()) {
+				if (provider === "bitx" && !baseValues.jobToken?.trim()) {
 					toast.error("Bitx Cloud Token is required")
 					return
 				}
@@ -465,11 +465,11 @@ export function NewRun() {
 							commandExecutionTimeout,
 							terminalShellIntegrationTimeout: terminalShellIntegrationTimeout * 1000,
 						}
-					} else if (provider === "roo") {
+					} else if (provider === "bitx") {
 						runValues.model = selection.model
 						runValues.settings = {
 							...(runValues.settings || {}),
-							apiProvider: "roo",
+							apiProvider: "bitx",
 							apiModelId: selection.model,
 							commandExecutionTimeout,
 							terminalShellIntegrationTimeout: terminalShellIntegrationTimeout * 1000,
@@ -568,10 +568,10 @@ export function NewRun() {
 							<FormItem>
 								<Tabs
 									value={provider}
-									onValueChange={(value) => setModelSource(value as "roo" | "openrouter" | "other")}>
+									onValueChange={(value) => setModelSource(value as "bitx" | "openrouter" | "other")}>
 									<TabsList className="mb-2">
 										<TabsTrigger value="other">Import</TabsTrigger>
-										<TabsTrigger value="roo">Bitx Cloud</TabsTrigger>
+										<TabsTrigger value="bitx">Bitx Cloud</TabsTrigger>
 										<TabsTrigger value="openrouter">OpenRouter</TabsTrigger>
 									</TabsList>
 								</Tabs>
@@ -774,7 +774,7 @@ export function NewRun() {
 						)}
 					/>
 
-					{provider === "roo" && (
+					{provider === "bitx" && (
 						<FormField
 							control={form.control}
 							name="jobToken"

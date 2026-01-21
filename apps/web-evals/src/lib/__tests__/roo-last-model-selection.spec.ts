@@ -2,7 +2,7 @@ import {
 	loadRooLastModelSelection,
 	ROO_LAST_MODEL_SELECTION_KEY,
 	saveRooLastModelSelection,
-} from "../roo-last-model-selection"
+} from "../bitx-last-model-selection"
 
 class LocalStorageMock implements Storage {
 	private store = new Map<string, string>()
@@ -39,10 +39,10 @@ beforeEach(() => {
 	})
 })
 
-describe("roo-last-model-selection", () => {
+describe("bitx-last-model-selection", () => {
 	it("saves and loads (deduped + trimmed)", () => {
-		saveRooLastModelSelection([" roo/model-a ", "roo/model-a", "roo/model-b"])
-		expect(loadRooLastModelSelection()).toEqual(["roo/model-a", "roo/model-b"])
+		saveRooLastModelSelection([" bitx/model-a ", "bitx/model-a", "bitx/model-b"])
+		expect(loadRooLastModelSelection()).toEqual(["bitx/model-a", "bitx/model-b"])
 	})
 
 	it("ignores invalid JSON", () => {
@@ -51,7 +51,7 @@ describe("roo-last-model-selection", () => {
 	})
 
 	it("clears when empty", () => {
-		localStorage.setItem(ROO_LAST_MODEL_SELECTION_KEY, JSON.stringify(["roo/model-a"]))
+		localStorage.setItem(ROO_LAST_MODEL_SELECTION_KEY, JSON.stringify(["bitx/model-a"]))
 		saveRooLastModelSelection([])
 		expect(localStorage.getItem(ROO_LAST_MODEL_SELECTION_KEY)).toBeNull()
 	})
@@ -73,6 +73,6 @@ describe("roo-last-model-selection", () => {
 		})
 
 		expect(() => loadRooLastModelSelection()).not.toThrow()
-		expect(() => saveRooLastModelSelection(["roo/model-a"])).not.toThrow()
+		expect(() => saveRooLastModelSelection(["bitx/model-a"])).not.toThrow()
 	})
 })

@@ -120,7 +120,7 @@
 			"noResponseBody": "Kesalahan API Cerebras: Tidak ada isi respons",
 			"completionError": "Kesalahan penyelesaian Cerebras: {{error}}"
 		},
-		"roo": {
+		"bitx": {
 			"authenticationRequired": "Penyedia Roo memerlukan autentikasi cloud. Silakan masuk ke Bitx Cloud."
 		},
 		"api": {

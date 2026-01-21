@@ -204,7 +204,7 @@
 			},
 			"protected": {
 				"label": "Incluir archivos protegidos",
-				"description": "Permitir a Roo crear y editar archivos protegidos (como .rooignore y archivos de configuración .roo/) sin requerir aprobación."
+				"description": "Permitir a Roo crear y editar archivos protegidos (como .rooignore y archivos de configuración .bitx/) sin requerir aprobación."
 			}
 		},
 		"browser": {
@@ -472,7 +472,7 @@
 		"getUnboundApiKey": "Obtener clave API de Unbound",
 		"unboundRefreshModelsSuccess": "¡Lista de modelos actualizada! Ahora puede seleccionar entre los últimos modelos.",
 		"unboundInvalidApiKey": "Clave API inválida. Por favor, verifique su clave API e inténtelo de nuevo.",
-		"roo": {
+		"bitx": {
 			"authenticatedMessage": "Autenticado de forma segura a través de tu cuenta de Bitx Cloud.",
 			"connectButton": "Conectar a Bitx Cloud"
 		},
@@ -703,7 +703,7 @@
 		},
 		"enableSubfolderRules": {
 			"label": "Activar reglas de subcarpetas",
-			"description": "Descubrir y cargar recursivamente archivos .roo/rules y AGENTS.md desde subdirectorios. Útil para monorepos con reglas por paquete."
+			"description": "Descubrir y cargar recursivamente archivos .bitx/rules y AGENTS.md desde subdirectorios. Útil para monorepos con reglas por paquete."
 		}
 	},
 	"terminal": {
@@ -858,9 +858,9 @@
 		},
 		"CUSTOM_TOOLS": {
 			"name": "Habilitar herramientas personalizadas",
-			"description": "Cuando está habilitado, Roo puede cargar y usar herramientas TypeScript/JavaScript personalizadas desde el directorio .roo/tools de tu proyecto o ~/.roo/tools para herramientas globales. Nota: estas herramientas se aprobarán automáticamente.",
+			"description": "Cuando está habilitado, Roo puede cargar y usar herramientas TypeScript/JavaScript personalizadas desde el directorio .bitx/tools de tu proyecto o ~/.bitx/tools para herramientas globales. Nota: estas herramientas se aprobarán automáticamente.",
 			"toolsHeader": "Herramientas personalizadas disponibles",
-			"noTools": "No hay herramientas personalizadas cargadas. Añade archivos .ts o .js al directorio .roo/tools de tu proyecto o ~/.roo/tools para herramientas globales.",
+			"noTools": "No hay herramientas personalizadas cargadas. Añade archivos .ts o .js al directorio .bitx/tools de tu proyecto o ~/.bitx/tools para herramientas globales.",
 			"refreshButton": "Actualizar",
 			"refreshing": "Actualizando...",
 			"refreshSuccess": "Herramientas actualizadas correctamente",

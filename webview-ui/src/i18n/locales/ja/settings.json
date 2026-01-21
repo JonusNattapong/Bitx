@@ -204,7 +204,7 @@
 			},
 			"protected": {
 				"label": "保護されたファイルを含める",
-				"description": "Rooが保護されたファイル（.rooignoreや.roo/設定ファイルなど）を承認なしで作成・編集することを許可します。"
+				"description": "Rooが保護されたファイル（.rooignoreや.bitx/設定ファイルなど）を承認なしで作成・編集することを許可します。"
 			}
 		},
 		"browser": {
@@ -472,7 +472,7 @@
 		"getUnboundApiKey": "Unbound APIキーを取得",
 		"unboundRefreshModelsSuccess": "モデルリストが更新されました！最新のモデルから選択できます。",
 		"unboundInvalidApiKey": "無効なAPIキーです。APIキーを確認して、もう一度お試しください。",
-		"roo": {
+		"bitx": {
 			"authenticatedMessage": "Bitx Cloudアカウントを通じて安全に認証されています。",
 			"connectButton": "Bitx Cloudに接続"
 		},
@@ -704,7 +704,7 @@
 		},
 		"enableSubfolderRules": {
 			"label": "サブフォルダルールを有効化",
-			"description": "サブディレクトリから.roo/rulesとAGENTS.mdファイルを再帰的に検出してロードします。パッケージごとのルールを持つモノレポに便利です。"
+			"description": "サブディレクトリから.bitx/rulesとAGENTS.mdファイルを再帰的に検出してロードします。パッケージごとのルールを持つモノレポに便利です。"
 		}
 	},
 	"terminal": {
@@ -859,9 +859,9 @@
 		},
 		"CUSTOM_TOOLS": {
 			"name": "カスタムツールを有効化",
-			"description": "有効にすると、Rooはプロジェクトの.roo/toolsディレクトリまたはグローバルツール用の~/.roo/toolsからカスタムTypeScript/JavaScriptツールを読み込んで使用できます。注意：これらのツールは自動的に承認されます。",
+			"description": "有効にすると、Rooはプロジェクトの.bitx/toolsディレクトリまたはグローバルツール用の~/.bitx/toolsからカスタムTypeScript/JavaScriptツールを読み込んで使用できます。注意：これらのツールは自動的に承認されます。",
 			"toolsHeader": "利用可能なカスタムツール",
-			"noTools": "カスタムツールが読み込まれていません。プロジェクトの.roo/toolsディレクトリまたはグローバルツール用の~/.roo/toolsに.tsまたは.jsファイルを追加してください。",
+			"noTools": "カスタムツールが読み込まれていません。プロジェクトの.bitx/toolsディレクトリまたはグローバルツール用の~/.bitx/toolsに.tsまたは.jsファイルを追加してください。",
 			"refreshButton": "更新",
 			"refreshing": "更新中...",
 			"refreshSuccess": "ツールが正常に更新されました",

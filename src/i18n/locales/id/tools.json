@@ -27,7 +27,7 @@
 		"invalidImageData": "Data gambar tidak valid dalam respons",
 		"invalidImageFormat": "Format gambar tidak valid diterima",
 		"unknownError": "Terjadi kesalahan yang tidak diketahui",
-		"roo": {
+		"bitx": {
 			"authRequired": "Autentikasi Bitx Cloud diperlukan untuk menghasilkan gambar. Silakan masuk ke Bitx Cloud."
 		}
 	}

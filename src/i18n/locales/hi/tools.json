@@ -24,7 +24,7 @@
 		"invalidImageData": "प्रतिक्रिया में अमान्य छवि डेटा",
 		"invalidImageFormat": "अमान्य छवि प्रारूप प्राप्त हुआ",
 		"unknownError": "एक अज्ञात त्रुटि हुई",
-		"roo": {
+		"bitx": {
 			"authRequired": "छवि निर्माण के लिए Bitx Cloud प्रमाणीकरण आवश्यक है। कृपया Bitx Cloud में साइन इन करें।"
 		}
 	}

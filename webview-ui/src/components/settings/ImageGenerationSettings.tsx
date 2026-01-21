@@ -114,7 +114,7 @@ export const ImageGenerationSettings = ({
 							value={currentProvider}
 							onChange={(e: any) => handleProviderChange(e.target.value)}
 							className="w-full">
-							<VSCodeOption value="roo" className="py-2 px-3">
+							<VSCodeOption value="bitx" className="py-2 px-3">
 								Bitx Cloud
 							</VSCodeOption>
 							<VSCodeOption value="openrouter" className="py-2 px-3">

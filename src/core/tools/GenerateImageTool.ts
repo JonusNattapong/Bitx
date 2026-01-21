@@ -14,7 +14,7 @@ import { getReadablePath } from "../../utils/path"
 import { isPathOutsideWorkspace } from "../../utils/pathUtils"
 import { EXPERIMENT_IDS, experiments } from "../../shared/experiments"
 import { OpenRouterHandler } from "../../api/providers/openrouter"
-import { RooHandler } from "../../api/providers/roo"
+import { RooHandler } from "../../api/providers/bitx"
 import { BaseTool, ToolCallbacks } from "./BaseTool"
 import type { ToolUse } from "../../shared/tools"
 import { t } from "../../i18n"
@@ -190,7 +190,7 @@ export class GenerateImageTool extends BaseTool<"generate_image"> {
 			}
 
 			let result
-			if (modelProvider === "roo") {
+			if (modelProvider === "bitx") {
 				// Use Bitx Cloud provider (supports both chat completions and images API)
 				const rooHandler = new RooHandler({} as any)
 				result = await rooHandler.generateImage(prompt, selectedModel, inputImageData, apiMethod)

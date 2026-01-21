@@ -120,7 +120,7 @@
 			"noResponseBody": "Cerebras API Hatası: Yanıt gövdesi yok",
 			"completionError": "Cerebras tamamlama hatası: {{error}}"
 		},
-		"roo": {
+		"bitx": {
 			"authenticationRequired": "Roo sağlayıcısı bulut kimlik doğrulaması gerektirir. Lütfen Bitx Cloud'a giriş yapın."
 		},
 		"api": {

@@ -24,8 +24,8 @@ type ModelMigrations = {
 }
 
 const MODEL_MIGRATIONS: ModelMigrations = {
-	roo: {
-		"roo/code-supernova": "roo/code-supernova-1-million",
+	bitx: {
+		"bitx/code-supernova": "bitx/code-supernova-1-million",
 	},
 } as const satisfies ModelMigrations
 

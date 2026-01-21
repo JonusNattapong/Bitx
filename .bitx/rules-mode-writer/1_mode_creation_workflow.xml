@@ -14,7 +14,7 @@
         <pattern type="edit_existing">
           <indicators>
             <indicator>User mentions a specific mode by name or slug</indicator>
-            <indicator>User references a mode directory path (e.g., .roo/rules-[mode-slug])</indicator>
+            <indicator>User references a mode directory path (e.g., .bitx/rules-[mode-slug])</indicator>
             <indicator>User asks to modify, update, enhance, or fix an existing mode</indicator>
             <indicator>User says "edit this mode" or "change this mode"</indicator>
           </indicators>
@@ -109,7 +109,7 @@
         <important_note>
           Do not include customInstructions in the .roomodes configuration.
           All detailed instructions should be placed in XML files within
-          the .roo/rules-[mode-slug]/ directory instead.
+          the .bitx/rules-[mode-slug]/ directory instead.
         </important_note>
       </step>
 
@@ -139,7 +139,7 @@ groups:
       <step number="5a">
         <title>Create XML Instruction Files</title>
         <description>
-          Design structured instruction files in .roo/rules-[mode-slug]/
+          Design structured instruction files in .bitx/rules-[mode-slug]/
         </description>
         <file_structure>
           <file name="1_workflow.xml">Main workflow and step-by-step processes</file>
@@ -165,7 +165,7 @@ groups:
         </description>
         <actions>
           <action>Locate and read the mode configuration in .roomodes</action>
-          <action>Read all XML instruction files in .roo/rules-[mode-slug]/</action>
+          <action>Read all XML instruction files in .bitx/rules-[mode-slug]/</action>
           <action>Analyze the mode's current capabilities and limitations</action>
           <action>Understand the mode's role in the broader ecosystem</action>
         </actions>
@@ -292,7 +292,7 @@ groups:
   <quick_reference>
     <command>Create mode in .roomodes for project-specific modes</command>
     <command>Create mode in global custom_modes.yaml for system-wide modes</command>
-    <command>Use list_files to verify .roo folder structure</command>
+    <command>Use list_files to verify .bitx folder structure</command>
     <command>Test file regex patterns with search_files</command>
     <command>Use codebase_search to find existing mode implementations</command>
     <command>Read all XML files in a mode directory to understand its structure</command>

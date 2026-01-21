@@ -50,7 +50,7 @@
 		"title": "Niestandardowe instrukcje dla trybu (opcjonalne)",
 		"resetToDefault": "Przywróć domyślne",
 		"description": "Dodaj wytyczne dotyczące zachowania specyficzne dla trybu {{modeName}}.",
-		"loadFromFile": "Niestandardowe instrukcje specyficzne dla trybu {{mode}} można również załadować z folderu <span>.roo/rules-{{slug}}/</span> w twoim obszarze roboczym lub z globalnego <0>.roo/rules-{{slug}}/</0> (.roorules-{{slug}} i .clinerules-{{slug}} są przestarzałe i wkrótce przestaną działać)."
+		"loadFromFile": "Niestandardowe instrukcje specyficzne dla trybu {{mode}} można również załadować z folderu <span>.bitx/rules-{{slug}}/</span> w twoim obszarze roboczym lub z globalnego <0>.bitx/rules-{{slug}}/</0> (.roorules-{{slug}} i .clinerules-{{slug}} są przestarzałe i wkrótce przestaną działać)."
 	},
 	"exportMode": {
 		"title": "Eksportuj tryb",
@@ -68,7 +68,7 @@
 		},
 		"project": {
 			"label": "Poziom projektu",
-			"description": "Dostępne tylko w tym obszarze roboczym. Jeśli wyeksportowany tryb zawierał pliki reguł, zostaną one odtworzone w folderze .roo/rules-{slug}/."
+			"description": "Dostępne tylko w tym obszarze roboczym. Jeśli wyeksportowany tryb zawierał pliki reguł, zostaną one odtworzone w folderze .bitx/rules-{slug}/."
 		}
 	},
 	"advanced": {
@@ -77,7 +77,7 @@
 	"globalCustomInstructions": {
 		"title": "Niestandardowe instrukcje dla wszystkich trybów",
 		"description": "Te instrukcje dotyczą wszystkich trybów. Zapewniają podstawowy zestaw zachowań, które mogą być rozszerzone przez instrukcje specyficzne dla trybów poniżej. <0>Dowiedz się więcej</0>",
-		"loadFromFile": "Instrukcje można również załadować z folderu <span>.roo/rules/</span> w twoim obszarze roboczym lub z globalnego <0>.roo/rules/</0> (.roorules i .clinerules są przestarzałe i wkrótce przestaną działać)."
+		"loadFromFile": "Instrukcje można również załadować z folderu <span>.bitx/rules/</span> w twoim obszarze roboczym lub z globalnego <0>.bitx/rules/</0> (.roorules i .clinerules są przestarzałe i wkrótce przestaną działać)."
 	},
 	"systemPrompt": {
 		"preview": "Podgląd podpowiedzi systemowej",
@@ -148,7 +148,7 @@
 	},
 	"advancedSystemPrompt": {
 		"title": "Zaawansowane: Zastąp podpowiedź systemową",
-		"description": "<2>⚠️ Ostrzeżenie:</2> Ta zaawansowana funkcja omija zabezpieczenia. <1>PRZECZYTAJ TO PRZED UŻYCIEM!</1>Zastąp domyślną podpowiedź systemową, tworząc plik w <span>.roo/system-prompt-{{slug}}</span>."
+		"description": "<2>⚠️ Ostrzeżenie:</2> Ta zaawansowana funkcja omija zabezpieczenia. <1>PRZECZYTAJ TO PRZED UŻYCIEM!</1>Zastąp domyślną podpowiedź systemową, tworząc plik w <span>.bitx/system-prompt-{{slug}}</span>."
 	},
 	"createModeDialog": {
 		"title": "Utwórz nowy tryb",

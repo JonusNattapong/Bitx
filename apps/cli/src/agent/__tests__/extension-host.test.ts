@@ -17,7 +17,7 @@ vi.mock("@bitx/vscode-shim", () => ({
 }))
 
 vi.mock("@/lib/storage/index.js", () => ({
-	createEphemeralStorageDir: vi.fn(() => Promise.resolve("/tmp/roo-cli-test-ephemeral")),
+	createEphemeralStorageDir: vi.fn(() => Promise.resolve("/tmp/bitx-cli-test-ephemeral")),
 }))
 
 /**
@@ -553,7 +553,7 @@ describe("ExtensionHost", () => {
 			const host = createTestHost({ ephemeral: true })
 
 			// Set up a mock ephemeral storage directory
-			const mockEphemeralDir = "/tmp/roo-cli-test-ephemeral-cleanup"
+			const mockEphemeralDir = "/tmp/bitx-cli-test-ephemeral-cleanup"
 			setPrivate(host, "ephemeralStorageDir", mockEphemeralDir)
 
 			// Mock fs.promises.rm
@@ -587,7 +587,7 @@ describe("ExtensionHost", () => {
 			const host = createTestHost({ ephemeral: true })
 
 			// Set up a mock ephemeral storage directory
-			setPrivate(host, "ephemeralStorageDir", "/tmp/roo-cli-test-ephemeral-error")
+			setPrivate(host, "ephemeralStorageDir", "/tmp/bitx-cli-test-ephemeral-error")
 
 			// Mock fs.promises.rm to throw an error
 			const rmMock = vi.spyOn(fs.promises, "rm").mockRejectedValue(new Error("Cleanup failed"))

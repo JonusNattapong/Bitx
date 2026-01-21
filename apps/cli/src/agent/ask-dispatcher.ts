@@ -396,7 +396,7 @@ export class AskDispatcher {
 			this.outputManager.output(`\n[Tool Request] ${toolName} [PROTECTED CONFIGURATION FILE]`)
 			this.outputManager.output(`⚠️  WARNING: This tool wants to modify a protected configuration file.`)
 			this.outputManager.output(
-				`    Protected files include .rooignore, .roo/*, and other sensitive config files.`,
+				`    Protected files include .rooignore, .bitx/*, and other sensitive config files.`,
 			)
 		} else {
 			this.outputManager.output(`\n[Tool Request] ${toolName}`)

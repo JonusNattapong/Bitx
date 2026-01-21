@@ -21,8 +21,8 @@ import {
 	getAllModes,
 	findModeBySlug as findCustomModeBySlug,
 	defaultModeSlug,
-} from "@roo/modes"
-import { TOOL_GROUPS } from "@roo/tools"
+} from "@bitx/modes"
+import { TOOL_GROUPS } from "@bitx/tools"
 
 import { vscode } from "@src/utils/vscode"
 import { buildDocLink } from "@src/utils/docLinks"
@@ -1270,7 +1270,7 @@ const ModesView = () => {
 											// Open or create an empty file
 											vscode.postMessage({
 												type: "openFile",
-												text: `./.roo/rules-${currentMode.slug}/rules.md`,
+												text: `./.bitx/rules-${currentMode.slug}/rules.md`,
 												values: {
 													create: true,
 													content: "",
@@ -1363,7 +1363,7 @@ const ModesView = () => {
 
 															vscode.postMessage({
 																type: "openFile",
-																text: `./.roo/system-prompt-${currentMode.slug}`,
+																text: `./.bitx/system-prompt-${currentMode.slug}`,
 																values: {
 																	create: true,
 																	content: "",
@@ -1432,7 +1432,7 @@ const ModesView = () => {
 										onClick={() =>
 											vscode.postMessage({
 												type: "openFile",
-												text: "./.roo/rules/rules.md",
+												text: "./.bitx/rules/rules.md",
 												values: {
 													create: true,
 													content: "",

@@ -142,14 +142,14 @@ vi.mock("../QueuedMessages", () => ({
 // Mock RooTips component
 vi.mock("@src/components/welcome/RooTips", () => ({
 	default: function MockRooTips() {
-		return <div data-testid="roo-tips">Tips content</div>
+		return <div data-testid="bitx-tips">Tips content</div>
 	},
 }))
 
 // Mock RooHero component
 vi.mock("@src/components/welcome/RooHero", () => ({
 	default: function MockRooHero() {
-		return <div data-testid="roo-hero">Hero content</div>
+		return <div data-testid="bitx-hero">Hero content</div>
 	},
 }))
 
@@ -767,9 +767,9 @@ describe("ChatView - DismissibleUpsell Display Tests", () => {
 			// Should not show DismissibleUpsell during active task
 			expect(queryByTestId("dismissible-upsell")).not.toBeInTheDocument()
 			// Should not show RooTips either since the entire welcome screen is hidden during active tasks
-			expect(queryByTestId("roo-tips")).not.toBeInTheDocument()
+			expect(queryByTestId("bitx-tips")).not.toBeInTheDocument()
 			// Should not show RooHero either since the entire welcome screen is hidden during active tasks
-			expect(queryByTestId("roo-hero")).not.toBeInTheDocument()
+			expect(queryByTestId("bitx-hero")).not.toBeInTheDocument()
 		})
 	})
 
@@ -790,7 +790,7 @@ describe("ChatView - DismissibleUpsell Display Tests", () => {
 
 		// Should not show DismissibleUpsell but should show RooTips
 		expect(queryByTestId("dismissible-upsell")).not.toBeInTheDocument()
-		expect(getByTestId("roo-tips")).toBeInTheDocument()
+		expect(getByTestId("bitx-tips")).toBeInTheDocument()
 	})
 
 	it("shows RooTips when user has fewer than 6 tasks (instead of DismissibleUpsell)", () => {
@@ -809,7 +809,7 @@ describe("ChatView - DismissibleUpsell Display Tests", () => {
 
 		// Should not show DismissibleUpsell but should show RooTips
 		expect(queryByTestId("dismissible-upsell")).not.toBeInTheDocument()
-		expect(getByTestId("roo-tips")).toBeInTheDocument()
+		expect(getByTestId("bitx-tips")).toBeInTheDocument()
 	})
 })
 

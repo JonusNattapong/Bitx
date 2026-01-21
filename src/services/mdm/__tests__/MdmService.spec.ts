@@ -35,7 +35,7 @@ vi.mock("vscode", () => ({
 vi.mock("../../../shared/package", () => ({
 	Package: {
 		publisher: "bitx",
-		name: "roo-cline",
+		name: "roo-cline-bitx",
 		version: "1.0.0",
 		outputChannel: "Bitx",
 		sha: undefined,

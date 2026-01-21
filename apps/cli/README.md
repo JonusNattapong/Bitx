@@ -44,7 +44,7 @@ curl -fsSL https://raw.githubusercontent.com/RooCodeInc/Bitx/main/apps/cli/insta
 ### Uninstalling
 
 ```bash
-rm -rf ~/.roo/cli ~/.local/bin/roo
+rm -rf ~/.bitx/cli ~/.local/bin/bitx
 ```
 
 ### Development Installation
@@ -56,7 +56,7 @@ For contributing or development:
 pnpm install
 
 # Build the main extension first.
-pnpm --filter roo-cline bundle
+pnpm --filter roo-cline-bitx bundle
 
 # Build the cli.
 pnpm --filter @bitx/cli build
@@ -71,13 +71,13 @@ By default, the CLI prompts for approval before executing actions:
 ```bash
 export OPENROUTER_API_KEY=sk-or-v1-...
 
-roo ~/Documents/my-project -P "What is this project?"
+bitx ~/Documents/my-project -P "What is this project?"
 ```
 
 You can also run without a prompt and enter it interactively in TUI mode:
 
 ```bash
-roo ~/Documents/my-project
+bitx ~/Documents/my-project
 ```
 
 In interactive mode:
@@ -92,7 +92,7 @@ In interactive mode:
 For automation and scripts, use `-y` to auto-approve all actions:
 
 ```bash
-roo ~/Documents/my-project -y -P "Refactor the utils.ts file"
+bitx ~/Documents/my-project -y -P "Refactor the utils.ts file"
 ```
 
 In non-interactive mode:
@@ -107,20 +107,20 @@ To use Bitx Cloud features (like the provider proxy), you need to authenticate:
 
 ```bash
 # Log in to Bitx Cloud (opens browser)
-roo auth login
+bitx auth login
 
 # Check authentication status
-roo auth status
+bitx auth status
 
 # Log out
-roo auth logout
+bitx auth logout
 ```
 
 The `auth login` command:
 
 1. Opens your browser to authenticate with Bitx Cloud
 2. Receives a secure token via localhost callback
-3. Stores the token in `~/.config/roo/credentials.json`
+3. Stores the token in `~/.config/bitx/credentials.json`
 
 Tokens are valid for 90 days. The CLI will prompt you to re-authenticate when your token expires.
 
@@ -167,9 +167,9 @@ Tokens are valid for 90 days. The CLI will prompt you to re-authenticate when yo
 
 | Command           | Description                        |
 | ----------------- | ---------------------------------- |
-| `roo auth login`  | Authenticate with Bitx Cloud   |
-| `roo auth logout` | Clear stored authentication token  |
-| `roo auth status` | Show current authentication status |
+| `bitx auth login`  | Authenticate with Bitx Cloud   |
+| `bitx auth logout` | Clear stored authentication token  |
+| `bitx auth status` | Show current authentication status |
 
 ## Environment Variables
 
@@ -249,7 +249,7 @@ pnpm lint
 To create a new release, execute the /cli-release slash command:
 
 ```bash
-roo ~/Documents/Bitx -P "/cli-release" -y
+bitx ~/Documents/Bitx -P "/cli-release" -y
 ```
 
 The workflow will:

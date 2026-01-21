@@ -7,7 +7,7 @@
 		"openrouter": {
 			"description": "LLM 統一介面"
 		},
-		"roo": {
+		"bitx": {
 			"description": "開始使用的最佳免費模型",
 			"incentive": "免費試用 Roo"
 		}

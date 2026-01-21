@@ -142,7 +142,7 @@
 
 ## [3.38.3] - 2026-01-03
 
-- Feat: Add option in Context settings to recursively load `.roo/rules` and `AGENTS.md` from subdirectories (PR #10446 by @mrubens)
+- Feat: Add option in Context settings to recursively load `.bitx/rules` and `AGENTS.md` from subdirectories (PR #10446 by @mrubens)
 - Fix: Stop frequent Claude Code sign-ins by hardening OAuth refresh token handling (PR #10410 by @hannesrudolph)
 - Fix: Add `maxConcurrentFileReads` limit to native `read_file` tool schema (PR #10449 by @app/roomote)
 - Fix: Add type check for `lastMessage.text` in TTS useEffect to prevent runtime errors (PR #10431 by @app/roomote)
@@ -419,7 +419,7 @@
 - ChatView: Smoother stick-to-bottom behavior during streaming (PR #8999 by @hannesrudolph)
 - UX: Improved error messages and documentation links (PR #9777 by @brunobergher)
 - Fix: Overly round follow-up question suggestions styling (PR #9829 by @brunobergher)
-- Add symlink support for slash commands in .roo/commands folder (PR #9838 by @mrubens)
+- Add symlink support for slash commands in .bitx/commands folder (PR #9838 by @mrubens)
 - Ignore input to the execa terminal process for safer command execution (PR #9827 by @mrubens)
 - Be safer about large file reads (PR #9843 by @jr)
 - Add gpt-5.1-codex-max model to OpenAI provider (PR #9848 by @hannesrudolph)
@@ -1170,7 +1170,7 @@
 
 - feat: add custom base URL support for Requesty provider (thanks @requesty-JohnCosta27!)
 - feat: add DeepSeek V3.1 model to Chutes AI provider (#7294 by @dmarkey, PR by @app/roomote)
-- Revert "feat: enable loading Roo modes from multiple files in .roo/modes directory" temporarily to fix a bug with mode installation
+- Revert "feat: enable loading Roo modes from multiple files in .bitx/modes directory" temporarily to fix a bug with mode installation
 
 ## [3.25.22] - 2025-08-22
 
@@ -1189,7 +1189,7 @@
 - Improved context window error handling for OpenAI and other providers
 - Add "installed" filter to Roo Marketplace (thanks @semidark)
 - Improve filesystem access checks (thanks @elianiva)
-- Support for loading Roo modes from multiple YAML files in the `.roo/modes/` directory (thanks @farazoman)
+- Support for loading Roo modes from multiple YAML files in the `.bitx/modes/` directory (thanks @farazoman)
 - Add Featherless provider (thanks @DarinVerheijke)
 
 ## [3.25.20] - 2025-08-19
@@ -1585,7 +1585,7 @@
 - Chat index UI enhancements (thanks @MuriloFP!)
 - Fix model search being prefilled on dropdown (thanks @kevinvandijk!)
 - Improve chat UI - add camera icon margin and make placeholder non-selectable (thanks @MuriloFP!)
-- Delete .roo/rules-{mode} folder when custom mode is deleted
+- Delete .bitx/rules-{mode} folder when custom mode is deleted
 - Enforce file restrictions for all edit tools in architect mode
 - Add User-Agent header to API providers
 - Fix auto question timer unmount (thanks @liwilliam2021!)
@@ -1652,7 +1652,7 @@
 ## [3.22.0] - 2025-06-25
 
 - Add 1-click task sharing
-- Add support for loading rules from a global .roo directory (thanks @samhvw8!)
+- Add support for loading rules from a global .bitx directory (thanks @samhvw8!)
 - Modes selector improvements (thanks @brunobergher!)
 - Use safeWriteJson for all JSON file writes to avoid task history corruption (thanks @KJ7LNW!)
 - Improve YAML error handling when editing modes
@@ -2263,7 +2263,7 @@
 
 ## [3.11.10] - 2025-04-08
 
-- Fix bug where nested .roo/rules directories are not respected properly (thanks @taisukeoe!)
+- Fix bug where nested .bitx/rules directories are not respected properly (thanks @taisukeoe!)
 - Handle long command output more efficiently in the chat row (thanks @samhvw8!)
 - Fix cache usage tracking for OpenAI-compatible providers
 - Add custom translation instructions for zh-CN (thanks @System233!)
@@ -2272,7 +2272,7 @@
 ## [3.11.9] - 2025-04-07
 
 - Rate-limit setting updated to be per-profile (thanks @ross and @olweraltuve!)
-- You can now place multiple rules files in the .roo/rules/ and .roo/rules-{mode}/ folders (thanks @upamune!)
+- You can now place multiple rules files in the .bitx/rules/ and .bitx/rules-{mode}/ folders (thanks @upamune!)
 - Prevent unnecessary autoscroll when buttons appear (thanks @shtse8!)
 - Add Gemini 2.5 Pro Preview to Vertex AI (thanks @nbihan-mediware!)
 - Tidy up following ClineProvider refactor (thanks @diarmidmackenzie!)
@@ -2354,7 +2354,7 @@
 ## [3.11.0] - 2025-03-30
 
 - Replace single-block-diff with multi-block-diff fast editing strategy
-- Support project-level MCP config in .roo/mcp.json (thanks @aheizi!)
+- Support project-level MCP config in .bitx/mcp.json (thanks @aheizi!)
 - Show OpenRouter and Requesty key balance on the settings screen
 - Support import/export of settings
 - Add pinning and sorting for API configuration dropdown (thanks @jwcraig!)

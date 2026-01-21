@@ -27,7 +27,7 @@ import { getLMStudioModels } from "./lmstudio"
 import { getIOIntelligenceModels } from "./io-intelligence"
 import { getDeepInfraModels } from "./deepinfra"
 import { getHuggingFaceModels } from "./huggingface"
-import { getRooModels } from "./roo"
+import { getRooModels } from "./bitx"
 import { getChutesModels } from "./chutes"
 
 const memoryCache = new NodeCache({ stdTTL: 5 * 60, checkperiod: 5 * 60 })
@@ -99,7 +99,7 @@ async function fetchModelsFromProvider(options: GetModelsOptions): Promise<Model
 		case "huggingface":
 			models = await getHuggingFaceModels()
 			break
-		case "roo": {
+		case "bitx": {
 			// Bitx Cloud provider requires baseUrl and optional apiKey
 			const rooBaseUrl = options.baseUrl ?? process.env.ROO_CODE_PROVIDER_URL ?? "https://api.roocode.com/proxy"
 			models = await getRooModels(rooBaseUrl, options.apiKey)

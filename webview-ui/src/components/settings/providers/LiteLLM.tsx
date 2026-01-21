@@ -8,7 +8,7 @@ import {
 	litellmDefaultModelId,
 } from "@bitx/types"
 
-import { RouterName } from "@roo/api"
+import { RouterName } from "@bitx/api"
 
 import { vscode } from "@src/utils/vscode"
 import { useExtensionState } from "@src/context/ExtensionStateContext"

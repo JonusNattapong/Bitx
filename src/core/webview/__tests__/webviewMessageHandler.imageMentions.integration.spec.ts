@@ -33,7 +33,7 @@ vi.mock("../../tools/helpers/imageHelpers", async (importOriginal) => {
 
 describe("webviewMessageHandler - image mentions (integration)", () => {
 	it("resolves image mentions for newTask and passes images to createTask", async () => {
-		const tmpRoot = await fs.mkdtemp(path.join(os.tmpdir(), "roo-image-mentions-"))
+		const tmpRoot = await fs.mkdtemp(path.join(os.tmpdir(), "bitx-image-mentions-"))
 		try {
 			const imgBytes = Buffer.from("png-bytes")
 			await fs.writeFile(path.join(tmpRoot, "cat.png"), imgBytes)
@@ -64,7 +64,7 @@ describe("webviewMessageHandler - image mentions (integration)", () => {
 	})
 
 	it("resolves image mentions for askResponse and passes images to handleWebviewAskResponse", async () => {
-		const tmpRoot = await fs.mkdtemp(path.join(os.tmpdir(), "roo-image-mentions-"))
+		const tmpRoot = await fs.mkdtemp(path.join(os.tmpdir(), "bitx-image-mentions-"))
 		try {
 			const imgBytes = Buffer.from("jpg-bytes")
 			await fs.writeFile(path.join(tmpRoot, "cat.jpg"), imgBytes)
@@ -98,7 +98,7 @@ describe("webviewMessageHandler - image mentions (integration)", () => {
 	})
 
 	it("resolves gif image mentions (matching read_file behavior)", async () => {
-		const tmpRoot = await fs.mkdtemp(path.join(os.tmpdir(), "roo-image-mentions-"))
+		const tmpRoot = await fs.mkdtemp(path.join(os.tmpdir(), "bitx-image-mentions-"))
 		try {
 			const imgBytes = Buffer.from("gif-bytes")
 			await fs.writeFile(path.join(tmpRoot, "animation.gif"), imgBytes)

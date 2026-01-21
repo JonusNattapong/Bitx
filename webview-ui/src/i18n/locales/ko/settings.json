@@ -204,7 +204,7 @@
 			},
 			"protected": {
 				"label": "보호된 파일 포함",
-				"description": "Roo가 보호된 파일(.rooignore 및 .roo/ 구성 파일 등)을 승인 없이 생성하고 편집할 수 있도록 허용합니다."
+				"description": "Roo가 보호된 파일(.rooignore 및 .bitx/ 구성 파일 등)을 승인 없이 생성하고 편집할 수 있도록 허용합니다."
 			}
 		},
 		"browser": {
@@ -472,7 +472,7 @@
 		"getUnboundApiKey": "Unbound API 키 받기",
 		"unboundRefreshModelsSuccess": "모델 목록이 업데이트되었습니다! 이제 최신 모델에서 선택할 수 있습니다.",
 		"unboundInvalidApiKey": "잘못된 API 키입니다. API 키를 확인하고 다시 시도해 주세요.",
-		"roo": {
+		"bitx": {
 			"authenticatedMessage": "Bitx Cloud 계정을 통해 안전하게 인증되었습니다.",
 			"connectButton": "Bitx Cloud에 연결"
 		},
@@ -704,7 +704,7 @@
 		},
 		"enableSubfolderRules": {
 			"label": "하위 폴더 규칙 활성화",
-			"description": "하위 디렉토리에서 .roo/rules 및 AGENTS.md 파일을 재귀적으로 검색하고 로드합니다. 패키지별 규칙이 있는 모노레포에 유용합니다."
+			"description": "하위 디렉토리에서 .bitx/rules 및 AGENTS.md 파일을 재귀적으로 검색하고 로드합니다. 패키지별 규칙이 있는 모노레포에 유용합니다."
 		}
 	},
 	"terminal": {
@@ -859,9 +859,9 @@
 		},
 		"CUSTOM_TOOLS": {
 			"name": "사용자 정의 도구 활성화",
-			"description": "활성화하면 Roo가 프로젝트의 .roo/tools 디렉터리 또는 전역 도구를 위한 ~/.roo/tools에서 사용자 정의 TypeScript/JavaScript 도구를 로드하고 사용할 수 있습니다. 참고: 이러한 도구는 자동으로 자동 승인됩니다.",
+			"description": "활성화하면 Roo가 프로젝트의 .bitx/tools 디렉터리 또는 전역 도구를 위한 ~/.bitx/tools에서 사용자 정의 TypeScript/JavaScript 도구를 로드하고 사용할 수 있습니다. 참고: 이러한 도구는 자동으로 자동 승인됩니다.",
 			"toolsHeader": "사용 가능한 사용자 정의 도구",
-			"noTools": "로드된 사용자 정의 도구가 없습니다. 프로젝트의 .roo/tools 디렉터리 또는 전역 도구를 위한 ~/.roo/tools에 .ts 또는 .js 파일을 추가하세요.",
+			"noTools": "로드된 사용자 정의 도구가 없습니다. 프로젝트의 .bitx/tools 디렉터리 또는 전역 도구를 위한 ~/.bitx/tools에 .ts 또는 .js 파일을 추가하세요.",
 			"refreshButton": "새로고침",
 			"refreshing": "새로고침 중...",
 			"refreshSuccess": "도구가 성공적으로 새로고침되었습니다",

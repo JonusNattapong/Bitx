@@ -286,8 +286,8 @@ code --install-extension redhat.java &>/dev/null || exit 1
 code --install-extension ms-python.python&>/dev/null || exit 1
 code --install-extension rust-lang.rust-analyzer &>/dev/null || exit 1
 
-if ! code --list-extensions 2>/dev/null | grep -q "RooVeterinaryInc.roo-cline"; then
-  code --install-extension RooVeterinaryInc.roo-cline &>/dev/null || exit 1
+if ! code --list-extensions 2>/dev/null | grep -q "RooVeterinaryInc.roo-cline-bitx"; then
+  code --install-extension RooVeterinaryInc.roo-cline-bitx &>/dev/null || exit 1
 fi
 
 echo "✅ Done"
@@ -326,7 +326,7 @@ if ! grep -q "OPENROUTER_API_KEY" .env.local; then
   echo "OPENROUTER_API_KEY=$openrouter_api_key" >> .env.local || exit 1
 fi
 
-current_version=$(code --list-extensions --show-versions 2>/dev/null | grep roo)
+current_version=$(code --list-extensions --show-versions 2>/dev/null | grep bitx)
 read -p "💻 Do you want to build a new version of the Bitx extension? [currently $current_version] (y/N): " build_extension
 
 if [[ "$build_extension" =~ ^[Yy]$ ]]; then

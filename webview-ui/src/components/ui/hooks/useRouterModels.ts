@@ -5,7 +5,7 @@ import { type RouterModels, type ExtensionMessage } from "@bitx/types"
 import { vscode } from "@src/utils/vscode"
 
 type UseRouterModelsOptions = {
-	provider?: string // single provider filter (e.g. "roo")
+	provider?: string // single provider filter (e.g. "bitx")
 	enabled?: boolean // gate fetching entirely
 }
 

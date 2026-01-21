@@ -15,7 +15,7 @@ export const useRooCreditBalance = () => {
 
 	useEffect(() => {
 		setIsLoading(true)
-		const requestId = `roo-balance-${Date.now()}`
+		const requestId = `bitx-balance-${Date.now()}`
 
 		const handleMessage = (event: MessageEvent) => {
 			const message: ExtensionMessage = event.data

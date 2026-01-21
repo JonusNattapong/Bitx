@@ -301,7 +301,7 @@ export class RooHandler extends BaseOpenAiCompatibleProvider<string> {
 				// - OpenAI protocol expects TOTAL input tokens (cached + non-cached)
 				// - Anthropic protocol expects NON-CACHED input tokens (caches passed separately)
 				const modelId = model.id
-				const apiProtocol = getApiProtocol("roo", modelId)
+				const apiProtocol = getApiProtocol("bitx", modelId)
 
 				const promptTokens = lastUsage.prompt_tokens || 0
 				const cacheWrite = lastUsage.cache_creation_input_tokens || 0
@@ -342,7 +342,7 @@ export class RooHandler extends BaseOpenAiCompatibleProvider<string> {
 		try {
 			// Fetch models and cache them in the shared cache
 			await getModels({
-				provider: "roo",
+				provider: "bitx",
 				baseUrl: baseURL,
 				apiKey,
 			})
@@ -361,7 +361,7 @@ export class RooHandler extends BaseOpenAiCompatibleProvider<string> {
 		const modelId = this.options.apiModelId || rooDefaultModelId
 
 		// Get models from shared cache (settings are already applied by the fetcher)
-		const models = getModelsFromCache("roo") || {}
+		const models = getModelsFromCache("bitx") || {}
 		const modelInfo = models[modelId]
 
 		if (modelInfo) {
@@ -405,7 +405,7 @@ export class RooHandler extends BaseOpenAiCompatibleProvider<string> {
 		if (!sessionToken || sessionToken === "unauthenticated") {
 			return {
 				success: false,
-				error: t("tools:generateImage.roo.authRequired"),
+				error: t("tools:generateImage.bitx.authRequired"),
 			}
 		}
 

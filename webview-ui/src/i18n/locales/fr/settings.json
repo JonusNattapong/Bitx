@@ -205,7 +205,7 @@
 			},
 			"protected": {
 				"label": "Inclure les fichiers protégés",
-				"description": "Permettre à Roo de créer et modifier des fichiers protégés (comme .rooignore et les fichiers de configuration .roo/) sans nécessiter d'approbation."
+				"description": "Permettre à Roo de créer et modifier des fichiers protégés (comme .rooignore et les fichiers de configuration .bitx/) sans nécessiter d'approbation."
 			}
 		},
 		"browser": {
@@ -472,7 +472,7 @@
 		"getUnboundApiKey": "Obtenir la clé API Unbound",
 		"unboundRefreshModelsSuccess": "Liste des modèles mise à jour ! Vous pouvez maintenant sélectionner parmi les derniers modèles.",
 		"unboundInvalidApiKey": "Clé API invalide. Veuillez vérifier votre clé API et réessayer.",
-		"roo": {
+		"bitx": {
 			"authenticatedMessage": "Authentifié de manière sécurisée via ton compte Bitx Cloud.",
 			"connectButton": "Se connecter à Bitx Cloud"
 		},
@@ -703,7 +703,7 @@
 		},
 		"enableSubfolderRules": {
 			"label": "Activer les règles des sous-dossiers",
-			"description": "Découvrir et charger récursivement les fichiers .roo/rules et AGENTS.md depuis les sous-répertoires. Utile pour les monorepos avec des règles par package."
+			"description": "Découvrir et charger récursivement les fichiers .bitx/rules et AGENTS.md depuis les sous-répertoires. Utile pour les monorepos avec des règles par package."
 		}
 	},
 	"terminal": {
@@ -858,9 +858,9 @@
 		},
 		"CUSTOM_TOOLS": {
 			"name": "Activer les outils personnalisés",
-			"description": "Lorsqu'activé, Roo peut charger et utiliser des outils TypeScript/JavaScript personnalisés à partir du répertoire .roo/tools de votre projet ou ~/.roo/tools pour des outils globaux. Remarque : ces outils seront automatiquement approuvés.",
+			"description": "Lorsqu'activé, Roo peut charger et utiliser des outils TypeScript/JavaScript personnalisés à partir du répertoire .bitx/tools de votre projet ou ~/.bitx/tools pour des outils globaux. Remarque : ces outils seront automatiquement approuvés.",
 			"toolsHeader": "Outils personnalisés disponibles",
-			"noTools": "Aucun outil personnalisé chargé. Ajoutez des fichiers .ts ou .js au répertoire .roo/tools de votre projet ou ~/.roo/tools pour des outils globaux.",
+			"noTools": "Aucun outil personnalisé chargé. Ajoutez des fichiers .ts ou .js au répertoire .bitx/tools de votre projet ou ~/.bitx/tools pour des outils globaux.",
 			"refreshButton": "Actualiser",
 			"refreshing": "Actualisation...",
 			"refreshSuccess": "Outils actualisés avec succès",

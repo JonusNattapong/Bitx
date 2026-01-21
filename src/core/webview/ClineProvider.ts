@@ -2168,7 +2168,7 @@ export class ClineProvider
 			enterBehavior: enterBehavior ?? "send",
 			cloudUserInfo,
 			cloudIsAuthenticated: cloudIsAuthenticated ?? false,
-			cloudAuthSkipModel: this.context.globalState.get<boolean>("roo-auth-skip-model") ?? false,
+			cloudAuthSkipModel: this.context.globalState.get<boolean>("bitx-auth-skip-model") ?? false,
 			cloudOrganizations,
 			sharingEnabled: sharingEnabled ?? false,
 			publicSharingEnabled: publicSharingEnabled ?? false,

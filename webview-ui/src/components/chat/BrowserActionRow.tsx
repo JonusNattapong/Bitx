@@ -14,7 +14,7 @@ import {
 
 import type { ClineMessage, ClineSayBrowserAction } from "@bitx/types"
 
-import { getViewportCoordinate as getViewportCoordinateShared, prettyKey } from "@roo/browserUtils"
+import { getViewportCoordinate as getViewportCoordinateShared, prettyKey } from "@bitx/browserUtils"
 
 import { vscode } from "@src/utils/vscode"
 import { useExtensionState } from "@src/context/ExtensionStateContext"

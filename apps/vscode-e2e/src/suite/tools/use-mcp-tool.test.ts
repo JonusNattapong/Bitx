@@ -21,7 +21,7 @@ suite.skip("Bitx use_mcp_tool Tool", function () {
 
 	// Create a temporary directory and test files
 	suiteSetup(async () => {
-		tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "roo-test-mcp-"))
+		tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "bitx-test-mcp-"))
 
 		// Create test files in VSCode workspace directory
 		const workspaceDir = vscode.workspace.workspaceFolders?.[0]?.uri.fsPath || tempDir
@@ -30,15 +30,15 @@ suite.skip("Bitx use_mcp_tool Tool", function () {
 		testFiles = {
 			simple: path.join(workspaceDir, `mcp-test-${Date.now()}.txt`),
 			testData: path.join(workspaceDir, `mcp-data-${Date.now()}.json`),
-			mcpConfig: path.join(workspaceDir, ".roo", "mcp.json"),
+			mcpConfig: path.join(workspaceDir, ".bitx", "mcp.json"),
 		}
 
 		// Create initial test files
 		await fs.writeFile(testFiles.simple, "Initial content for MCP test")
 		await fs.writeFile(testFiles.testData, JSON.stringify({ test: "data", value: 42 }, null, 2))
 
-		// Create .roo directory and MCP configuration file
-		const rooDir = path.join(workspaceDir, ".roo")
+		// Create .bitx directory and MCP configuration file
+		const rooDir = path.join(workspaceDir, ".bitx")
 		await fs.mkdir(rooDir, { recursive: true })
 
 		const mcpConfig = {
@@ -74,9 +74,9 @@ suite.skip("Bitx use_mcp_tool Tool", function () {
 			}
 		}
 
-		// Clean up .roo directory
+		// Clean up .bitx directory
 		const workspaceDir = vscode.workspace.workspaceFolders?.[0]?.uri.fsPath || tempDir
-		const rooDir = path.join(workspaceDir, ".roo")
+		const rooDir = path.join(workspaceDir, ".bitx")
 		try {
 			await fs.rm(rooDir, { recursive: true, force: true })
 		} catch {
@@ -515,12 +515,12 @@ suite.skip("Bitx use_mcp_tool Tool", function () {
 				responseText.includes("mcp-test-") || responseText.includes(path.basename(testFiles.simple))
 			const hasDataFile =
 				responseText.includes("mcp-data-") || responseText.includes(path.basename(testFiles.testData))
-			const hasRooDir = responseText.includes(".roo")
+			const hasRooDir = responseText.includes(".bitx")
 
-			// At least one of our test files or the .roo directory should be present
+			// At least one of our test files or the .bitx directory should be present
 			assert.ok(
 				hasTestFile || hasDataFile || hasRooDir,
-				`MCP server response should contain our test files or .roo directory. Expected to find: '${path.basename(testFiles.simple)}', '${path.basename(testFiles.testData)}', or '.roo'. Got: ${responseText.substring(0, 200)}...`,
+				`MCP server response should contain our test files or .bitx directory. Expected to find: '${path.basename(testFiles.simple)}', '${path.basename(testFiles.testData)}', or '.bitx'. Got: ${responseText.substring(0, 200)}...`,
 			)
 
 			// Check for typical directory listing indicators
@@ -661,7 +661,7 @@ suite.skip("Bitx use_mcp_tool Tool", function () {
 			const hasTestFiles =
 				responseText.includes("mcp-test-") ||
 				responseText.includes("mcp-data-") ||
-				responseText.includes(".roo") ||
+				responseText.includes(".bitx") ||
 				responseText.includes(".txt") ||
 				responseText.includes(".json") ||
 				responseText.length > 10 // At least some content indicating directory structure

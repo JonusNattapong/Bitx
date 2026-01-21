@@ -24,7 +24,7 @@
 		"invalidImageData": "Dades d'imatge no vàlides en la resposta",
 		"invalidImageFormat": "Format d'imatge no vàlid rebut",
 		"unknownError": "S'ha produït un error desconegut",
-		"roo": {
+		"bitx": {
 			"authRequired": "Es requereix autenticació de Bitx Cloud per a la generació d'imatges. Inicia sessió a Bitx Cloud."
 		}
 	}

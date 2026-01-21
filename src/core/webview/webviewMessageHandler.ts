@@ -2,7 +2,7 @@ import { safeWriteJson } from "../../utils/safeWriteJson"
 import * as path from "path"
 import * as os from "os"
 import * as fs from "fs/promises"
-import { getRooDirectoriesForCwd } from "../../services/roo-config/index.js"
+import { getRooDirectoriesForCwd } from "../../services/bitx-config/index.js"
 import pWaitFor from "p-wait-for"
 import * as vscode from "vscode"
 
@@ -872,7 +872,7 @@ export const webviewMessageHandler = async (
 						unbound: {},
 						ollama: {},
 						lmstudio: {},
-						roo: {},
+						bitx: {},
 						chutes: {},
 					}
 
@@ -911,9 +911,9 @@ export const webviewMessageHandler = async (
 					},
 				},
 				{
-					key: "roo",
+					key: "bitx",
 					options: {
-						provider: "roo",
+						provider: "bitx",
 						baseUrl: process.env.ROO_CODE_PROVIDER_URL ?? "https://api.roocode.com/proxy",
 						apiKey: CloudService.hasInstance()
 							? CloudService.instance.authService?.getSessionToken()
@@ -1050,7 +1050,7 @@ export const webviewMessageHandler = async (
 			// Specific handler for Roo models only - flushes cache to ensure fresh auth token is used
 			try {
 				const rooOptions = {
-					provider: "roo" as const,
+					provider: "bitx" as const,
 					baseUrl: process.env.ROO_CODE_PROVIDER_URL ?? "https://api.roocode.com/proxy",
 					apiKey: CloudService.hasInstance()
 						? CloudService.instance.authService?.getSessionToken()
@@ -1065,7 +1065,7 @@ export const webviewMessageHandler = async (
 				provider.postMessageToWebview({
 					type: "singleRouterModelFetchResponse",
 					success: true,
-					values: { provider: "roo", models: rooModels },
+					values: { provider: "bitx", models: rooModels },
 				})
 			} catch (error) {
 				// Send error response
@@ -1074,7 +1074,7 @@ export const webviewMessageHandler = async (
 					type: "singleRouterModelFetchResponse",
 					success: false,
 					error: errorMessage,
-					values: { provider: "roo" },
+					values: { provider: "bitx" },
 				})
 			}
 			break
@@ -1325,7 +1325,7 @@ export const webviewMessageHandler = async (
 			}
 
 			const workspaceFolder = getCurrentCwd()
-			const rooDir = path.join(workspaceFolder, ".roo")
+			const rooDir = path.join(workspaceFolder, ".bitx")
 			const mcpPath = path.join(rooDir, "mcp.json")
 
 			try {
@@ -2072,14 +2072,14 @@ export const webviewMessageHandler = async (
 				if (scope === "project") {
 					const workspacePath = getWorkspacePath()
 					if (workspacePath) {
-						rulesFolderPath = path.join(workspacePath, ".roo", `rules-${message.slug}`)
+						rulesFolderPath = path.join(workspacePath, ".bitx", `rules-${message.slug}`)
 					} else {
-						rulesFolderPath = path.join(".roo", `rules-${message.slug}`)
+						rulesFolderPath = path.join(".bitx", `rules-${message.slug}`)
 					}
 				} else {
 					// Global scope - use OS home directory
 					const homeDir = os.homedir()
-					rulesFolderPath = path.join(homeDir, ".roo", `rules-${message.slug}`)
+					rulesFolderPath = path.join(homeDir, ".bitx", `rules-${message.slug}`)
 				}
 
 				// Check if the rules folder exists
@@ -2507,7 +2507,7 @@ export const webviewMessageHandler = async (
 		}
 		case "clearCloudAuthSkipModel": {
 			// Clear the flag that indicates auth completed without model selection
-			await provider.context.globalState.update("roo-auth-skip-model", undefined)
+			await provider.context.globalState.update("bitx-auth-skip-model", undefined)
 			await provider.postStateToWebview()
 			break
 		}
@@ -3065,7 +3065,7 @@ export const webviewMessageHandler = async (
 				// Determine the commands directory based on source
 				let commandsDir: string
 				if (source === "global") {
-					const globalConfigDir = path.join(os.homedir(), ".roo")
+					const globalConfigDir = path.join(os.homedir(), ".bitx")
 					commandsDir = path.join(globalConfigDir, "commands")
 				} else {
 					if (!vscode.workspace.workspaceFolders?.length) {
@@ -3078,7 +3078,7 @@ export const webviewMessageHandler = async (
 						vscode.window.showErrorMessage(t("common:errors.no_workspace_for_project_command"))
 						break
 					}
-					commandsDir = path.join(workspaceRoot, ".roo", "commands")
+					commandsDir = path.join(workspaceRoot, ".bitx", "commands")
 				}
 
 				// Ensure the commands directory exists
@@ -3251,7 +3251,7 @@ export const webviewMessageHandler = async (
 				try {
 					const tmpDir = os.tmpdir()
 					const timestamp = Date.now()
-					const tempFileName = `roo-preview-${timestamp}.md`
+					const tempFileName = `bitx-preview-${timestamp}.md`
 					const tempFilePath = path.join(tmpDir, tempFileName)
 
 					await fs.writeFile(tempFilePath, message.text, "utf8")
@@ -3370,7 +3370,7 @@ export const webviewMessageHandler = async (
 				// Create a temporary file
 				const tmpDir = os.tmpdir()
 				const timestamp = Date.now()
-				const tempFileName = `roo-debug-${message.type === "openDebugApiHistory" ? "api" : "ui"}-${currentTask.taskId.slice(0, 8)}-${timestamp}.json`
+				const tempFileName = `bitx-debug-${message.type === "openDebugApiHistory" ? "api" : "ui"}-${currentTask.taskId.slice(0, 8)}-${timestamp}.json`
 				const tempFilePath = path.join(tmpDir, tempFileName)
 
 				await fs.writeFile(tempFilePath, prettifiedContent, "utf8")

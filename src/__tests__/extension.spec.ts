@@ -201,7 +201,7 @@ vi.mock("../core/webview/ClineProvider", async () => {
 			{
 				// Static method used by extension.ts
 				getVisibleInstance: vi.fn().mockReturnValue(mockInstance),
-				sideBarId: "roo-cline-sidebar",
+				sideBarId: "roo-cline-bitx-sidebar",
 			},
 		),
 	}
@@ -348,7 +348,7 @@ describe("extension.ts", () => {
 
 			// Verify refreshModels was called with correct parameters including session token
 			expect(mockRefreshModels).toHaveBeenCalledWith({
-				provider: "roo",
+				provider: "bitx",
 				baseUrl: expect.any(String),
 				apiKey: "test-session-token",
 			})
@@ -384,7 +384,7 @@ describe("extension.ts", () => {
 			})
 
 			// Verify flushModels was called to clear the cache on logout
-			expect(flushModels).toHaveBeenCalledWith({ provider: "roo" }, false)
+			expect(flushModels).toHaveBeenCalledWith({ provider: "bitx" }, false)
 		})
 	})
 })

@@ -12,18 +12,18 @@ services:
             # Mount log files so web can access task logs
             - /tmp/evals:/tmp/evals:ro
             # Mount source code for hot reload in development
-            - ../../apps/web-evals:/roo/repo/apps/web-evals:delegated
-            - ../../packages/evals:/roo/repo/packages/evals:delegated
-            - ../../packages/types:/roo/repo/packages/types:delegated
-            - ../../packages/ipc:/roo/repo/packages/ipc:delegated
-            - ../../packages/cloud:/roo/repo/packages/cloud:delegated
+            - ../../apps/web-evals:/bitx/repo/apps/web-evals:delegated
+            - ../../packages/evals:/bitx/repo/packages/evals:delegated
+            - ../../packages/types:/bitx/repo/packages/types:delegated
+            - ../../packages/ipc:/bitx/repo/packages/ipc:delegated
+            - ../../packages/cloud:/bitx/repo/packages/cloud:delegated
             # Exclude node_modules from being overwritten
-            - /roo/repo/node_modules
-            - /roo/repo/apps/web-evals/node_modules
-            - /roo/repo/packages/evals/node_modules
-            - /roo/repo/packages/types/node_modules
-            - /roo/repo/packages/ipc/node_modules
-            - /roo/repo/packages/cloud/node_modules
+            - /bitx/repo/node_modules
+            - /bitx/repo/apps/web-evals/node_modules
+            - /bitx/repo/packages/evals/node_modules
+            - /bitx/repo/packages/types/node_modules
+            - /bitx/repo/packages/ipc/node_modules
+            - /bitx/repo/packages/cloud/node_modules
         entrypoint: []
         command:
             - sh
@@ -42,4 +42,4 @@ services:
                 echo '🔄 Running database migrations...'
                 pnpm --filter @bitx/evals db:migrate
                 echo '🌐 Starting Next.js dev server...'
-                cd /roo/repo/apps/web-evals && npx next dev -p 3446
+                cd /bitx/repo/apps/web-evals && npx next dev -p 3446

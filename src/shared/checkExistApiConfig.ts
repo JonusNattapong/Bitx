@@ -5,10 +5,10 @@ export function checkExistKey(config: ProviderSettings | undefined) {
 		return false
 	}
 
-	// Special case for fake-ai, claude-code, openai-codex, qwen-code, and roo providers which don't need any configuration.
+	// Special case for fake-ai, claude-code, openai-codex, qwen-code, and bitx providers which don't need any configuration.
 	if (
 		config.apiProvider &&
-		["fake-ai", "claude-code", "openai-codex", "qwen-code", "roo"].includes(config.apiProvider)
+		["fake-ai", "claude-code", "openai-codex", "qwen-code", "bitx"].includes(config.apiProvider)
 	) {
 		return true
 	}

@@ -24,7 +24,7 @@
 		"invalidImageData": "Yanıtta geçersiz görüntü verisi",
 		"invalidImageFormat": "Geçersiz görüntü formatı alındı",
 		"unknownError": "Bilinmeyen bir hata oluştu",
-		"roo": {
+		"bitx": {
 			"authRequired": "Görüntü oluşturma için Bitx Cloud kimlik doğrulaması gereklidir. Lütfen Bitx Cloud'da oturum açın."
 		}
 	}

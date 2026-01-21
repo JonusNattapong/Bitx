@@ -45,7 +45,7 @@ logs
 .idea/
 .qodo/
 .vercel
-.roo/mcp.json
+.bitx/mcp.json
 
 # Qdrant
 qdrant_storage/
@@ -53,4 +53,4 @@ qdrant_storage/
 # Architect plans
 plans/
 
-roo-cli-*.tar.gz*
+bitx-cli-*.tar.gz*

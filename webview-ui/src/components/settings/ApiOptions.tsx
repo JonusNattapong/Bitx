@@ -250,7 +250,7 @@ const ApiOptions = ({
 			} else if (
 				selectedProvider === "litellm" ||
 				selectedProvider === "deepinfra" ||
-				selectedProvider === "roo"
+				selectedProvider === "bitx"
 			) {
 				vscode.postMessage({ type: "requestRouterModels" })
 			}
@@ -374,7 +374,7 @@ const ApiOptions = ({
 				fireworks: { field: "apiModelId", default: fireworksDefaultModelId },
 				featherless: { field: "apiModelId", default: featherlessDefaultModelId },
 				"io-intelligence": { field: "ioIntelligenceModelId", default: ioIntelligenceDefaultModelId },
-				roo: { field: "apiModelId", default: rooDefaultModelId },
+				bitx: { field: "apiModelId", default: rooDefaultModelId },
 				"vercel-ai-gateway": { field: "vercelAiGatewayModelId", default: vercelAiGatewayDefaultModelId },
 				openai: { field: "openAiModelId" },
 				ollama: { field: "ollamaModelId" },
@@ -452,16 +452,16 @@ const ApiOptions = ({
 			label,
 		}))
 
-		// Pin "roo" to the top if not on welcome screen
+		// Pin "bitx" to the top if not on welcome screen
 		if (!fromWelcomeView) {
-			const rooIndex = options.findIndex((opt) => opt.value === "roo")
+			const rooIndex = options.findIndex((opt) => opt.value === "bitx")
 			if (rooIndex > 0) {
 				const [rooOption] = options.splice(rooIndex, 1)
 				options.unshift(rooOption)
 			}
 		} else {
-			// Filter out roo from the welcome view
-			const filteredOptions = options.filter((opt) => opt.value !== "roo")
+			// Filter out bitx from the welcome view
+			const filteredOptions = options.filter((opt) => opt.value !== "bitx")
 			options.length = 0
 			options.push(...filteredOptions)
 
@@ -480,7 +480,7 @@ const ApiOptions = ({
 			<div className="flex flex-col gap-1 relative">
 				<div className="flex justify-between items-center">
 					<label className="block font-medium">{t("settings:providers.apiProvider")}</label>
-					{selectedProvider === "roo" && cloudIsAuthenticated ? (
+					{selectedProvider === "bitx" && cloudIsAuthenticated ? (
 						<RooBalanceDisplay />
 					) : (
 						docs && (
@@ -758,7 +758,7 @@ const ApiOptions = ({
 				<Fireworks apiConfiguration={apiConfiguration} setApiConfigurationField={setApiConfigurationField} />
 			)}
 
-			{selectedProvider === "roo" && (
+			{selectedProvider === "bitx" && (
 				<Roo
 					apiConfiguration={apiConfiguration}
 					setApiConfigurationField={setApiConfigurationField}

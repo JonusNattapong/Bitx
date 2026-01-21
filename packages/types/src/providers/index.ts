@@ -23,7 +23,7 @@ export * from "./openai-codex-rate-limits.js"
 export * from "./openrouter.js"
 export * from "./qwen-code.js"
 export * from "./requesty.js"
-export * from "./roo.js"
+export * from "./bitx.js"
 export * from "./sambanova.js"
 export * from "./unbound.js"
 export * from "./vertex.js"
@@ -54,7 +54,7 @@ import { openAiCodexDefaultModelId } from "./openai-codex.js"
 import { openRouterDefaultModelId } from "./openrouter.js"
 import { qwenCodeDefaultModelId } from "./qwen-code.js"
 import { requestyDefaultModelId } from "./requesty.js"
-import { rooDefaultModelId } from "./roo.js"
+import { rooDefaultModelId } from "./bitx.js"
 import { sambaNovaDefaultModelId } from "./sambanova.js"
 import { unboundDefaultModelId } from "./unbound.js"
 import { vertexDefaultModelId } from "./vertex.js"
@@ -140,7 +140,7 @@ export function getProviderDefaultModelId(
 			return featherlessDefaultModelId
 		case "io-intelligence":
 			return ioIntelligenceDefaultModelId
-		case "roo":
+		case "bitx":
 			return rooDefaultModelId
 		case "qwen-code":
 			return qwenCodeDefaultModelId

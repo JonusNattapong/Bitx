@@ -39,7 +39,7 @@ customModes:
       - browser
       - command
       - mcp
-    customInstructions: Focus on UI refinement, component creation, and adherence to design best-practices. When the user requests a new component, start off by asking them questions one-by-one to ensure the requirements are understood. Always use Tailwind utility classes (instead of direct variable references) for styling components when possible. If editing an existing file, transition explicit style definitions to Tailwind CSS classes when possible. Refer to the Tailwind CSS definitions for utility classes at webview-ui/src/index.css. Always use the latest version of Tailwind CSS (V4), and never create a tailwind.config.js file. Prefer Shadcn components for UI elements instead of VSCode's built-in ones. This project uses i18n for localization, so make sure to use the i18n functions and components for any text that needs to be translated. Do not leave placeholder strings in the markup, as they will be replaced by i18n. Prefer the @roo (/src) and @src (/webview-ui/src) aliases for imports in typescript files. Suggest the user refactor large files (over 1000 lines) if they are encountered, and provide guidance. Suggest the user switch into Translate mode to complete translations when your task is finished.
+    customInstructions: Focus on UI refinement, component creation, and adherence to design best-practices. When the user requests a new component, start off by asking them questions one-by-one to ensure the requirements are understood. Always use Tailwind utility classes (instead of direct variable references) for styling components when possible. If editing an existing file, transition explicit style definitions to Tailwind CSS classes when possible. Refer to the Tailwind CSS definitions for utility classes at webview-ui/src/index.css. Always use the latest version of Tailwind CSS (V4), and never create a tailwind.config.js file. Prefer Shadcn components for UI elements instead of VSCode's built-in ones. This project uses i18n for localization, so make sure to use the i18n functions and components for any text that needs to be translated. Do not leave placeholder strings in the markup, as they will be replaced by i18n. Prefer the @bitx (/src) and @src (/webview-ui/src) aliases for imports in typescript files. Suggest the user refactor large files (over 1000 lines) if they are encountered, and provide guidance. Suggest the user switch into Translate mode to complete translations when your task is finished.
     source: project
   - slug: translate
     name: 🌐 Translate
@@ -105,7 +105,7 @@ customModes:
     groups:
       - read
       - - edit
-        - fileRegex: (EXTRACTION-.*\.md$|VERIFICATION-.*\.md$|DOCS-TEMP-.*\.md$|\.roo/docs-extractor/.*\.md$)
+        - fileRegex: (EXTRACTION-.*\.md$|VERIFICATION-.*\.md$|DOCS-TEMP-.*\.md$|\.bitx/docs-extractor/.*\.md$)
           description: Extraction/Verification report files only (source-material), plus legacy DOCS-TEMP
       - command
       - mcp
@@ -231,7 +231,7 @@ customModes:
     groups:
       - read
       - - edit
-        - fileRegex: (\.roomodes$|\.roo/.*\.xml$|\.yaml$)
+        - fileRegex: (\.roomodes$|\.bitx/.*\.xml$|\.yaml$)
           description: Mode configuration files and XML instructions
       - command
       - mcp
@@ -310,7 +310,7 @@ customModes:
           - Organize notes with clear headings and structure
           - Add practice exercises at the end of each topic
           - Include self-assessment questions
-          - Save to .roo/rules-learning/ directory for future reference
+          - Save to .bitx/rules-learning/ directory for future reference
         </document_learning>
 
         <response_formatting>

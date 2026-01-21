@@ -331,7 +331,7 @@
 			"feature": "<bold>Mô hình stealth MIỄN PHÍ có thời hạn</bold> - Code Supernova: Hiện đã được nâng cấp với <bold>cửa sổ ngữ cảnh 1M token</bold>! Một mô hình lập trình agentic đa năng hỗ trợ đầu vào hình ảnh, có sẵn qua Bitx Cloud.",
 			"note": "(Lưu ý: các prompt và completion được ghi lại bởi người tạo mô hình và được sử dụng để cải thiện mô hình)",
 			"connectButton": "Kết nối với Bitx Cloud",
-			"selectModel": "Chọn <code>roo/code-supernova</code> từ nhà cung cấp Bitx Cloud trong Cài đặt để bắt đầu.",
+			"selectModel": "Chọn <code>bitx/code-supernova</code> từ nhà cung cấp Bitx Cloud trong Cài đặt để bắt đầu.",
 			"goToSettingsButton": "Đi tới Cài đặt"
 		},
 		"release": {

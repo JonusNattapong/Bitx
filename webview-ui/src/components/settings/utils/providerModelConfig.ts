@@ -137,7 +137,7 @@ export const PROVIDERS_WITH_CUSTOM_MODEL_UI: ProviderName[] = [
 	"litellm",
 	"io-intelligence",
 	"vercel-ai-gateway",
-	"roo",
+	"bitx",
 	"chutes",
 	"ollama",
 	"lmstudio",

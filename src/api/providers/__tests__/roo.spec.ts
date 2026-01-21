@@ -1,4 +1,4 @@
-// npx vitest run api/providers/__tests__/roo.spec.ts
+// npx vitest run api/providers/__tests__/bitx.spec.ts
 
 import { Anthropic } from "@anthropic-ai/sdk"
 import { rooDefaultModelId } from "@bitx/types"
@@ -79,7 +79,7 @@ vitest.mock("@bitx/cloud", () => ({
 // Mock i18n
 vitest.mock("../../../i18n", () => ({
 	t: vitest.fn((key: string) => {
-		if (key === "common:errors.roo.authenticationRequired") {
+		if (key === "common:errors.bitx.authenticationRequired") {
 			return "Authentication required for Bitx Cloud"
 		}
 		return key
@@ -91,7 +91,7 @@ vitest.mock("../../providers/fetchers/modelCache", () => ({
 	getModels: vitest.fn(),
 	flushModels: vitest.fn(),
 	getModelsFromCache: vitest.fn((provider: string) => {
-		if (provider === "roo") {
+		if (provider === "bitx") {
 			return {
 				"xai/grok-code-fast-1": {
 					maxTokens: 16_384,
@@ -125,7 +125,7 @@ vitest.mock("../../providers/fetchers/modelCache", () => ({
 }))
 
 // Import after mocks are set up
-import { RooHandler } from "../roo"
+import { RooHandler } from "../bitx"
 import { CloudService } from "@bitx/cloud"
 
 describe("RooHandler", () => {
@@ -410,7 +410,7 @@ describe("RooHandler", () => {
 
 		it("should handle any model ID since models are loaded dynamically", () => {
 			// Test with various model IDs - they should all work since models are loaded dynamically
-			const testModelIds = ["xai/grok-code-fast-1", "roo/sonic", "deepseek/deepseek-chat-v3.1"]
+			const testModelIds = ["xai/grok-code-fast-1", "bitx/sonic", "deepseek/deepseek-chat-v3.1"]
 
 			for (const modelId of testModelIds) {
 				const handlerWithModel = new RooHandler({ apiModelId: modelId })

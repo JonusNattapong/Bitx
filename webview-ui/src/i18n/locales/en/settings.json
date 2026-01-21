@@ -212,7 +212,7 @@
 			},
 			"protected": {
 				"label": "Include protected files",
-				"description": "Allow Roo to create and edit protected files (like .rooignore and .roo/ configuration files) without requiring approval."
+				"description": "Allow Roo to create and edit protected files (like .rooignore and .bitx/ configuration files) without requiring approval."
 			}
 		},
 		"browser": {
@@ -481,7 +481,7 @@
 		"getUnboundApiKey": "Get Unbound API Key",
 		"unboundRefreshModelsSuccess": "Models list updated! You can now select from the latest models.",
 		"unboundInvalidApiKey": "Invalid API key. Please check your API key and try again.",
-		"roo": {
+		"bitx": {
 			"authenticatedMessage": "Securely authenticated through your Bitx Cloud account.",
 			"connectButton": "Connect to Bitx Cloud"
 		},
@@ -712,7 +712,7 @@
 		},
 		"enableSubfolderRules": {
 			"label": "Enable subfolder rules",
-			"description": "Recursively discover and load .roo/rules and AGENTS.md files from subdirectories. Useful for monorepos with per-package rules."
+			"description": "Recursively discover and load .bitx/rules and AGENTS.md files from subdirectories. Useful for monorepos with per-package rules."
 		}
 	},
 	"terminal": {
@@ -867,9 +867,9 @@
 		},
 		"CUSTOM_TOOLS": {
 			"name": "Enable custom tools",
-			"description": "When enabled, Roo can load and use custom TypeScript/JavaScript tools from your project's .roo/tools directory or ~/.roo/tools for global tools. Note: these tools will automatically be auto-approved.",
+			"description": "When enabled, Roo can load and use custom TypeScript/JavaScript tools from your project's .bitx/tools directory or ~/.bitx/tools for global tools. Note: these tools will automatically be auto-approved.",
 			"toolsHeader": "Available Custom Tools",
-			"noTools": "No custom tools loaded. Add .ts or .js files to your project's .roo/tools directory or ~/.roo/tools for global tools.",
+			"noTools": "No custom tools loaded. Add .ts or .js files to your project's .bitx/tools directory or ~/.bitx/tools for global tools.",
 			"refreshButton": "Refresh",
 			"refreshing": "Refreshing...",
 			"refreshSuccess": "Tools refreshed successfully",

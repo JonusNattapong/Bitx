@@ -330,7 +330,7 @@
 			"feature": "<bold>Darmowy model stealth na ograniczony czas</bold> - Code Supernova: Teraz ulepszony z <bold>oknem kontekstu 1M tokenów</bold>! Wszechstronny model kodowania agentowego, który obsługuje wprowadzanie obrazów, dostępny przez Bitx Cloud.",
 			"note": "(Uwaga: prompty i uzupełnienia są rejestrowane przez twórcę modelu i używane do jego ulepszania)",
 			"connectButton": "Połącz z Bitx Cloud",
-			"selectModel": "Wybierz <code>roo/code-supernova</code> od dostawcy Bitx Cloud w Ustawieniach, aby rozpocząć.",
+			"selectModel": "Wybierz <code>bitx/code-supernova</code> od dostawcy Bitx Cloud w Ustawieniach, aby rozpocząć.",
 			"goToSettingsButton": "Przejdź do Ustawień"
 		},
 		"release": {

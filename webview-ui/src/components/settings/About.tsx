@@ -6,7 +6,7 @@ import { VSCodeCheckbox, VSCodeLink } from "@vscode/webview-ui-toolkit/react"
 
 import type { TelemetrySetting } from "@bitx/types"
 
-import { Package } from "@roo/package"
+import { Package } from "@bitx/package"
 
 import { vscode } from "@/utils/vscode"
 import { cn } from "@/lib/utils"

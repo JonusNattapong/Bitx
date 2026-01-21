@@ -2,7 +2,7 @@ import { render, screen, fireEvent } from "@/utils/test-utils"
 
 import type { ModeConfig } from "@bitx/types"
 
-import type { Mode } from "@roo/modes"
+import type { Mode } from "@bitx/modes"
 
 import { ModeSelector } from "../ModeSelector"
 
@@ -38,8 +38,8 @@ vi.mock("@/utils/TelemetryClient", () => ({
 // Create a variable to control what getAllModes returns.
 let mockModes: ModeConfig[] = []
 
-vi.mock("@roo/modes", async () => {
-	const actual = await vi.importActual<typeof import("@roo/modes")>("@roo/modes")
+vi.mock("@bitx/modes", async () => {
+	const actual = await vi.importActual<typeof import("@bitx/modes")>("@bitx/modes")
 	return {
 		...actual,
 		getAllModes: () => mockModes,

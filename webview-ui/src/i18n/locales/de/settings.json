@@ -204,7 +204,7 @@
 			},
 			"protected": {
 				"label": "Geschützte Dateien einbeziehen",
-				"description": "Roo erlauben, geschützte Dateien (wie .rooignore und .roo/ Konfigurationsdateien) ohne Genehmigung zu erstellen und zu bearbeiten."
+				"description": "Roo erlauben, geschützte Dateien (wie .rooignore und .bitx/ Konfigurationsdateien) ohne Genehmigung zu erstellen und zu bearbeiten."
 			}
 		},
 		"browser": {
@@ -472,7 +472,7 @@
 		"getUnboundApiKey": "Unbound API-Schlüssel erhalten",
 		"unboundRefreshModelsSuccess": "Modellliste aktualisiert! Sie können jetzt aus den neuesten Modellen auswählen.",
 		"unboundInvalidApiKey": "Ungültiger API-Schlüssel. Bitte überprüfen Sie Ihren API-Schlüssel und versuchen Sie es erneut.",
-		"roo": {
+		"bitx": {
 			"authenticatedMessage": "Sicher authentifiziert über dein Bitx Cloud-Konto.",
 			"connectButton": "Mit Bitx Cloud verbinden"
 		},
@@ -703,7 +703,7 @@
 		},
 		"enableSubfolderRules": {
 			"label": "Unterordner-Regeln aktivieren",
-			"description": "Rekursiv .roo/rules und AGENTS.md-Dateien aus Unterverzeichnissen laden. Nützlich für Monorepos mit paketspezifischen Regeln."
+			"description": "Rekursiv .bitx/rules und AGENTS.md-Dateien aus Unterverzeichnissen laden. Nützlich für Monorepos mit paketspezifischen Regeln."
 		}
 	},
 	"terminal": {
@@ -858,9 +858,9 @@
 		},
 		"CUSTOM_TOOLS": {
 			"name": "Benutzerdefinierte Tools aktivieren",
-			"description": "Wenn aktiviert, kann Roo benutzerdefinierte TypeScript/JavaScript-Tools aus dem .roo/tools-Verzeichnis deines Projekts oder ~/.roo/tools für globale Tools laden und verwenden. Hinweis: Diese Tools werden automatisch genehmigt.",
+			"description": "Wenn aktiviert, kann Roo benutzerdefinierte TypeScript/JavaScript-Tools aus dem .bitx/tools-Verzeichnis deines Projekts oder ~/.bitx/tools für globale Tools laden und verwenden. Hinweis: Diese Tools werden automatisch genehmigt.",
 			"toolsHeader": "Verfügbare benutzerdefinierte Tools",
-			"noTools": "Keine benutzerdefinierten Tools geladen. Füge .ts- oder .js-Dateien zum .roo/tools-Verzeichnis deines Projekts oder ~/.roo/tools für globale Tools hinzu.",
+			"noTools": "Keine benutzerdefinierten Tools geladen. Füge .ts- oder .js-Dateien zum .bitx/tools-Verzeichnis deines Projekts oder ~/.bitx/tools für globale Tools hinzu.",
 			"refreshButton": "Aktualisieren",
 			"refreshing": "Aktualisieren...",
 			"refreshSuccess": "Tools erfolgreich aktualisiert",

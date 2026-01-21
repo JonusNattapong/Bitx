@@ -24,7 +24,7 @@
 		"invalidImageData": "Invalid image data in response",
 		"invalidImageFormat": "Invalid image format received",
 		"unknownError": "Unknown error occurred",
-		"roo": {
+		"bitx": {
 			"authRequired": "Bitx Cloud authentication is required for image generation. Please sign in to Bitx Cloud."
 		}
 	}

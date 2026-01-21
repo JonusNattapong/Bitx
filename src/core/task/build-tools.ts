@@ -6,7 +6,7 @@ import type { ProviderSettings, ModeConfig, ModelInfo } from "@bitx/types"
 import { customToolRegistry, formatNative } from "@bitx/core"
 
 import type { ClineProvider } from "../webview/ClineProvider"
-import { getRooDirectoriesForCwd } from "../../services/roo-config/index.js"
+import { getRooDirectoriesForCwd } from "../../services/bitx-config/index.js"
 
 import { getNativeTools, getMcpServerTools } from "../prompts/tools/native-tools"
 import {

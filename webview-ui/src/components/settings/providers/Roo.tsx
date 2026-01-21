@@ -37,7 +37,7 @@ export const Roo = ({
 			{cloudIsAuthenticated ? (
 				<div className="flex justify-between items-center mb-2">
 					<div className="text-sm text-vscode-descriptionForeground">
-						{t("settings:providers.roo.authenticatedMessage")}
+						{t("settings:providers.bitx.authenticatedMessage")}
 					</div>
 				</div>
 			) : (
@@ -46,7 +46,7 @@ export const Roo = ({
 						variant="primary"
 						onClick={() => vscode.postMessage({ type: "rooCloudSignIn" })}
 						className="w-fit">
-						{t("settings:providers.roo.connectButton")}
+						{t("settings:providers.bitx.connectButton")}
 					</Button>
 				</div>
 			)}
@@ -54,7 +54,7 @@ export const Roo = ({
 				apiConfiguration={apiConfiguration}
 				setApiConfigurationField={setApiConfigurationField}
 				defaultModelId={rooDefaultModelId}
-				models={routerModels?.roo ?? {}}
+				models={routerModels?.bitx ?? {}}
 				modelIdKey="apiModelId"
 				serviceName="Bitx Router"
 				serviceUrl="https://app.roocode.com"

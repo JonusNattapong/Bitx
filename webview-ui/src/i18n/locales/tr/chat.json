@@ -331,7 +331,7 @@
 			"feature": "<bold>Sınırlı süre ÜCRETSİZ gizli model</bold> - Code Supernova: Artık <bold>1M token bağlam penceresi</bold> ile yükseltildi! Görüntü girişlerini destekleyen çok amaçlı acentik kodlama modeli, Bitx Cloud üzerinden kullanılabilir.",
 			"note": "(Not: istemler ve tamamlamalar model yaratıcısı tarafından kaydedilir ve modeli geliştirmek için kullanılır)",
 			"connectButton": "Bitx Cloud'a bağlan",
-			"selectModel": "Başlamak için Ayarlar'da Bitx Cloud sağlayıcısından <code>roo/code-supernova</code>'yı seçin.",
+			"selectModel": "Başlamak için Ayarlar'da Bitx Cloud sağlayıcısından <code>bitx/code-supernova</code>'yı seçin.",
 			"goToSettingsButton": "Ayarlar'a Git"
 		},
 		"release": {

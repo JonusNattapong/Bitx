@@ -4,7 +4,7 @@ import { Check, X } from "lucide-react"
 
 import { type ModeConfig, type CustomModePrompts, TelemetryEventName } from "@bitx/types"
 
-import { type Mode, getAllModes } from "@roo/modes"
+import { type Mode, getAllModes } from "@bitx/modes"
 
 import { vscode } from "@/utils/vscode"
 import { telemetryClient } from "@/utils/TelemetryClient"
@@ -46,7 +46,7 @@ export const ModeSelector = ({
 	const searchInputRef = React.useRef<HTMLInputElement>(null)
 	const selectedItemRef = React.useRef<HTMLDivElement>(null)
 	const scrollContainerRef = React.useRef<HTMLDivElement>(null)
-	const portalContainer = useRooPortal("roo-portal")
+	const portalContainer = useRooPortal("bitx-portal")
 	const { hasOpenedModeSelector, setHasOpenedModeSelector } = useExtensionState()
 	const { t } = useAppTranslation()
 

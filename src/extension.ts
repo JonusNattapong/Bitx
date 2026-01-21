@@ -96,7 +96,7 @@ async function checkWorktreeAutoOpen(
 			// Open the Bitx sidebar with a slight delay to ensure UI is ready
 			setTimeout(async () => {
 				try {
-					await vscode.commands.executeCommand("roo-cline.plusButtonClicked")
+					await vscode.commands.executeCommand("roo-cline-bitx.plusButtonClicked")
 				} catch (error) {
 					outputChannel.appendLine(
 						`[Worktree] Error auto-opening sidebar: ${error instanceof Error ? error.message : String(error)}`,
@@ -218,13 +218,13 @@ export async function activate(context: vscode.ExtensionContext) {
 						? CloudService.instance.authService?.getSessionToken()
 						: undefined
 					await refreshModels({
-						provider: "roo",
+						provider: "bitx",
 						baseUrl: process.env.ROO_CODE_PROVIDER_URL ?? "https://api.roocode.com/proxy",
 						apiKey: sessionToken,
 					})
 				} else {
 					// Flush without refresh on logout
-					await flushModels({ provider: "roo" }, false)
+					await flushModels({ provider: "bitx" }, false)
 				}
 			} catch (error) {
 				cloudLogger(
@@ -239,7 +239,7 @@ export async function activate(context: vscode.ExtensionContext) {
 			// Apply stored provider model to API configuration if present
 			if (data.state === "active-session") {
 				try {
-					const storedModel = context.globalState.get<string>("roo-provider-model")
+					const storedModel = context.globalState.get<string>("bitx-provider-model")
 					if (storedModel) {
 						cloudLogger(`[authStateChangedHandler] Applying stored provider model: ${storedModel}`)
 						// Get the current API configuration name
@@ -247,11 +247,11 @@ export async function activate(context: vscode.ExtensionContext) {
 							provider.contextProxy.getGlobalState("currentApiConfigName") || "default"
 						// Update it with the stored model using upsertProviderProfile
 						await provider.upsertProviderProfile(currentConfigName, {
-							apiProvider: "roo",
+							apiProvider: "bitx",
 							apiModelId: storedModel,
 						})
 						// Clear the stored model after applying
-						await context.globalState.update("roo-provider-model", undefined)
+						await context.globalState.update("bitx-provider-model", undefined)
 						cloudLogger(`[authStateChangedHandler] Applied and cleared stored provider model`)
 					}
 				} catch (error) {

@@ -244,8 +244,8 @@ build() {
 create_tarball() {
     step "4/8" "Creating release tarball for $PLATFORM..."
     
-    RELEASE_DIR="$REPO_ROOT/roo-cli-${PLATFORM}"
-    TARBALL="roo-cli-${PLATFORM}.tar.gz"
+    RELEASE_DIR="$REPO_ROOT/bitx-cli-${PLATFORM}"
+    TARBALL="bitx-cli-${PLATFORM}.tar.gz"
     
     # Clean up any previous build
     rm -rf "$RELEASE_DIR"
@@ -313,7 +313,7 @@ create_tarball() {
     
     # Create the wrapper script
     info "Creating wrapper script..."
-    cat > "$RELEASE_DIR/bin/roo" << 'WRAPPER_EOF'
+    cat > "$RELEASE_DIR/bin/bitx" << 'WRAPPER_EOF'
 #!/usr/bin/env node
 
 import { fileURLToPath } from 'url';
@@ -332,7 +332,7 @@ process.env.ROO_RIPGREP_PATH = join(__dirname, 'rg');
 await import(join(__dirname, '..', 'lib', 'index.js'));
 WRAPPER_EOF
 
-    chmod +x "$RELEASE_DIR/bin/roo"
+    chmod +x "$RELEASE_DIR/bin/bitx"
     
     # Create empty .env file to suppress dotenvx warnings
     touch "$RELEASE_DIR/.env"
@@ -392,10 +392,10 @@ verify_local_install() {
     info "Testing installed CLI..."
     
     # Test --help
-    if ! "$VERIFY_BIN_DIR/roo" --help > /dev/null 2>&1; then
+    if ! "$VERIFY_BIN_DIR/bitx" --help > /dev/null 2>&1; then
         echo ""
         warn "CLI --help output:"
-        "$VERIFY_BIN_DIR/roo" --help 2>&1 || true
+        "$VERIFY_BIN_DIR/bitx" --help 2>&1 || true
         echo ""
         rm -rf "$VERIFY_DIR"
         error "CLI --help check failed! The release tarball may have missing dependencies."
@@ -403,10 +403,10 @@ verify_local_install() {
     info "CLI --help check passed"
     
     # Test --version
-    if ! "$VERIFY_BIN_DIR/roo" --version > /dev/null 2>&1; then
+    if ! "$VERIFY_BIN_DIR/bitx" --version > /dev/null 2>&1; then
         echo ""
         warn "CLI --version output:"
-        "$VERIFY_BIN_DIR/roo" --version 2>&1 || true
+        "$VERIFY_BIN_DIR/bitx" --version 2>&1 || true
         echo ""
         rm -rf "$VERIFY_DIR"
         error "CLI --version check failed! The release tarball may have missing dependencies."
@@ -421,7 +421,7 @@ verify_local_install() {
     mkdir -p "$VERIFY_WORKSPACE"
     
     # Run the CLI with a simple prompt
-    if timeout 60 "$VERIFY_BIN_DIR/roo" --yes --oneshot -w "$VERIFY_WORKSPACE" "1+1=?" > "$VERIFY_DIR/test-output.log" 2>&1; then
+    if timeout 60 "$VERIFY_BIN_DIR/bitx" --yes --oneshot -w "$VERIFY_WORKSPACE" "1+1=?" > "$VERIFY_DIR/test-output.log" 2>&1; then
         info "End-to-end test passed"
     else
         EXIT_CODE=$?
@@ -537,16 +537,16 @@ ROO_VERSION=$VERSION curl -fsSL https://raw.githubusercontent.com/RooCodeInc/Bit
 
 \`\`\`bash
 # Run a task
-roo "What is this project?"
+bitx "What is this project?"
 
 # See all options
-roo --help
+bitx --help
 \`\`\`
 
 ## Platform Support
 
 This release includes:
-- \`roo-cli-${PLATFORM}.tar.gz\` - Built on $(uname -s) $(uname -m)
+- \`bitx-cli-${PLATFORM}.tar.gz\` - Built on $(uname -s) $(uname -m)
 
 > **Note:** Additional platforms will be added as needed. If you need a different platform, please open an issue.
 
@@ -653,12 +653,12 @@ print_local_install_summary() {
     printf "${GREEN}${BOLD}✓ Local build installed for v$VERSION${NC}\n"
     echo ""
     echo "  Tarball: $REPO_ROOT/$TARBALL"
-    echo "  Installed to: ~/.roo/cli"
-    echo "  Binary: ~/.local/bin/roo"
+    echo "  Installed to: ~/.bitx/cli"
+    echo "  Binary: ~/.local/bin/bitx"
     echo ""
     echo "  Test it out:"
-    echo "    roo --version"
-    echo "    roo --help"
+    echo "    bitx --version"
+    echo "    bitx --help"
     echo ""
 }
 

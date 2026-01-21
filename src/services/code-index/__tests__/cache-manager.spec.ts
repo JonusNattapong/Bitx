@@ -68,7 +68,7 @@ describe("CacheManager", () => {
 
 			expect(vscode.Uri.joinPath).toHaveBeenCalledWith(
 				mockContext.globalStorageUri,
-				`roo-index-cache-${expectedHash}.json`,
+				`bitx-index-cache-${expectedHash}.json`,
 			)
 		})
 

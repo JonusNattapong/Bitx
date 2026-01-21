@@ -1,7 +1,7 @@
 /**
  * File-based debug logging utility
  *
- * This writes logs to ~/.roo/cli-debug.log, avoiding stdout/stderr
+ * This writes logs to ~/.bitx/cli-debug.log, avoiding stdout/stderr
  * which would break TUI applications. The log format is timestamped JSON.
  *
  * Usage:
@@ -19,11 +19,11 @@ import * as fs from "fs"
 import * as path from "path"
 import * as os from "os"
 
-const DEBUG_LOG_PATH = path.join(os.homedir(), ".roo", "cli-debug.log")
+const DEBUG_LOG_PATH = path.join(os.homedir(), ".bitx", "cli-debug.log")
 
 /**
  * Simple file-based debug log function.
- * Writes timestamped entries to ~/.roo/cli-debug.log
+ * Writes timestamped entries to ~/.bitx/cli-debug.log
  */
 export function debugLog(message: string, data?: unknown): void {
 	try {

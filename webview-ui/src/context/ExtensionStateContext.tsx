@@ -20,12 +20,12 @@ import {
 	DEFAULT_CHECKPOINT_TIMEOUT_SECONDS,
 } from "@bitx/types"
 
-import { findLastIndex } from "@roo/array"
+import { findLastIndex } from "@bitx/array"
 
-import { checkExistKey } from "@roo/checkExistApiConfig"
-import { Mode, defaultModeSlug, defaultPrompts } from "@roo/modes"
-import { CustomSupportPrompts } from "@roo/support-prompt"
-import { experimentDefault } from "@roo/experiments"
+import { checkExistKey } from "@bitx/checkExistApiConfig"
+import { Mode, defaultModeSlug, defaultPrompts } from "@bitx/modes"
+import { CustomSupportPrompts } from "@bitx/support-prompt"
+import { experimentDefault } from "@bitx/experiments"
 
 import { vscode } from "@src/utils/vscode"
 import { convertTextMateToHljs } from "@src/utils/textMateToHljs"
@@ -484,7 +484,7 @@ export const ExtensionStateContextProvider: React.FC<{ children: React.ReactNode
 	useEffect(() => {
 		const currentAuth = state.cloudIsAuthenticated ?? false
 		const currentProvider = state.apiConfiguration?.apiProvider
-		if (!prevCloudIsAuthenticated && currentAuth && currentProvider === "roo") {
+		if (!prevCloudIsAuthenticated && currentAuth && currentProvider === "bitx") {
 			// User just authenticated and Roo is the active provider - refresh Roo models
 			vscode.postMessage({ type: "requestRooModels" })
 		}

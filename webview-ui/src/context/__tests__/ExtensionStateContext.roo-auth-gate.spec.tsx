@@ -26,14 +26,14 @@ describe("ExtensionStateContext Roo auth gate", () => {
 		)
 	}
 
-	it("does not post requestRooModels when auth flips and provider !== 'roo'", async () => {
+	it("does not post requestRooModels when auth flips and provider !== 'bitx'", async () => {
 		render(
 			<ExtensionStateContextProvider>
 				<div />
 			</ExtensionStateContextProvider>,
 		)
 
-		// Flip auth to true with a non-roo provider (anthropic)
+		// Flip auth to true with a non-bitx provider (anthropic)
 		postStateMessage({
 			cloudIsAuthenticated: true,
 			apiConfiguration: { apiProvider: "anthropic" },
@@ -47,7 +47,7 @@ describe("ExtensionStateContext Roo auth gate", () => {
 		})
 	})
 
-	it("posts requestRooModels when auth flips and provider === 'roo'", async () => {
+	it("posts requestRooModels when auth flips and provider === 'bitx'", async () => {
 		render(
 			<ExtensionStateContextProvider>
 				<div />
@@ -57,15 +57,15 @@ describe("ExtensionStateContext Roo auth gate", () => {
 		// Ensure prev false (explicit)
 		postStateMessage({
 			cloudIsAuthenticated: false,
-			apiConfiguration: { apiProvider: "roo" },
+			apiConfiguration: { apiProvider: "bitx" },
 		})
 
 		vi.clearAllMocks()
 
-		// Flip to true with provider roo - should trigger
+		// Flip to true with provider bitx - should trigger
 		postStateMessage({
 			cloudIsAuthenticated: true,
-			apiConfiguration: { apiProvider: "roo" },
+			apiConfiguration: { apiProvider: "bitx" },
 		})
 
 		await waitFor(() => {

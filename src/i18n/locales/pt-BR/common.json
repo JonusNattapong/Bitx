@@ -124,7 +124,7 @@
 			"noResponseBody": "Erro da API Cerebras: Sem corpo de resposta",
 			"completionError": "Erro de conclusão do Cerebras: {{error}}"
 		},
-		"roo": {
+		"bitx": {
 			"authenticationRequired": "O provedor Roo requer autenticação na nuvem. Faça login no Bitx Cloud."
 		},
 		"api": {

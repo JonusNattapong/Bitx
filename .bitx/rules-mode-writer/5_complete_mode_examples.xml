@@ -39,13 +39,13 @@
         <description>Explore existing test mode instructions</description>
         <tool_use><![CDATA[
 <list_files>
-<path>.roo/rules-test</path>
+<path>.bitx/rules-test</path>
 <recursive>true</recursive>
 </list_files>
         ]]></tool_use>
         <tool_use><![CDATA[
 <read_file>
-<path>.roo/rules-test/1_workflow.xml</path>
+<path>.bitx/rules-test/1_workflow.xml</path>
 </read_file>
         ]]></tool_use>
         <analysis>Understood current test workflows and patterns</analysis>
@@ -113,7 +113,7 @@ This aligns well with the existing testing focus. Should I proceed with all thes
         <description>Create new benchmark workflow instructions</description>
         <tool_use><![CDATA[
 <write_to_file>
-<path>.roo/rules-test/5_benchmark_testing.xml</path>
+<path>.bitx/rules-test/5_benchmark_testing.xml</path>
 <content>
 <benchmark_testing_guide>
   <overview>
@@ -193,7 +193,7 @@ I've successfully enhanced the test mode with benchmark testing capabilities:
 
 2. Modified file restrictions to include .bench.ts files, allowing the mode to create and edit benchmark files
 
-3. Created new workflow instructions at .roo/rules-test/5_benchmark_testing.xml with:
+3. Created new workflow instructions at .bitx/rules-test/5_benchmark_testing.xml with:
    - Basic benchmark patterns
    - Best practices for performance testing
    - Example code using Vitest's bench API

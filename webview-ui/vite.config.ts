@@ -89,7 +89,7 @@ export default defineConfig(({ mode }) => {
 			alias: {
 				"@": resolve(__dirname, "./src"),
 				"@src": resolve(__dirname, "./src"),
-				"@roo": resolve(__dirname, "../src/shared"),
+				"@bitx": resolve(__dirname, "../src/shared"),
 			},
 		},
 		build: {
@@ -104,7 +104,7 @@ export default defineConfig(({ mode }) => {
 			cssCodeSplit: false,
 			rollupOptions: {
 				// Externalize vscode module - it's imported by file-search.ts which is
-				// dynamically imported by roo-config/index.ts, but should never be bundled
+				// dynamically imported by bitx-config/index.ts, but should never be bundled
 				// in the webview since it's not available in the browser context
 				external: ["vscode"],
 				input: {

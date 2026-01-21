@@ -120,7 +120,7 @@
 			"noResponseBody": "Cerebras API-Fehler: Kein Antworttext vorhanden",
 			"completionError": "Cerebras-Vervollständigungsfehler: {{error}}"
 		},
-		"roo": {
+		"bitx": {
 			"authenticationRequired": "Roo-Anbieter erfordert Cloud-Authentifizierung. Bitte melde dich bei Bitx Cloud an."
 		},
 		"openAiCodex": {

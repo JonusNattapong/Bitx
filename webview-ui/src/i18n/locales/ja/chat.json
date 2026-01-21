@@ -330,7 +330,7 @@
 			"feature": "<bold>期間限定無料ステルスモデル</bold> - Code Supernova：<bold>1Mトークンコンテキストウィンドウ</bold>にアップグレード！画像入力をサポートする多目的エージェントコーディングモデル、Bitx Cloud 経由で利用可能。",
 			"note": "(注意：プロンプトと補完はモデル作成者によってログに記録され、モデルの改善に使用されます)",
 			"connectButton": "Bitx Cloud に接続",
-			"selectModel": "設定で Bitx Cloud プロバイダーから <code>roo/code-supernova</code> を選択して開始してください。",
+			"selectModel": "設定で Bitx Cloud プロバイダーから <code>bitx/code-supernova</code> を選択して開始してください。",
 			"goToSettingsButton": "設定に移動"
 		},
 		"release": {

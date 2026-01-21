@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest"
-import { getRooModels } from "../roo"
+import { getRooModels } from "../bitx"
 import { Package } from "../../../../shared/package"
 
 // Mock fetch globally

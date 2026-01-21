@@ -75,7 +75,7 @@ export const testimonials: Testimonial[] = [
 		name: "Ryan Booth",
 		role: "Reviewer",
 		origin: "VS Code Marketplace",
-		quote: "I work inside Roo about 60+ hours a week and usually roo is building something at all hours of the day. An amazing tool by an amazing team!",
+		quote: "I work inside Roo about 60+ hours a week and usually bitx is building something at all hours of the day. An amazing tool by an amazing team!",
 		stars: 5,
 	},
 	{

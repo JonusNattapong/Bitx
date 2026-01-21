@@ -204,7 +204,7 @@
 			},
 			"protected": {
 				"label": "包含受保護的檔案",
-				"description": "允許 Roo 建立和編輯受保護的檔案（如 .rooignore 和 .roo/ 設定檔），無需核准。"
+				"description": "允許 Roo 建立和編輯受保護的檔案（如 .rooignore 和 .bitx/ 設定檔），無需核准。"
 			}
 		},
 		"browser": {
@@ -472,7 +472,7 @@
 		"getUnboundApiKey": "取得 Unbound API 金鑰",
 		"unboundRefreshModelsSuccess": "模型列表已更新！您現在可以從最新模型中選擇。",
 		"unboundInvalidApiKey": "無效的 API 金鑰。請檢查您的 API 金鑰並重試。",
-		"roo": {
+		"bitx": {
 			"authenticatedMessage": "已透過 Bitx Cloud 帳戶安全認證。",
 			"connectButton": "連接到 Bitx Cloud"
 		},
@@ -704,7 +704,7 @@
 		},
 		"enableSubfolderRules": {
 			"label": "啟用子資料夾規則",
-			"description": "遞迴發現並載入子目錄中的 .roo/rules 和 AGENTS.md 檔案。適用於具有每包規則的 monorepo。"
+			"description": "遞迴發現並載入子目錄中的 .bitx/rules 和 AGENTS.md 檔案。適用於具有每包規則的 monorepo。"
 		}
 	},
 	"terminal": {
@@ -859,9 +859,9 @@
 		},
 		"CUSTOM_TOOLS": {
 			"name": "啟用自訂工具",
-			"description": "啟用後，Roo 可以從專案中的 .roo/tools 目錄或全域工具目錄 ~/.roo/tools 載入並使用自訂 TypeScript/JavaScript 工具。注意：這些工具將自動獲得核准。",
+			"description": "啟用後，Roo 可以從專案中的 .bitx/tools 目錄或全域工具目錄 ~/.bitx/tools 載入並使用自訂 TypeScript/JavaScript 工具。注意：這些工具將自動獲得核准。",
 			"toolsHeader": "可用自訂工具",
-			"noTools": "未載入自訂工具。請向專案的 .roo/tools 目錄或全域工具目錄 ~/.roo/tools 新增 .ts 或 .js 檔案。",
+			"noTools": "未載入自訂工具。請向專案的 .bitx/tools 目錄或全域工具目錄 ~/.bitx/tools 新增 .ts 或 .js 檔案。",
 			"refreshButton": "重新整理",
 			"refreshing": "正在重新整理...",
 			"refreshSuccess": "工具重新整理成功",

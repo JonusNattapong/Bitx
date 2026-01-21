@@ -10,7 +10,7 @@ import {
 	mcpExecutionStatusSchema,
 } from "@bitx/types"
 
-import { safeJsonParse } from "@roo/core"
+import { safeJsonParse } from "@bitx/core"
 
 import { cn } from "@src/lib/utils"
 import { Button } from "@src/components/ui"

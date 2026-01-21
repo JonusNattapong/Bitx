@@ -23,7 +23,7 @@ import { Trans } from "react-i18next"
 import { ArrowLeft, ArrowRight, BadgeInfo, Brain, TriangleAlert } from "lucide-react"
 import { buildDocLink } from "@/utils/docLinks"
 
-type ProviderOption = "roo" | "custom"
+type ProviderOption = "bitx" | "custom"
 type AuthOrigin = "landing" | "providerSelection"
 
 const WelcomeViewProvider = () => {
@@ -60,7 +60,7 @@ const WelcomeViewProvider = () => {
 			} else {
 				// Auth completed from provider signup flow - save the config now
 				const rooConfig: ProviderSettings = {
-					apiProvider: "roo",
+					apiProvider: "bitx",
 				}
 				vscode.postMessage({
 					type: "upsertApiConfiguration",
@@ -98,11 +98,11 @@ const WelcomeViewProvider = () => {
 			setAuthInProgress(true)
 		}
 		// Provider Selection screen
-		else if (selectedProvider === "roo") {
+		else if (selectedProvider === "bitx") {
 			if (cloudIsAuthenticated) {
 				// Already authenticated - save config and finish
 				const rooConfig: ProviderSettings = {
-					apiProvider: "roo",
+					apiProvider: "bitx",
 				}
 				vscode.postMessage({
 					type: "upsertApiConfiguration",
@@ -131,7 +131,7 @@ const WelcomeViewProvider = () => {
 
 	const handleNoAccount = useCallback(() => {
 		// Navigate to Provider Selection, defaulting to Roo option
-		setSelectedProvider("roo")
+		setSelectedProvider("bitx")
 	}, [])
 
 	const handleBackToLanding = useCallback(() => {
@@ -239,7 +239,7 @@ const WelcomeViewProvider = () => {
 												ref={manualUrlInputRef as any}
 												value={manualUrl}
 												onKeyUp={handleManualUrlChange}
-												placeholder="vscode://RooVeterinaryInc.roo-cline/auth/clerk/callback?state=..."
+												placeholder="vscode://RooVeterinaryInc.roo-cline-bitx/auth/clerk/callback?state=..."
 												className="flex-1"
 											/>
 											<Button
@@ -317,7 +317,7 @@ const WelcomeViewProvider = () => {
 		)
 	}
 
-	// Provider Selection screen - shown when selectedProvider is "roo" or "custom"
+	// Provider Selection screen - shown when selectedProvider is "bitx" or "custom"
 	return (
 		<Tab>
 			<TabContent className="flex flex-col gap-4 p-6 justify-center">
@@ -337,7 +337,7 @@ const WelcomeViewProvider = () => {
 							setSelectedProvider(target.value as ProviderOption)
 						}}>
 						{/* Bitx Router Option */}
-						<VSCodeRadio value="roo" className="flex items-start gap-2">
+						<VSCodeRadio value="bitx" className="flex items-start gap-2">
 							<div className="flex-1 space-y-1 cursor-pointer">
 								<p className="text-lg font-semibold block -mt-1">
 									{t("welcome:providerSignup.rooCloudProvider")}

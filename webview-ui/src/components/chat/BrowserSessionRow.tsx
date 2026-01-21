@@ -11,7 +11,7 @@ import { useExtensionState } from "@src/context/ExtensionStateContext"
 import CodeBlock from "../common/CodeBlock"
 import { ProgressIndicator } from "./ProgressIndicator"
 import { Button, StandardTooltip } from "@src/components/ui"
-import { getViewportCoordinate as getViewportCoordinateShared, prettyKey } from "@roo/browserUtils"
+import { getViewportCoordinate as getViewportCoordinateShared, prettyKey } from "@bitx/browserUtils"
 import {
 	Globe,
 	Pointer,

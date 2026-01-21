@@ -120,7 +120,7 @@
 			"noResponseBody": "Ошибка Cerebras API: Нет тела ответа",
 			"completionError": "Ошибка завершения Cerebras: {{error}}"
 		},
-		"roo": {
+		"bitx": {
 			"authenticationRequired": "Провайдер Roo требует облачной аутентификации. Войдите в Bitx Cloud."
 		},
 		"api": {

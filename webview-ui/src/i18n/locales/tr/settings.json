@@ -204,7 +204,7 @@
 			},
 			"protected": {
 				"label": "Korumalı dosyaları dahil et",
-				"description": "Roo'nun korumalı dosyaları (.rooignore ve .roo/ yapılandırma dosyaları gibi) onay gerektirmeden oluşturmasına ve düzenlemesine izin ver."
+				"description": "Roo'nun korumalı dosyaları (.rooignore ve .bitx/ yapılandırma dosyaları gibi) onay gerektirmeden oluşturmasına ve düzenlemesine izin ver."
 			}
 		},
 		"browser": {
@@ -472,7 +472,7 @@
 		"getUnboundApiKey": "Unbound API Anahtarı Al",
 		"unboundRefreshModelsSuccess": "Model listesi güncellendi! Artık en son modeller arasından seçim yapabilirsiniz.",
 		"unboundInvalidApiKey": "Geçersiz API anahtarı. Lütfen API anahtarınızı kontrol edin ve tekrar deneyin.",
-		"roo": {
+		"bitx": {
 			"authenticatedMessage": "Bitx Cloud hesabın üzerinden güvenli bir şekilde kimlik doğrulandı.",
 			"connectButton": "Bitx Cloud'a Bağlan"
 		},
@@ -704,7 +704,7 @@
 		},
 		"enableSubfolderRules": {
 			"label": "Alt klasör kurallarını etkinleştir",
-			"description": "Alt dizinlerden .roo/rules ve AGENTS.md dosyalarını yinelemeli olarak keşfet ve yükle. Paket başına kuralları olan monorepo'lar için kullanışlı."
+			"description": "Alt dizinlerden .bitx/rules ve AGENTS.md dosyalarını yinelemeli olarak keşfet ve yükle. Paket başına kuralları olan monorepo'lar için kullanışlı."
 		}
 	},
 	"terminal": {
@@ -859,9 +859,9 @@
 		},
 		"CUSTOM_TOOLS": {
 			"name": "Özel araçları etkinleştir",
-			"description": "Etkinleştirildiğinde, Roo projenizin .roo/tools dizininden veya global araçlar için ~/.roo/tools dizininden özel TypeScript/JavaScript araçlarını yükleyebilir ve kullanabilir. Not: Bu araçlar otomatik olarak onaylanacaktır.",
+			"description": "Etkinleştirildiğinde, Roo projenizin .bitx/tools dizininden veya global araçlar için ~/.bitx/tools dizininden özel TypeScript/JavaScript araçlarını yükleyebilir ve kullanabilir. Not: Bu araçlar otomatik olarak onaylanacaktır.",
 			"toolsHeader": "Kullanılabilir Özel Araçlar",
-			"noTools": "Özel araç yüklenmedi. Projenizin .roo/tools dizinine veya global araçlar için ~/.roo/tools dizinine .ts veya .js dosyaları ekleyin.",
+			"noTools": "Özel araç yüklenmedi. Projenizin .bitx/tools dizinine veya global araçlar için ~/.bitx/tools dizinine .ts veya .js dosyaları ekleyin.",
 			"refreshButton": "Yenile",
 			"refreshing": "Yenileniyor...",
 			"refreshSuccess": "Araçlar başarıyla yenilendi",

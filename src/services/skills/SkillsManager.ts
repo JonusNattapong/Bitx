@@ -4,8 +4,8 @@ import * as vscode from "vscode"
 import matter from "gray-matter"
 
 import type { ClineProvider } from "../../core/webview/ClineProvider"
-import { getGlobalRooDirectory } from "../roo-config"
-import { directoryExists, fileExists } from "../roo-config"
+import { getGlobalRooDirectory } from "../bitx-config"
+import { directoryExists, fileExists } from "../bitx-config"
 import { SkillMetadata, SkillContent } from "../../shared/skills"
 import { modes, getAllModes } from "../../shared/modes"
 
@@ -31,8 +31,8 @@ export class SkillsManager {
 	 * Discover all skills from global and project directories.
 	 * Supports both generic skills (skills/) and mode-specific skills (skills-{mode}/).
 	 * Also supports symlinks:
-	 * - .roo/skills can be a symlink to a directory containing skill subdirectories
-	 * - .roo/skills/[dirname] can be a symlink to a skill directory
+	 * - .bitx/skills can be a symlink to a directory containing skill subdirectories
+	 * - .bitx/skills/[dirname] can be a symlink to a skill directory
 	 */
 	async discoverSkills(): Promise<void> {
 		this.skills.clear()
@@ -252,7 +252,7 @@ export class SkillsManager {
 		const dirs: Array<{ dir: string; source: "global" | "project"; mode?: string }> = []
 		const globalRooDir = getGlobalRooDirectory()
 		const provider = this.providerRef.deref()
-		const projectRooDir = provider?.cwd ? path.join(provider.cwd, ".roo") : null
+		const projectRooDir = provider?.cwd ? path.join(provider.cwd, ".bitx") : null
 
 		// Get list of modes to check for mode-specific skills
 		const modesList = await this.getAvailableModes()
@@ -309,7 +309,7 @@ export class SkillsManager {
 
 		// Watch for changes in skills directories
 		const globalSkillsDir = path.join(getGlobalRooDirectory(), "skills")
-		const projectSkillsDir = path.join(provider.cwd, ".roo", "skills")
+		const projectSkillsDir = path.join(provider.cwd, ".bitx", "skills")
 
 		// Watch global skills directory
 		this.watchDirectory(globalSkillsDir)
@@ -321,7 +321,7 @@ export class SkillsManager {
 		const modesList = await this.getAvailableModes()
 		for (const mode of modesList) {
 			this.watchDirectory(path.join(getGlobalRooDirectory(), `skills-${mode}`))
-			this.watchDirectory(path.join(provider.cwd, ".roo", `skills-${mode}`))
+			this.watchDirectory(path.join(provider.cwd, ".bitx", `skills-${mode}`))
 		}
 	}
 

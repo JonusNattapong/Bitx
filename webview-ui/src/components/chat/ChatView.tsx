@@ -14,14 +14,14 @@ import { getCostBreakdownIfNeeded } from "@src/utils/costFormatting"
 
 import type { ClineAsk, ClineSayTool, ClineMessage, ExtensionMessage, AudioType } from "@bitx/types"
 
-import { findLast } from "@roo/array"
+import { findLast } from "@bitx/array"
 import { SuggestionItem } from "@bitx/types"
-import { combineApiRequests } from "@roo/combineApiRequests"
-import { combineCommandSequences } from "@roo/combineCommandSequences"
-import { getApiMetrics } from "@roo/getApiMetrics"
-import { getAllModes } from "@roo/modes"
-import { ProfileValidator } from "@roo/ProfileValidator"
-import { getLatestTodo } from "@roo/todo"
+import { combineApiRequests } from "@bitx/combineApiRequests"
+import { combineCommandSequences } from "@bitx/combineCommandSequences"
+import { getApiMetrics } from "@bitx/getApiMetrics"
+import { getAllModes } from "@bitx/modes"
+import { ProfileValidator } from "@bitx/ProfileValidator"
+import { getLatestTodo } from "@bitx/todo"
 
 import { vscode } from "@src/utils/vscode"
 import { useAppTranslation } from "@src/i18n/TranslationContext"
@@ -1695,7 +1695,7 @@ const ChatViewComponent: React.ForwardRefRenderFunction<ChatViewRef, ChatViewPro
 				</div>
 			)}
 
-			<div id="roo-portal" />
+			<div id="bitx-portal" />
 			<CloudUpsellDialog open={isUpsellOpen} onOpenChange={closeUpsell} onConnect={handleConnect} />
 		</div>
 	)

@@ -17,6 +17,6 @@
 		"url": "https://github.com/RooCodeInc/Bitx/issues"
 	},
 	"homepage": "https://roocode.com",
-	"keywords": ["roo", "bitx", "ai"],
+	"keywords": ["bitx", "bitx", "ai"],
 	"files": ["dist"]
 }

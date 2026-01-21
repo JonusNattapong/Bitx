@@ -120,7 +120,7 @@
 			"noResponseBody": "Cerebras API-fout: Geen responslichaam",
 			"completionError": "Cerebras-voltooiingsfout: {{error}}"
 		},
-		"roo": {
+		"bitx": {
 			"authenticationRequired": "Roo provider vereist cloud authenticatie. Log in bij Bitx Cloud."
 		},
 		"api": {

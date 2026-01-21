@@ -1,6 +1,6 @@
 import { z } from "zod"
 
-export const ROO_LAST_MODEL_SELECTION_KEY = "evals-roo-last-model-selection"
+export const ROO_LAST_MODEL_SELECTION_KEY = "evals-bitx-last-model-selection"
 
 const modelIdListSchema = z.array(z.string())
 

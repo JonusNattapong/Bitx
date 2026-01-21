@@ -60,7 +60,7 @@ const McpView = () => {
 					}}>
 					<Trans i18nKey="mcp:description">
 						<VSCodeLink
-							href={buildDocLink("features/mcp/using-mcp-in-roo", "mcp_settings")}
+							href={buildDocLink("features/mcp/using-mcp-in-bitx", "mcp_settings")}
 							style={{ display: "inline" }}>
 							Learn More
 						</VSCodeLink>
@@ -89,7 +89,7 @@ const McpView = () => {
 								<Trans i18nKey="mcp:enableServerCreation.description">
 									<VSCodeLink
 										href={buildDocLink(
-											"features/mcp/using-mcp-in-roo#how-to-use-roo-to-create-an-mcp-server",
+											"features/mcp/using-mcp-in-bitx#how-to-use-bitx-to-create-an-mcp-server",
 											"mcp_server_creation",
 										)}
 										style={{ display: "inline" }}>
@@ -202,7 +202,7 @@ const McpView = () => {
 							}}>
 							<VSCodeLink
 								href={buildDocLink(
-									"features/mcp/using-mcp-in-roo#editing-mcp-settings-files",
+									"features/mcp/using-mcp-in-bitx#editing-mcp-settings-files",
 									"mcp_edit_settings",
 								)}
 								style={{ display: "inline" }}>

@@ -50,7 +50,7 @@
 		"title": "Istruzioni personalizzate specifiche per la modalità (opzionale)",
 		"resetToDefault": "Ripristina predefiniti",
 		"description": "Aggiungi linee guida comportamentali specifiche per la modalità {{modeName}}.",
-		"loadFromFile": "Le istruzioni personalizzate specifiche per la modalità {{mode}} possono anche essere caricate dalla cartella <span>.roo/rules-{{slug}}/</span> nel tuo spazio di lavoro o dal globale <0>.roo/rules-{{slug}}/</0> (.roorules-{{slug}} e .clinerules-{{slug}} sono deprecati e smetteranno di funzionare presto)."
+		"loadFromFile": "Le istruzioni personalizzate specifiche per la modalità {{mode}} possono anche essere caricate dalla cartella <span>.bitx/rules-{{slug}}/</span> nel tuo spazio di lavoro o dal globale <0>.bitx/rules-{{slug}}/</0> (.roorules-{{slug}} e .clinerules-{{slug}} sono deprecati e smetteranno di funzionare presto)."
 	},
 	"exportMode": {
 		"title": "Esporta modalità",
@@ -68,7 +68,7 @@
 		},
 		"project": {
 			"label": "Livello di progetto",
-			"description": "Disponibile solo in questo spazio di lavoro. Se la modalità esportata conteneva file di regole, verranno ricreati nella cartella .roo/rules-{slug}/."
+			"description": "Disponibile solo in questo spazio di lavoro. Se la modalità esportata conteneva file di regole, verranno ricreati nella cartella .bitx/rules-{slug}/."
 		}
 	},
 	"advanced": {
@@ -77,7 +77,7 @@
 	"globalCustomInstructions": {
 		"title": "Istruzioni personalizzate per tutte le modalità",
 		"description": "Queste istruzioni si applicano a tutte le modalità. Forniscono un insieme base di comportamenti che possono essere migliorati dalle istruzioni specifiche per modalità qui sotto. <0>Scopri di più</0>",
-		"loadFromFile": "Le istruzioni possono anche essere caricate dalla cartella <span>.roo/rules/</span> nel tuo spazio di lavoro o dal globale <0>.roo/rules/</0> (.roorules e .clinerules sono deprecati e smetteranno di funzionare presto)."
+		"loadFromFile": "Le istruzioni possono anche essere caricate dalla cartella <span>.bitx/rules/</span> nel tuo spazio di lavoro o dal globale <0>.bitx/rules/</0> (.roorules e .clinerules sono deprecati e smetteranno di funzionare presto)."
 	},
 	"systemPrompt": {
 		"preview": "Anteprima prompt di sistema",
@@ -148,7 +148,7 @@
 	},
 	"advancedSystemPrompt": {
 		"title": "Avanzato: Sovrascrivi prompt di sistema",
-		"description": "<2>⚠️ Attenzione:</2> Questa funzionalità avanzata bypassa le misure di sicurezza. <1>LEGGI QUESTO PRIMA DI USARE!</1>Sovrascrivi il prompt di sistema predefinito creando un file in <span>.roo/system-prompt-{{slug}}</span>."
+		"description": "<2>⚠️ Attenzione:</2> Questa funzionalità avanzata bypassa le misure di sicurezza. <1>LEGGI QUESTO PRIMA DI USARE!</1>Sovrascrivi il prompt di sistema predefinito creando un file in <span>.bitx/system-prompt-{{slug}}</span>."
 	},
 	"createModeDialog": {
 		"title": "Crea nuova modalità",

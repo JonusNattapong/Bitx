@@ -120,7 +120,7 @@
 			"noResponseBody": "Cerebras APIエラー: レスポンスボディなし",
 			"completionError": "Cerebras完了エラー: {{error}}"
 		},
-		"roo": {
+		"bitx": {
 			"authenticationRequired": "Rooプロバイダーはクラウド認証が必要です。Bitx Cloudにサインインしてください。"
 		},
 		"api": {

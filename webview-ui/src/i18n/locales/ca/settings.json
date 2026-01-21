@@ -204,7 +204,7 @@
 			},
 			"protected": {
 				"label": "Incloure fitxers protegits",
-				"description": "Permetre a Roo crear i editar fitxers protegits (com .rooignore i fitxers de configuració .roo/) sense requerir aprovació."
+				"description": "Permetre a Roo crear i editar fitxers protegits (com .rooignore i fitxers de configuració .bitx/) sense requerir aprovació."
 			}
 		},
 		"browser": {
@@ -472,7 +472,7 @@
 		"getUnboundApiKey": "Obtenir clau API d'Unbound",
 		"unboundRefreshModelsSuccess": "Llista de models actualitzada! Ara podeu seleccionar entre els últims models.",
 		"unboundInvalidApiKey": "Clau API no vàlida. Si us plau, comproveu la vostra clau API i torneu-ho a provar.",
-		"roo": {
+		"bitx": {
 			"authenticatedMessage": "Autenticat de forma segura a través del teu compte de Bitx Cloud.",
 			"connectButton": "Connecta amb Bitx Cloud"
 		},
@@ -703,7 +703,7 @@
 		},
 		"enableSubfolderRules": {
 			"label": "Activa les regles dels subdirectoris",
-			"description": "Descobreix i carrega recursivament fitxers .roo/rules i AGENTS.md des de subdirectoris. Útil per a monorepos amb regles per paquet."
+			"description": "Descobreix i carrega recursivament fitxers .bitx/rules i AGENTS.md des de subdirectoris. Útil per a monorepos amb regles per paquet."
 		}
 	},
 	"terminal": {
@@ -858,9 +858,9 @@
 		},
 		"CUSTOM_TOOLS": {
 			"name": "Habilitar eines personalitzades",
-			"description": "Quan està habilitat, Roo pot carregar i utilitzar eines TypeScript/JavaScript personalitzades des del directori .roo/tools del vostre projecte o ~/.roo/tools per a eines globals. Nota: aquestes eines s'aprovaran automàticament.",
+			"description": "Quan està habilitat, Roo pot carregar i utilitzar eines TypeScript/JavaScript personalitzades des del directori .bitx/tools del vostre projecte o ~/.bitx/tools per a eines globals. Nota: aquestes eines s'aprovaran automàticament.",
 			"toolsHeader": "Eines personalitzades disponibles",
-			"noTools": "No s'han carregat eines personalitzades. Afegiu fitxers .ts o .js al directori .roo/tools del vostre projecte o ~/.roo/tools per a eines globals.",
+			"noTools": "No s'han carregat eines personalitzades. Afegiu fitxers .ts o .js al directori .bitx/tools del vostre projecte o ~/.bitx/tools per a eines globals.",
 			"refreshButton": "Actualitzar",
 			"refreshing": "Actualitzant...",
 			"refreshSuccess": "Eines actualitzades correctament",

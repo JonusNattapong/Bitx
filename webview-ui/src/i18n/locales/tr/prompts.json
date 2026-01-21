@@ -50,7 +50,7 @@
 		"title": "Moda özgü özel talimatlar (isteğe bağlı)",
 		"resetToDefault": "Varsayılana sıfırla",
 		"description": "{{modeName}} modu için özel davranış yönergeleri ekleyin.",
-		"loadFromFile": "{{mode}} moduna özgü özel talimatlar, çalışma alanınızdaki <span>.roo/rules-{{slug}}/</span> klasöründen veya global <0>.roo/rules-{{slug}}/</0> klasöründen de yüklenebilir (.roorules-{{slug}} ve .clinerules-{{slug}} kullanımdan kaldırılmıştır ve yakında çalışmayı durduracaktır)."
+		"loadFromFile": "{{mode}} moduna özgü özel talimatlar, çalışma alanınızdaki <span>.bitx/rules-{{slug}}/</span> klasöründen veya global <0>.bitx/rules-{{slug}}/</0> klasöründen de yüklenebilir (.roorules-{{slug}} ve .clinerules-{{slug}} kullanımdan kaldırılmıştır ve yakında çalışmayı durduracaktır)."
 	},
 	"exportMode": {
 		"title": "Modu Dışa Aktar",
@@ -61,7 +61,7 @@
 	"globalCustomInstructions": {
 		"title": "Tüm Modlar için Özel Talimatlar",
 		"description": "Bu talimatlar tüm modlara uygulanır. Aşağıdaki moda özgü talimatlarla geliştirilebilen temel davranış seti sağlarlar. <0>Daha fazla bilgi edinin</0>",
-		"loadFromFile": "Talimatlar, çalışma alanınızdaki <span>.roo/rules/</span> klasöründen veya global <0>.roo/rules/</0> klasöründen de yüklenebilir (.roorules ve .clinerules kullanımdan kaldırılmıştır ve yakında çalışmayı durduracaktır)."
+		"loadFromFile": "Talimatlar, çalışma alanınızdaki <span>.bitx/rules/</span> klasöründen veya global <0>.bitx/rules/</0> klasöründen de yüklenebilir (.roorules ve .clinerules kullanımdan kaldırılmıştır ve yakında çalışmayı durduracaktır)."
 	},
 	"importMode": {
 		"selectLevel": "Bu modu nereye içe aktaracağınızı seçin:",
@@ -73,7 +73,7 @@
 		},
 		"project": {
 			"label": "Proje Seviyesi",
-			"description": "Yalnızca bu çalışma alanında kullanılabilir. Dışa aktarılan mod kural dosyaları içeriyorsa, bunlar .roo/rules-{slug}/ klasöründe yeniden oluşturulur."
+			"description": "Yalnızca bu çalışma alanında kullanılabilir. Dışa aktarılan mod kural dosyaları içeriyorsa, bunlar .bitx/rules-{slug}/ klasöründe yeniden oluşturulur."
 		}
 	},
 	"systemPrompt": {
@@ -145,7 +145,7 @@
 	},
 	"advancedSystemPrompt": {
 		"title": "Gelişmiş: Sistem Promptunu Geçersiz Kıl",
-		"description": "<2>⚠️ Uyarı:</2> Bu gelişmiş özellik güvenlik önlemlerini atlar. <1>KULLANMADAN ÖNCE BUNU OKUYUN!</1>Çalışma alanınızda <span>.roo/system-prompt-{{slug}}</span> adresinde bir dosya oluşturarak varsayılan sistem istemini geçersiz kılın."
+		"description": "<2>⚠️ Uyarı:</2> Bu gelişmiş özellik güvenlik önlemlerini atlar. <1>KULLANMADAN ÖNCE BUNU OKUYUN!</1>Çalışma alanınızda <span>.bitx/system-prompt-{{slug}}</span> adresinde bir dosya oluşturarak varsayılan sistem istemini geçersiz kılın."
 	},
 	"createModeDialog": {
 		"title": "Yeni Mod Oluştur",

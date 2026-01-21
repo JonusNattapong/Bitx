@@ -243,13 +243,13 @@ vi.mock("../providers/LiteLLM", () => ({
 // Mock Roo provider for tests
 vi.mock("../providers/Roo", () => ({
 	Roo: ({ cloudIsAuthenticated }: any) => (
-		<div data-testid="roo-provider">{cloudIsAuthenticated ? "Authenticated" : "Not Authenticated"}</div>
+		<div data-testid="bitx-provider">{cloudIsAuthenticated ? "Authenticated" : "Not Authenticated"}</div>
 	),
 }))
 
 // Mock RooBalanceDisplay for tests
 vi.mock("../providers/RooBalanceDisplay", () => ({
-	RooBalanceDisplay: () => <div data-testid="roo-balance-display">Balance: $10.00</div>,
+	RooBalanceDisplay: () => <div data-testid="bitx-balance-display">Balance: $10.00</div>,
 }))
 
 vi.mock("@src/components/ui/hooks/useSelectedModel", () => ({
@@ -614,11 +614,11 @@ describe("ApiOptions", () => {
 
 			renderApiOptions({
 				apiConfiguration: {
-					apiProvider: "roo",
+					apiProvider: "bitx",
 				},
 			})
 
-			expect(screen.getByTestId("roo-balance-display")).toBeInTheDocument()
+			expect(screen.getByTestId("bitx-balance-display")).toBeInTheDocument()
 		})
 
 		it("does not show balance display when not authenticated", () => {
@@ -631,14 +631,14 @@ describe("ApiOptions", () => {
 
 			renderApiOptions({
 				apiConfiguration: {
-					apiProvider: "roo",
+					apiProvider: "bitx",
 				},
 			})
 
-			expect(screen.queryByTestId("roo-balance-display")).not.toBeInTheDocument()
+			expect(screen.queryByTestId("bitx-balance-display")).not.toBeInTheDocument()
 		})
 
-		it("pins roo provider to the top when not on welcome screen", () => {
+		it("pins bitx provider to the top when not on welcome screen", () => {
 			// Mock useExtensionState to ensure no filtering
 			const useExtensionStateMock = vi.spyOn(ExtensionStateContext, "useExtensionState")
 			useExtensionStateMock.mockReturnValue({
@@ -658,18 +658,18 @@ describe("ApiOptions", () => {
 			// Filter out the placeholder option (empty value)
 			const providerOptions = options.filter((opt) => opt.value !== "")
 
-			// Find the roo option
-			const rooOption = providerOptions.find((opt) => opt.value === "roo")
+			// Find the bitx option
+			const rooOption = providerOptions.find((opt) => opt.value === "bitx")
 
-			// If roo is available, verify it's pinned to the top
+			// If bitx is available, verify it's pinned to the top
 			if (rooOption) {
-				expect(providerOptions[0].value).toBe("roo")
+				expect(providerOptions[0].value).toBe("bitx")
 			}
 
 			useExtensionStateMock.mockRestore()
 		})
 
-		it("filters out roo provider on welcome screen", () => {
+		it("filters out bitx provider on welcome screen", () => {
 			// Mock useExtensionState to ensure no filtering
 			const useExtensionStateMock = vi.spyOn(ExtensionStateContext, "useExtensionState")
 			useExtensionStateMock.mockReturnValue({
@@ -689,8 +689,8 @@ describe("ApiOptions", () => {
 			// Filter out the placeholder option (empty value)
 			const providerOptions = options.filter((opt) => opt.value !== "")
 
-			// Check that roo is NOT in the list when on welcome screen
-			const rooOption = providerOptions.find((opt) => opt.value === "roo")
+			// Check that bitx is NOT in the list when on welcome screen
+			const rooOption = providerOptions.find((opt) => opt.value === "bitx")
 			expect(rooOption).toBeUndefined()
 
 			useExtensionStateMock.mockRestore()

@@ -407,7 +407,7 @@ export class ExtensionHost extends EventEmitter implements ExtensionHostInterfac
 		// This is critical for the extension to start sending state updates properly.
 		this.sendToExtension({ type: "webviewDidLaunch" })
 
-		setRuntimeConfigValues("roo-cline", this.initialSettings as Record<string, unknown>)
+		setRuntimeConfigValues("roo-cline-bitx", this.initialSettings as Record<string, unknown>)
 		this.sendToExtension({ type: "updateSettings", updatedSettings: this.initialSettings })
 	}
 

@@ -1,4 +1,4 @@
-// pnpm --filter roo-cline test core/webview/__tests__/ClineProvider.spec.ts
+// pnpm --filter roo-cline-bitx test core/webview/__tests__/ClineProvider.spec.ts
 
 import Anthropic from "@anthropic-ai/sdk"
 import * as vscode from "vscode"
@@ -2299,13 +2299,13 @@ describe("Project MCP Settings", () => {
 		})
 
 		// Check that fs.mkdir was called with the correct path
-		expect(mockedFs.mkdir).toHaveBeenCalledWith("/test/workspace/.roo", { recursive: true })
+		expect(mockedFs.mkdir).toHaveBeenCalledWith("/test/workspace/.bitx", { recursive: true })
 
 		// Verify file was created with default content
-		expect(safeWriteJson).toHaveBeenCalledWith("/test/workspace/.roo/mcp.json", { mcpServers: {} })
+		expect(safeWriteJson).toHaveBeenCalledWith("/test/workspace/.bitx/mcp.json", { mcpServers: {} })
 
 		// Check that openFile was called
-		expect(openFileSpy).toHaveBeenCalledWith("/test/workspace/.roo/mcp.json")
+		expect(openFileSpy).toHaveBeenCalledWith("/test/workspace/.bitx/mcp.json")
 	})
 
 	test("handles openProjectMcpSettings when workspace is not open", async () => {
@@ -2340,7 +2340,7 @@ describe("Project MCP Settings", () => {
 
 		// Verify error message was shown
 		expect(vscode.window.showErrorMessage).toHaveBeenCalledWith(
-			expect.stringContaining("Failed to create or open .roo/mcp.json"),
+			expect.stringContaining("Failed to create or open .bitx/mcp.json"),
 		)
 	})
 })
@@ -2671,7 +2671,7 @@ describe("ClineProvider - Router Models", () => {
 		expect(getModels).toHaveBeenCalledWith({ provider: "deepinfra" })
 		expect(getModels).toHaveBeenCalledWith(
 			expect.objectContaining({
-				provider: "roo",
+				provider: "bitx",
 				baseUrl: expect.any(String),
 			}),
 		)
@@ -2690,7 +2690,7 @@ describe("ClineProvider - Router Models", () => {
 				openrouter: mockModels,
 				requesty: mockModels,
 				unbound: mockModels,
-				roo: mockModels,
+				bitx: mockModels,
 				chutes: mockModels,
 				litellm: mockModels,
 				ollama: {},
@@ -2729,7 +2729,7 @@ describe("ClineProvider - Router Models", () => {
 			.mockRejectedValueOnce(new Error("Unbound API error")) // unbound fail
 			.mockResolvedValueOnce(mockModels) // vercel-ai-gateway success
 			.mockResolvedValueOnce(mockModels) // deepinfra success
-			.mockResolvedValueOnce(mockModels) // roo success
+			.mockResolvedValueOnce(mockModels) // bitx success
 			.mockRejectedValueOnce(new Error("Chutes API error")) // chutes fail
 			.mockRejectedValueOnce(new Error("LiteLLM connection failed")) // litellm fail
 
@@ -2743,7 +2743,7 @@ describe("ClineProvider - Router Models", () => {
 				openrouter: mockModels,
 				requesty: {},
 				unbound: {},
-				roo: mockModels,
+				bitx: mockModels,
 				chutes: {},
 				ollama: {},
 				lmstudio: {},
@@ -2864,7 +2864,7 @@ describe("ClineProvider - Router Models", () => {
 				openrouter: mockModels,
 				requesty: mockModels,
 				unbound: mockModels,
-				roo: mockModels,
+				bitx: mockModels,
 				chutes: mockModels,
 				litellm: {},
 				ollama: {},

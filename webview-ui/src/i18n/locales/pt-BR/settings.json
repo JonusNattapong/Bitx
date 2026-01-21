@@ -204,7 +204,7 @@
 			},
 			"protected": {
 				"label": "Incluir arquivos protegidos",
-				"description": "Permitir que o Roo crie e edite arquivos protegidos (como .rooignore e arquivos de configuração .roo/) sem exigir aprovação."
+				"description": "Permitir que o Roo crie e edite arquivos protegidos (como .rooignore e arquivos de configuração .bitx/) sem exigir aprovação."
 			}
 		},
 		"browser": {
@@ -472,7 +472,7 @@
 		"getUnboundApiKey": "Obter chave de API Unbound",
 		"unboundRefreshModelsSuccess": "Lista de modelos atualizada! Agora você pode selecionar entre os modelos mais recentes.",
 		"unboundInvalidApiKey": "Chave API inválida. Por favor, verifique sua chave API e tente novamente.",
-		"roo": {
+		"bitx": {
 			"authenticatedMessage": "Autenticado com segurança através da sua conta Bitx Cloud.",
 			"connectButton": "Conectar ao Bitx Cloud"
 		},
@@ -704,7 +704,7 @@
 		},
 		"enableSubfolderRules": {
 			"label": "Ativar regras de subpastas",
-			"description": "Descobrir e carregar recursivamente arquivos .roo/rules e AGENTS.md de subdiretórios. Útil para monorepos com regras por pacote."
+			"description": "Descobrir e carregar recursivamente arquivos .bitx/rules e AGENTS.md de subdiretórios. Útil para monorepos com regras por pacote."
 		}
 	},
 	"terminal": {
@@ -859,9 +859,9 @@
 		},
 		"CUSTOM_TOOLS": {
 			"name": "Ativar ferramentas personalizadas",
-			"description": "Quando habilitado, o Roo pode carregar e usar ferramentas TypeScript/JavaScript personalizadas do diretório .roo/tools do seu projeto ou ~/.roo/tools para ferramentas globais. Nota: estas ferramentas serão aprovadas automaticamente.",
+			"description": "Quando habilitado, o Roo pode carregar e usar ferramentas TypeScript/JavaScript personalizadas do diretório .bitx/tools do seu projeto ou ~/.bitx/tools para ferramentas globais. Nota: estas ferramentas serão aprovadas automaticamente.",
 			"toolsHeader": "Ferramentas personalizadas disponíveis",
-			"noTools": "Nenhuma ferramenta personalizada carregada. Adicione arquivos .ts ou .js ao diretório .roo/tools do seu projeto ou ~/.roo/tools para ferramentas globais.",
+			"noTools": "Nenhuma ferramenta personalizada carregada. Adicione arquivos .ts ou .js ao diretório .bitx/tools do seu projeto ou ~/.bitx/tools para ferramentas globais.",
 			"refreshButton": "Atualizar",
 			"refreshing": "Atualizando...",
 			"refreshSuccess": "Ferramentas atualizadas com sucesso",

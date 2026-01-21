@@ -17,8 +17,8 @@ import prettyBytes from "pretty-bytes"
 
 import type { ClineMessage } from "@bitx/types"
 
-import { getModelMaxOutputTokens } from "@roo/api"
-import { findLastIndex } from "@roo/array"
+import { getModelMaxOutputTokens } from "@bitx/api"
+import { findLastIndex } from "@bitx/array"
 
 import { formatLargeNumber } from "@src/utils/format"
 import { cn } from "@src/lib/utils"

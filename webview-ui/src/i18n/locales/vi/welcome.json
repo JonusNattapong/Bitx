@@ -7,7 +7,7 @@
 		"openrouter": {
 			"description": "Giao diện thống nhất cho LLM"
 		},
-		"roo": {
+		"bitx": {
 			"description": "Các mô hình miễn phí tốt nhất để bắt đầu",
 			"incentive": "Dùng thử Roo miễn phí"
 		}
