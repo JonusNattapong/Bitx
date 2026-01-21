@@ -9,7 +9,7 @@ import { RooCodeEventName, type ClineMessage } from "@bitx/types"
 import { waitFor, sleep } from "../utils"
 import { setDefaultSuiteTimeout } from "../test-utils"
 
-suite.skip("Roo Code read_file Tool", function () {
+suite.skip("Bitx read_file Tool", function () {
 	setDefaultSuiteTimeout(this)
 
 	let tempDir: string

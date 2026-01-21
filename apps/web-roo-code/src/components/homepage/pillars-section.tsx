@@ -180,7 +180,7 @@ export function PillarsSection() {
 								<h4 className="font-semibold text-lg">Open source from the get go.</h4>
 								<div className="text-muted-foreground my-4 space-y-1">
 									<p>
-										The Roo Code Extension is{" "}
+										The Bitx Extension is{" "}
 										<Link target="_blank" href="https://github.com/RooCodeInc/Bitx">
 											open source
 										</Link>{" "}

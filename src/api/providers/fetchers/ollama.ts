@@ -43,7 +43,7 @@ export const parseOllamaModel = (rawModel: OllamaModelInfoResponse): ModelInfo |
 		contextKey && typeof rawModel.model_info[contextKey] === "number" ? rawModel.model_info[contextKey] : undefined
 
 	// Filter out models that don't support tools.
-	// Roo Code tool calling is native-only; models without tool capability won't work.
+	// Bitx tool calling is native-only; models without tool capability won't work.
 	const supportsTools = rawModel.capabilities?.includes("tools") ?? false
 	if (!supportsTools) {
 		return null

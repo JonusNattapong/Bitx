@@ -1,6 +1,6 @@
 {
 	"name": "@bitx/telemetry",
-	"description": "Roo Code telemetry service and clients.",
+	"description": "Bitx telemetry service and clients.",
 	"version": "0.0.0",
 	"type": "module",
 	"exports": "./src/index.ts",

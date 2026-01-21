@@ -8,7 +8,7 @@ import { RooCodeEventName, type ClineMessage } from "@bitx/types"
 import { waitFor, sleep } from "../utils"
 import { setDefaultSuiteTimeout } from "../test-utils"
 
-suite.skip("Roo Code write_to_file Tool", function () {
+suite.skip("Bitx write_to_file Tool", function () {
 	setDefaultSuiteTimeout(this)
 
 	let tempDir: string

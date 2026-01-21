@@ -29,7 +29,7 @@ export function NavBar({ stars, downloads }: NavBarProps) {
 			<div className="container flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
 				<div className="flex items-center">
 					<Link href="/" className="flex items-center">
-						<Image src={logoSrc} alt="Roo Code Logo" width={130} height={24} className="h-[24px] w-auto" />
+						<Image src={logoSrc} alt="Bitx Logo" width={130} height={24} className="h-[24px] w-auto" />
 					</Link>
 				</div>
 
@@ -46,19 +46,19 @@ export function NavBar({ stars, downloads }: NavBarProps) {
 								href="/extension"
 								className="block px-4 py-2 text-sm transition-colors hover:bg-accent hover:text-foreground">
 								<Puzzle className="size-3 inline mr-2 -mt-0.5" />
-								Roo Code VS Code Extension
+								Bitx VS Code Extension
 							</Link>
 							<Link
 								href="/cloud"
 								className="block px-4 py-2 text-sm transition-colors hover:bg-accent hover:text-foreground">
 								<Cloud className="size-3 inline mr-2 -mt-0.5" />
-								Roo Code Cloud
+								Bitx Cloud
 							</Link>
 							<Link
 								href="/provider"
 								className="block px-4 py-2 text-sm transition-colors hover:bg-accent hover:text-foreground">
 								<Brain className="size-3 inline mr-2 -mt-0.5" />
-								Roo Code Router
+								Bitx Router
 							</Link>
 						</div>
 					</div>
@@ -182,19 +182,19 @@ export function NavBar({ stars, downloads }: NavBarProps) {
 								href="/extension"
 								className="block w-full p-5 py-3 text-left text-foreground active:opacity-50"
 								onClick={() => setIsMenuOpen(false)}>
-								Roo Code VS Code Extension
+								Bitx VS Code Extension
 							</Link>
 							<Link
 								href="/cloud"
 								className="block w-full p-5 py-3 text-left text-foreground active:opacity-50"
 								onClick={() => setIsMenuOpen(false)}>
-								Roo Code Cloud
+								Bitx Cloud
 							</Link>
 							<Link
 								href="/provider"
 								className="block w-full p-5 py-3 text-left text-foreground active:opacity-50"
 								onClick={() => setIsMenuOpen(false)}>
-								Roo Code Router
+								Bitx Router
 							</Link>
 						</div>
 

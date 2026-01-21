@@ -1,7 +1,7 @@
 {
-	"extension.displayName": "Roo Code Nightly",
-	"views.contextMenu.label": "Roo Code Nightly",
-	"views.terminalMenu.label": "Roo Code Nightly",
-	"views.activitybar.title": "Roo Code Nightly",
-	"configuration.title": "Roo Code Nightly"
+	"extension.displayName": "Bitx Nightly",
+	"views.contextMenu.label": "Bitx Nightly",
+	"views.terminalMenu.label": "Bitx Nightly",
+	"views.activitybar.title": "Bitx Nightly",
+	"configuration.title": "Bitx Nightly"
 }

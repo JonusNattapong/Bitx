@@ -473,8 +473,8 @@
 		"unboundRefreshModelsSuccess": "モデルリストが更新されました！最新のモデルから選択できます。",
 		"unboundInvalidApiKey": "無効なAPIキーです。APIキーを確認して、もう一度お試しください。",
 		"roo": {
-			"authenticatedMessage": "Roo Code Cloudアカウントを通じて安全に認証されています。",
-			"connectButton": "Roo Code Cloudに接続"
+			"authenticatedMessage": "Bitx Cloudアカウントを通じて安全に認証されています。",
+			"connectButton": "Bitx Cloudに接続"
 		},
 		"openRouter": {
 			"providerRouting": {

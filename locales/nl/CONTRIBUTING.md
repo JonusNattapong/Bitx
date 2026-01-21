@@ -11,9 +11,9 @@
 </sub>
 </div>
 
-# Bijdragen aan Roo Code
+# Bijdragen aan Bitx
 
-Roo Code is een door de gemeenschap gedreven project en we waarderen elke bijdrage ten zeerste. Om de samenwerking te stroomlijnen, werken we op basis van een [Issue-First-aanpak](#issue-first-aanpak), wat betekent dat alle [Pull Requests (PR's)](#een-pull-request-indienen) eerst gekoppeld moeten zijn aan een GitHub Issue. Lees deze handleiding zorgvuldig door.
+Bitx is een door de gemeenschap gedreven project en we waarderen elke bijdrage ten zeerste. Om de samenwerking te stroomlijnen, werken we op basis van een [Issue-First-aanpak](#issue-first-aanpak), wat betekent dat alle [Pull Requests (PR's)](#een-pull-request-indienen) eerst gekoppeld moeten zijn aan een GitHub Issue. Lees deze handleiding zorgvuldig door.
 
 ## Inhoudsopgave
 
@@ -52,7 +52,7 @@ Onze roadmap stuurt de richting van het project. Lijn je bijdragen uit met deze 
 
 Vermeld de afstemming met deze gebieden in je PR's.
 
-### 3. Word lid van de Roo Code-community
+### 3. Word lid van de Bitx-community
 
 - **Primair:** Word lid van onze [Discord](https://discord.gg/roocode) en stuur een DM naar **Hannes Rudolph (`hrudolph`)**.
 - **Alternatief:** Ervaren bijdragers kunnen rechtstreeks deelnemen via [GitHub Projects](https://github.com/orgs/RooCodeInc/projects/1).
@@ -79,7 +79,7 @@ Alle bijdragen beginnen met een GitHub Issue met behulp van onze slanke sjablone
 ### Beslissen waaraan je wilt werken
 
 - Controleer het [GitHub Project](https://github.com/orgs/RooCodeInc/projects/1) voor "Issue [Niet-toegewezen]" issues.
-- Ga voor documentatie naar [Roo Code Docs](https://github.com/RooCodeInc/Bitx-Docs).
+- Ga voor documentatie naar [Bitx Docs](https://github.com/RooCodeInc/Bitx-Docs).
 
 ### Bugs rapporteren
 
@@ -87,7 +87,7 @@ Alle bijdragen beginnen met een GitHub Issue met behulp van onze slanke sjablone
 - Maak een nieuwe bug aan met het ["Bugrapport"-sjabloon](https://github.com/RooCodeInc/Bitx/issues/new/choose) met:
     - Duidelijke, genummerde reproductiestappen
     - Verwacht vs. feitelijk resultaat
-    - Roo Code-versie (vereist); API-provider/model indien relevant
+    - Bitx-versie (vereist); API-provider/model indien relevant
 - **Beveiligingsproblemen**: Rapporteer privé via [beveiligingsadviezen](https://github.com/RooCodeInc/Bitx/security/advisories/new).
 
 ## Ontwikkelings- en indieningsproces
@@ -138,4 +138,4 @@ pnpm install
 
 ## Juridisch
 
-Door bij te dragen, ga je ermee akkoord dat je bijdragen onder de Apache 2.0-licentie worden gelicentieerd, in overeenstemming met de licentieverlening van Roo Code.
+Door bij te dragen, ga je ermee akkoord dat je bijdragen onder de Apache 2.0-licentie worden gelicentieerd, in overeenstemming met de licentieverlening van Bitx.

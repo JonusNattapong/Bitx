@@ -1,6 +1,6 @@
 {
 	"name": "@bitx/cloud",
-	"description": "Roo Code Cloud services.",
+	"description": "Bitx Cloud services.",
 	"version": "0.0.0",
 	"type": "module",
 	"exports": "./src/index.ts",

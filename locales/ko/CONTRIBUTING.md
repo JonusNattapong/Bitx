@@ -52,7 +52,7 @@ Roo Code는 커뮤니티 기반 프로젝트이며 모든 기여를 소중하게
 
 PR에 이러한 영역과의 연관성을 언급하세요.
 
-### 3. Roo Code 커뮤니티에 참여하세요
+### 3. Bitx 커뮤니티에 참여하세요
 
 - **기본:** [Discord](https://discord.gg/roocode)에 참여하여 **Hannes Rudolph (`hrudolph`)**에게 DM을 보내세요.
 - **대안:** 숙련된 기여자는 [GitHub 프로젝트](https://github.com/orgs/RooCodeInc/projects/1)를 통해 직접 참여할 수 있습니다.
@@ -79,7 +79,7 @@ PR에 이러한 영역과의 연관성을 언급하세요.
 ### 작업할 내용 결정하기
 
 - "이슈 [할당되지 않음]" 이슈는 [GitHub 프로젝트](https://github.com/orgs/RooCodeInc/projects/1)를 확인하세요.
-- 문서는 [Roo Code 문서](https://github.com/RooCodeInc/Bitx-Docs)를 방문하세요.
+- 문서는 [Bitx 문서](https://github.com/RooCodeInc/Bitx-Docs)를 방문하세요.
 
 ### 버그 신고하기
 
@@ -87,7 +87,7 @@ PR에 이러한 영역과의 연관성을 언급하세요.
 - ["버그 보고" 템플릿](https://github.com/RooCodeInc/Bitx/issues/new/choose)을 사용하여 새 버그를 생성하세요.
     - 명확하고 번호가 매겨진 재현 단계
     - 예상 결과 대 실제 결과
-    - Roo Code 버전 (필수), 관련이 있는 경우 API 제공업체/모델
+    - Bitx 버전 (필수), 관련이 있는 경우 API 제공업체/모델
 - **보안 문제**: [보안 권고](https://github.com/RooCodeInc/Bitx/security/advisories/new)를 통해 비공개로 보고하세요.
 
 ## 개발 및 제출 절차

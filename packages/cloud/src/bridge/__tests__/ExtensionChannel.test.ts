@@ -25,7 +25,7 @@ describe("ExtensionChannel", () => {
 		appVersion: "1.0.0",
 		vscodeVersion: "1.0.0",
 		platform: "darwin",
-		editorName: "Roo Code",
+		editorName: "Bitx",
 		hostname: "test-host",
 	}
 

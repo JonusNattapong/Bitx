@@ -1,13 +1,13 @@
 {
 	"name": "@bitx/types",
 	"version": "1.106.0",
-	"description": "TypeScript type definitions for Roo Code.",
+	"description": "TypeScript type definitions for Bitx.",
 	"publishConfig": {
 		"access": "public",
 		"name": "@bitx/types",
 		"registry": "https://registry.npmjs.org/"
 	},
-	"author": "Roo Code Team",
+	"author": "Bitx Team",
 	"license": "MIT",
 	"repository": {
 		"type": "git",

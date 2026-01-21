@@ -1,5 +1,5 @@
 ---
-description: "Create a new release of the Roo Code CLI"
+description: "Create a new release of the Bitx CLI"
 argument-hint: "[version-description]"
 mode: code
 ---

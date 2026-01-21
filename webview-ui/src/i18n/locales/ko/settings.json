@@ -40,7 +40,7 @@
 		"ui": "UI",
 		"experimental": "실험적",
 		"language": "언어",
-		"about": "Roo Code 정보"
+		"about": "Bitx 정보"
 	},
 	"about": {
 		"bugReport": {
@@ -58,7 +58,7 @@
 		"contact": {
 			"label": "문의가 필요하신가요? 이메일 보내기"
 		},
-		"community": "팁을 얻거나 다른 Roo Code 사용자들과 교류하고 싶으신가요? <redditLink>reddit.com/r/RooCode</redditLink> 또는 <discordLink>discord.gg/roocode</discordLink>에 참여하세요",
+		"community": "팁을 얻거나 다른 Bitx 사용자들과 교류하고 싶으신가요? <redditLink>reddit.com/r/RooCode</redditLink> 또는 <discordLink>discord.gg/roocode</discordLink>에 참여하세요",
 		"contactAndCommunity": "문의 및 커뮤니티",
 		"manageSettings": "설정 관리",
 		"debugMode": {
@@ -473,8 +473,8 @@
 		"unboundRefreshModelsSuccess": "모델 목록이 업데이트되었습니다! 이제 최신 모델에서 선택할 수 있습니다.",
 		"unboundInvalidApiKey": "잘못된 API 키입니다. API 키를 확인하고 다시 시도해 주세요.",
 		"roo": {
-			"authenticatedMessage": "Roo Code Cloud 계정을 통해 안전하게 인증되었습니다.",
-			"connectButton": "Roo Code Cloud에 연결"
+			"authenticatedMessage": "Bitx Cloud 계정을 통해 안전하게 인증되었습니다.",
+			"connectButton": "Bitx Cloud에 연결"
 		},
 		"openRouter": {
 			"providerRouting": {
@@ -912,7 +912,7 @@
 		"feedback": "질문이나 피드백이 있으시면 <githubLink>github.com/RooCodeInc/Bitx</githubLink>에서 이슈를 열거나 <redditLink>reddit.com/r/RooCode</redditLink> 또는 <discordLink>discord.gg/roocode</discordLink>에 가입하세요",
 		"telemetry": {
 			"label": "익명 오류 및 사용 보고 허용",
-			"description": "익명 사용 데이터 및 오류 보고서를 전송하여 Roo Code 개선에 도움을 주세요. 이 텔레메트리는 코드, 프롬프트 또는 개인 정보를 수집하지 않습니다. 자세한 내용은 <privacyLink>개인정보 보호정책</privacyLink>을 참조하세요."
+			"description": "익명 사용 데이터 및 오류 보고서를 전송하여 Bitx 개선에 도움을 주세요. 이 텔레메트리는 코드, 프롬프트 또는 개인 정보를 수집하지 않습니다. 자세한 내용은 <privacyLink>개인정보 보호정책</privacyLink>을 참조하세요."
 		},
 		"settings": {
 			"import": "가져오기",

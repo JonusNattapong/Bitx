@@ -77,7 +77,7 @@ export class OpenRouterEmbedder implements IEmbedder {
 				apiKey: apiKey,
 				defaultHeaders: {
 					"HTTP-Referer": "https://github.com/RooCodeInc/Bitx",
-					"X-Title": "Roo Code",
+					"X-Title": "Bitx",
 				},
 			})
 		} catch (error) {

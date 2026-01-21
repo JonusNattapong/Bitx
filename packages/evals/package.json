@@ -1,6 +1,6 @@
 {
 	"name": "@bitx/evals",
-	"description": "Roo Code evals.",
+	"description": "Bitx evals.",
 	"version": "0.0.0",
 	"type": "module",
 	"exports": "./src/index.ts",
