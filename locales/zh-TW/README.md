@@ -60,7 +60,7 @@ Roo Code 適應您的工作方式，而不是相反：
 - 自訂模式：為您的團隊或工作流程建置專門的模式
 - Roomote Control：Roomote Control 讓你能遠端控制在本機 VS Code 執行個體中運行的工作。
 
-更多資訊：[使用模式](https://docs.roocode.com/basic-usage/using-modes) • [自訂模式](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/roo-code-cloud/roomote-control)
+更多資訊：[使用模式](https://docs.roocode.com/basic-usage/using-modes) • [自訂模式](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/bitx-cloud/roomote-control)
 
 ## 教學和功能影片
 
@@ -82,8 +82,8 @@ Roo Code 適應您的工作方式，而不是相反：
 - **[YouTube 頻道](https://youtube.com/@roocodeyt?feature=shared):** 觀看教學和功能實際操作。
 - **[Discord 伺服器](https://discord.gg/roocode):** 加入社群以獲得即時協助和討論。
 - **[Reddit 社群](https://www.reddit.com/r/RooCode):** 分享您的經驗，看看其他人正在建立什麼。
-- **[GitHub 問題](https://github.com/RooCodeInc/Roo-Code/issues):** 回報錯誤並追蹤開發進度。
-- **[功能請求](https://github.com/RooCodeInc/Roo-Code/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** 有想法嗎？與開發人員分享。
+- **[GitHub 問題](https://github.com/RooCodeInc/Bitx/issues):** 回報錯誤並追蹤開發進度。
+- **[功能請求](https://github.com/RooCodeInc/Bitx/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** 有想法嗎？與開發人員分享。
 
 ---
 
@@ -92,7 +92,7 @@ Roo Code 適應您的工作方式，而不是相反：
 1. **複製**儲存庫：
 
 ```sh
-git clone https://github.com/RooCodeInc/Roo-Code.git
+git clone https://github.com/RooCodeInc/Bitx.git
 ```
 
 2. **安裝依賴套件**:

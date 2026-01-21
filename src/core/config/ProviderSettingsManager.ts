@@ -12,8 +12,8 @@ import {
 	getModelId,
 	type ProviderName,
 	isProviderName,
-} from "@roo-code/types"
-import { TelemetryService } from "@roo-code/telemetry"
+} from "@bitx/types"
+import { TelemetryService } from "@bitx/telemetry"
 
 import { Mode, modes } from "../../shared/modes"
 import { buildApiHandler } from "../../api"

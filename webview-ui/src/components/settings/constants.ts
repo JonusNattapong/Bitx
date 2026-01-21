@@ -22,7 +22,7 @@ import {
 	featherlessModels,
 	minimaxModels,
 	basetenModels,
-} from "@roo-code/types"
+} from "@bitx/types"
 
 export const MODELS_BY_PROVIDER: Partial<Record<ProviderName, Record<string, ModelInfo>>> = {
 	anthropic: anthropicModels,

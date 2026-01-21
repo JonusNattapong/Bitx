@@ -1,1 +1,1 @@
-export * from "@roo-code/core/browser"
+export * from "@bitx/core/browser"

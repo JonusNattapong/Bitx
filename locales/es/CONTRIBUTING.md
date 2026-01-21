@@ -69,7 +69,7 @@ Mencione la alineación con estas áreas en sus solicitudes de extracción.
 
 Todas las contribuciones comienzan con una incidencia de GitHub utilizando nuestras plantillas simplificadas.
 
-- **Compruebe las incidencias existentes**: busque en [Incidencias de GitHub](https://github.com/RooCodeInc/Roo-Code/issues).
+- **Compruebe las incidencias existentes**: busque en [Incidencias de GitHub](https://github.com/RooCodeInc/Bitx/issues).
 - **Cree una incidencia** utilizando:
     - **Mejoras:** plantilla "Solicitud de mejora" (lenguaje sencillo centrado en el beneficio del usuario).
     - **Errores:** plantilla "Informe de error" (reproducción mínima + esperado vs. real + versión).
@@ -79,16 +79,16 @@ Todas las contribuciones comienzan con una incidencia de GitHub utilizando nuest
 ### Decidir en qué trabajar
 
 - Consulte el [Proyecto de GitHub](https://github.com/orgs/RooCodeInc/projects/1) para ver las incidencias "Incidencia [Sin asignar]".
-- Para la documentación, visite [Documentos de Roo Code](https://github.com/RooCodeInc/Roo-Code-Docs).
+- Para la documentación, visite [Documentos de Roo Code](https://github.com/RooCodeInc/Bitx-Docs).
 
 ### Informar de errores
 
 - Compruebe primero si existen informes.
-- Cree un nuevo error utilizando la [plantilla "Informe de error"](https://github.com/RooCodeInc/Roo-Code/issues/new/choose) con:
+- Cree un nuevo error utilizando la [plantilla "Informe de error"](https://github.com/RooCodeInc/Bitx/issues/new/choose) con:
     - Pasos de reproducción claros y numerados
     - Resultado esperado vs. real
     - Versión de Roo Code (obligatorio); proveedor/modelo de API si es relevante
-- **Problemas de seguridad**: informe de forma privada a través de [avisos de seguridad](https://github.com/RooCodeInc/Roo-Code/security/advisories/new).
+- **Problemas de seguridad**: informe de forma privada a través de [avisos de seguridad](https://github.com/RooCodeInc/Bitx/security/advisories/new).
 
 ## Proceso de desarrollo y envío
 
@@ -97,7 +97,7 @@ Todas las contribuciones comienzan con una incidencia de GitHub utilizando nuest
 1. **Bifurcar y clonar:**
 
 ```
-git clone https://github.com/SU_NOMBRE_DE_USUARIO/Roo-Code.git
+git clone https://github.com/SU_NOMBRE_DE_USUARIO/Bitx.git
 ```
 
 2. **Instalar dependencias:**

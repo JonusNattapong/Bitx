@@ -1,4 +1,4 @@
-import type { SettingsService, ShareResponse, ShareVisibility } from "@roo-code/types"
+import type { SettingsService, ShareResponse, ShareVisibility } from "@bitx/types"
 
 import { importVscode } from "./importVscode.js"
 import type { CloudAPI } from "./CloudAPI.js"

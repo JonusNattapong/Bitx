@@ -60,7 +60,7 @@ Roo Code, sizin çalışma şeklinize uyum sağlar, tam tersi değil:
 - Özel Modlar: ekibiniz veya iş akışınız için özel modlar oluşturun
 - Roomote Control: Roomote Control, yerel VS Code örneğinde çalışan işleri uzaktan kontrol etmeni sağlar.
 
-Daha fazla: [Modları kullanma](https://docs.roocode.com/basic-usage/using-modes) • [Özel modlar](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/roo-code-cloud/roomote-control)
+Daha fazla: [Modları kullanma](https://docs.roocode.com/basic-usage/using-modes) • [Özel modlar](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/bitx-cloud/roomote-control)
 
 ## Eğitim ve Özellik Videoları
 
@@ -82,8 +82,8 @@ Daha fazla: [Modları kullanma](https://docs.roocode.com/basic-usage/using-modes
 - **[YouTube Kanalı](https://youtube.com/@roocodeyt?feature=shared):** Eğitimleri izleyin ve özellikleri çalışırken görün.
 - **[Discord Sunucusu](https://discord.gg/roocode):** Gerçek zamanlı yardım ve tartışma için topluluğa katılın.
 - **[Reddit Topluluğu](https://www.reddit.com/r/RooCode):** Deneyimlerinizi paylaşın ve başkalarının ne inşa ettiğini görün.
-- **[GitHub Sorunları](https://github.com/RooCodeInc/Roo-Code/issues):** Hataları bildirin ve gelişimi takip edin.
-- **[Özellik İstekleri](https://github.com/RooCodeInc/Roo-Code/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** Bir fikriniz mi var? Geliştiricilerle paylaşın.
+- **[GitHub Sorunları](https://github.com/RooCodeInc/Bitx/issues):** Hataları bildirin ve gelişimi takip edin.
+- **[Özellik İstekleri](https://github.com/RooCodeInc/Bitx/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** Bir fikriniz mi var? Geliştiricilerle paylaşın.
 
 ---
 
@@ -92,7 +92,7 @@ Daha fazla: [Modları kullanma](https://docs.roocode.com/basic-usage/using-modes
 1. **Depoyu klonlayın**:
 
 ```sh
-git clone https://github.com/RooCodeInc/Roo-Code.git
+git clone https://github.com/RooCodeInc/Bitx.git
 ```
 
 2. **Bağımlılıkları yükleyin**:

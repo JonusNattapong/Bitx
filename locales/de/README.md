@@ -60,7 +60,7 @@ Roo Code passt sich an deine Arbeitsweise an, nicht umgekehrt:
 - Benutzerdefinierte Modi: erstelle spezialisierte Modi für dein Team oder deinen Workflow
 - Roomote Control: Mit Roomote Control kannst du Aufgaben in deiner lokalen VS Code-Instanz aus der Ferne steuern.
 
-Mehr erfahren: [Modi verwenden](https://docs.roocode.com/basic-usage/using-modes) • [Benutzerdefinierte Modi](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/roo-code-cloud/roomote-control)
+Mehr erfahren: [Modi verwenden](https://docs.roocode.com/basic-usage/using-modes) • [Benutzerdefinierte Modi](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/bitx-cloud/roomote-control)
 
 ## Tutorial- & Feature-Videos
 
@@ -82,8 +82,8 @@ Mehr erfahren: [Modi verwenden](https://docs.roocode.com/basic-usage/using-modes
 - **[YouTube-Kanal](https://youtube.com/@roocodeyt?feature=shared):** Schau dir Tutorials an und sieh Features in Aktion.
 - **[Discord-Server](https://discord.gg/roocode):** Tritt der Community bei für Echtzeit-Hilfe und Diskussionen.
 - **[Reddit-Community](https://www.reddit.com/r/RooCode):** Teile deine Erfahrungen und sieh, was andere bauen.
-- **[GitHub Issues](https://github.com/RooCodeInc/Roo-Code/issues):** Melde Fehler und verfolge die Entwicklung.
-- **[Feature-Anfragen](https://github.com/RooCodeInc/Roo-Code/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** Hast du eine Idee? Teile sie mit den Entwicklern.
+- **[GitHub Issues](https://github.com/RooCodeInc/Bitx/issues):** Melde Fehler und verfolge die Entwicklung.
+- **[Feature-Anfragen](https://github.com/RooCodeInc/Bitx/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** Hast du eine Idee? Teile sie mit den Entwicklern.
 
 ---
 
@@ -92,7 +92,7 @@ Mehr erfahren: [Modi verwenden](https://docs.roocode.com/basic-usage/using-modes
 1. **Klone** das Repo:
 
 ```sh
-git clone https://github.com/RooCodeInc/Roo-Code.git
+git clone https://github.com/RooCodeInc/Bitx.git
 ```
 
 2. **Installiere die Abhängigkeiten**:

@@ -1,7 +1,7 @@
 import { Anthropic } from "@anthropic-ai/sdk"
 import OpenAI from "openai"
 
-import { unboundDefaultModelId, unboundDefaultModelInfo } from "@roo-code/types"
+import { unboundDefaultModelId, unboundDefaultModelInfo } from "@bitx/types"
 
 import type { ApiHandlerOptions } from "../../shared/api"
 
@@ -16,10 +16,10 @@ import { RouterProvider } from "./router-provider"
 import { getModelParams } from "../transform/model-params"
 import { getModels } from "./fetchers/modelCache"
 
-const ORIGIN_APP = "roo-code"
+const ORIGIN_APP = "bitx"
 
 const DEFAULT_HEADERS = {
-	"X-Unbound-Metadata": JSON.stringify({ labels: [{ key: "app", value: "roo-code" }] }),
+	"X-Unbound-Metadata": JSON.stringify({ labels: [{ key: "app", value: "bitx" }] }),
 }
 
 interface UnboundUsage extends OpenAI.CompletionUsage {

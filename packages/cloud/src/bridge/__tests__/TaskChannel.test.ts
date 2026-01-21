@@ -12,7 +12,7 @@ import {
 	TaskBridgeCommandName,
 	TaskSocketEvents,
 	TaskStatus,
-} from "@roo-code/types"
+} from "@bitx/types"
 
 import { TaskChannel } from "../TaskChannel.js"
 
@@ -24,7 +24,7 @@ describe("TaskChannel", () => {
 	const taskId = "test-task-456"
 
 	const appProperties: StaticAppProperties = {
-		appName: "roo-code",
+		appName: "bitx",
 		appVersion: "1.0.0",
 		vscodeVersion: "1.0.0",
 		platform: "darwin",

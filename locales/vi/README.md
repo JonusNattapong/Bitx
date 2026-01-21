@@ -60,7 +60,7 @@ Roo Code thích ứng với cách bạn làm việc, chứ không phải ngượ
 - Chế độ Tùy chỉnh: xây dựng các chế độ chuyên biệt cho nhóm hoặc quy trình làm việc của bạn
 - Roomote Control: Roomote Control cho phép bạn điều khiển từ xa các tác vụ đang chạy trên VS Code cục bộ của bạn.
 
-Xem thêm: [Sử dụng Chế độ](https://docs.roocode.com/basic-usage/using-modes) • [Chế độ tùy chỉnh](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/roo-code-cloud/roomote-control)
+Xem thêm: [Sử dụng Chế độ](https://docs.roocode.com/basic-usage/using-modes) • [Chế độ tùy chỉnh](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/bitx-cloud/roomote-control)
 
 ## Video hướng dẫn & tính năng
 
@@ -82,8 +82,8 @@ Xem thêm: [Sử dụng Chế độ](https://docs.roocode.com/basic-usage/using-
 - **[Kênh YouTube](https://youtube.com/@roocodeyt?feature=shared):** Xem các video hướng dẫn và các tính năng đang hoạt động.
 - **[Máy chủ Discord](https://discord.gg/roocode):** Tham gia cộng đồng để được trợ giúp và thảo luận trong thời gian thực.
 - **[Cộng đồng Reddit](https://www.reddit.com/r/RooCode):** Chia sẻ kinh nghiệm của bạn và xem những người khác đang xây dựng gì.
-- **[Vấn đề trên GitHub](https://github.com/RooCodeInc/Roo-Code/issues):** Báo cáo lỗi và theo dõi quá trình phát triển.
-- **[Yêu cầu tính năng](https://github.com/RooCodeInc/Roo-Code/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** Có ý tưởng? Hãy chia sẻ với các nhà phát triển.
+- **[Vấn đề trên GitHub](https://github.com/RooCodeInc/Bitx/issues):** Báo cáo lỗi và theo dõi quá trình phát triển.
+- **[Yêu cầu tính năng](https://github.com/RooCodeInc/Bitx/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** Có ý tưởng? Hãy chia sẻ với các nhà phát triển.
 
 ---
 
@@ -92,7 +92,7 @@ Xem thêm: [Sử dụng Chế độ](https://docs.roocode.com/basic-usage/using-
 1. **Sao chép** kho lưu trữ:
 
 ```sh
-git clone https://github.com/RooCodeInc/Roo-Code.git
+git clone https://github.com/RooCodeInc/Bitx.git
 ```
 
 2. **Cài đặt các dependency**:

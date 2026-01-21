@@ -69,7 +69,7 @@ Mention alignment with these areas in your PRs.
 
 All contributions start with a GitHub Issue using our skinny templates.
 
-- **Check existing issues**: Search [GitHub Issues](https://github.com/RooCodeInc/Roo-Code/issues).
+- **Check existing issues**: Search [GitHub Issues](https://github.com/RooCodeInc/Bitx/issues).
 - **Create an issue** using:
     - **Enhancements:** "Enhancement Request" template (plain language focused on user benefit).
     - **Bugs:** "Bug Report" template (minimal repro + expected vs actual + version).
@@ -79,16 +79,16 @@ All contributions start with a GitHub Issue using our skinny templates.
 ### Deciding What to Work On
 
 - Check the [GitHub Project](https://github.com/orgs/RooCodeInc/projects/1) for "Issue [Unassigned]" issues.
-- For docs, visit [Roo Code Docs](https://github.com/RooCodeInc/Roo-Code-Docs).
+- For docs, visit [Roo Code Docs](https://github.com/RooCodeInc/Bitx-Docs).
 
 ### Reporting Bugs
 
 - Check for existing reports first.
-- Create a new bug using the ["Bug Report" template](https://github.com/RooCodeInc/Roo-Code/issues/new/choose) with:
+- Create a new bug using the ["Bug Report" template](https://github.com/RooCodeInc/Bitx/issues/new/choose) with:
     - Clear, numbered reproduction steps
     - Expected vs actual result
     - Roo Code version (required); API provider/model if relevant
-- **Security issues**: Report privately via [security advisories](https://github.com/RooCodeInc/Roo-Code/security/advisories/new).
+- **Security issues**: Report privately via [security advisories](https://github.com/RooCodeInc/Bitx/security/advisories/new).
 
 ## Development & Submission Process
 
@@ -97,7 +97,7 @@ All contributions start with a GitHub Issue using our skinny templates.
 1. **Fork & Clone:**
 
 ```
-git clone https://github.com/YOUR_USERNAME/Roo-Code.git
+git clone https://github.com/YOUR_USERNAME/Bitx.git
 ```
 
 2. **Install Dependencies:**

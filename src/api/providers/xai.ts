@@ -1,8 +1,8 @@
 import { Anthropic } from "@anthropic-ai/sdk"
 import OpenAI from "openai"
 
-import { type XAIModelId, xaiDefaultModelId, xaiModels, ApiProviderError } from "@roo-code/types"
-import { TelemetryService } from "@roo-code/telemetry"
+import { type XAIModelId, xaiDefaultModelId, xaiModels, ApiProviderError } from "@bitx/types"
+import { TelemetryService } from "@bitx/telemetry"
 
 import { NativeToolCallParser } from "../../core/assistant-message/NativeToolCallParser"
 import type { ApiHandlerOptions } from "../../shared/api"

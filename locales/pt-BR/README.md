@@ -60,7 +60,7 @@ O Roo Code se adapta à sua maneira de trabalhar, e não o contrário:
 - Modos Personalizados: crie modos especializados para sua equipe ou fluxo de trabalho
 - Roomote Control: O Roomote Control permite controlar remotamente tarefas em execução na sua instância local do VS Code.
 
-Saiba mais: [Usar Modos](https://docs.roocode.com/basic-usage/using-modes) • [Modos personalizados](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/roo-code-cloud/roomote-control)
+Saiba mais: [Usar Modos](https://docs.roocode.com/basic-usage/using-modes) • [Modos personalizados](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/bitx-cloud/roomote-control)
 
 ## Vídeos de tutorial e recursos
 
@@ -82,8 +82,8 @@ Saiba mais: [Usar Modos](https://docs.roocode.com/basic-usage/using-modes) • [
 - **[Canal do YouTube](https://youtube.com/@roocodeyt?feature=shared):** Assista a tutoriais e veja os recursos em ação.
 - **[Servidor do Discord](https://discord.gg/roocode):** Junte-se à comunidade para ajuda e discussão em tempo real.
 - **[Comunidade do Reddit](https://www.reddit.com/r/RooCode):** Compartilhe suas experiências e veja o que os outros estão construindo.
-- **[Issues do GitHub](https://github.com/RooCodeInc/Roo-Code/issues):** Relate bugs e acompanhe o desenvolvimento.
-- **[Solicitações de recursos](https://github.com/RooCodeInc/Roo-Code/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** Tem uma ideia? Compartilhe com os desenvolvedores.
+- **[Issues do GitHub](https://github.com/RooCodeInc/Bitx/issues):** Relate bugs e acompanhe o desenvolvimento.
+- **[Solicitações de recursos](https://github.com/RooCodeInc/Bitx/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** Tem uma ideia? Compartilhe com os desenvolvedores.
 
 ---
 
@@ -92,7 +92,7 @@ Saiba mais: [Usar Modos](https://docs.roocode.com/basic-usage/using-modes) • [
 1. **Clone** o repositório:
 
 ```sh
-git clone https://github.com/RooCodeInc/Roo-Code.git
+git clone https://github.com/RooCodeInc/Bitx.git
 ```
 
 2. **Instale as dependências**:

@@ -60,7 +60,7 @@ Roo Code past zich aan jouw werkwijze aan, niet andersom:
 - Aangepaste Modi: bouw gespecialiseerde modi voor je team of workflow
 - Roomote Control: Roomote Control laat je taken op je lokale VS Code-instantie op afstand besturen.
 
-Meer info: [Modi gebruiken](https://docs.roocode.com/basic-usage/using-modes) • [Aangepaste modi](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/roo-code-cloud/roomote-control)
+Meer info: [Modi gebruiken](https://docs.roocode.com/basic-usage/using-modes) • [Aangepaste modi](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/bitx-cloud/roomote-control)
 
 ## Tutorial & Feature Videos
 
@@ -82,8 +82,8 @@ Meer info: [Modi gebruiken](https://docs.roocode.com/basic-usage/using-modes) �
 - **[YouTube-kanaal](https://youtube.com/@roocodeyt?feature=shared):** Bekijk tutorials en zie functies in actie.
 - **[Discord Server](https://discord.gg/roocode):** Word lid van de community voor realtime hulp en discussie.
 - **[Reddit Community](https://www.reddit.com/r/RooCode):** Deel je ervaringen en kijk wat anderen bouwen.
-- **[GitHub Issues](https://github.com/RooCodeInc/Roo-Code/issues):** Meld bugs en volg de ontwikkeling.
-- **[Feature Requests](https://github.com/RooCodeInc/Roo-Code/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** Heb je een idee? Deel het met de ontwikkelaars.
+- **[GitHub Issues](https://github.com/RooCodeInc/Bitx/issues):** Meld bugs en volg de ontwikkeling.
+- **[Feature Requests](https://github.com/RooCodeInc/Bitx/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** Heb je een idee? Deel het met de ontwikkelaars.
 
 ---
 
@@ -92,7 +92,7 @@ Meer info: [Modi gebruiken](https://docs.roocode.com/basic-usage/using-modes) �
 1. **Kloon** de repo:
 
 ```sh
-git clone https://github.com/RooCodeInc/Roo-Code.git
+git clone https://github.com/RooCodeInc/Bitx.git
 ```
 
 2. **Installeer afhankelijkheden**:

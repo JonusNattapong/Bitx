@@ -20,10 +20,10 @@ import {
 	ExperimentId,
 	checkoutDiffPayloadSchema,
 	checkoutRestorePayloadSchema,
-} from "@roo-code/types"
-import { customToolRegistry } from "@roo-code/core"
-import { CloudService } from "@roo-code/cloud"
-import { TelemetryService } from "@roo-code/telemetry"
+} from "@bitx/types"
+import { customToolRegistry } from "@bitx/core"
+import { CloudService } from "@bitx/cloud"
+import { TelemetryService } from "@bitx/telemetry"
 
 import { type ApiMessage } from "../task-persistence/apiMessages"
 import { saveTaskMessages } from "../task-persistence"

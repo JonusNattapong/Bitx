@@ -3,7 +3,7 @@ import * as path from "path"
 import * as os from "os"
 import { z } from "zod"
 
-import { CloudService, getClerkBaseUrl, PRODUCTION_CLERK_BASE_URL } from "@roo-code/cloud"
+import { CloudService, getClerkBaseUrl, PRODUCTION_CLERK_BASE_URL } from "@bitx/cloud"
 
 import { t } from "../../i18n"
 
@@ -158,8 +158,8 @@ export class MdmService {
 
 			case "linux":
 			default:
-				// Linux: /etc/roo-code/mdm.json or mdm.dev.json
-				return `/etc/roo-code/${configFileName}`
+				// Linux: /etc/bitx/mdm.json or mdm.dev.json
+				return `/etc/bitx/${configFileName}`
 		}
 	}
 

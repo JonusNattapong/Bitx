@@ -235,7 +235,7 @@ build() {
     pnpm bundle
     
     step "3/8" "Building CLI..."
-    pnpm --filter @roo-code/cli build
+    pnpm --filter @bitx/cli build
     
     info "Build complete"
 }
@@ -265,7 +265,7 @@ create_tarball() {
     node -e "
       const pkg = require('$CLI_DIR/package.json');
       const newPkg = {
-        name: '@roo-code/cli',
+        name: '@bitx/cli',
         version: '$VERSION',
         type: 'module',
         dependencies: {
@@ -520,12 +520,12 @@ $CHANGELOG_CONTENT
 ${WHATS_NEW_SECTION}## Installation
 
 \`\`\`bash
-curl -fsSL https://raw.githubusercontent.com/RooCodeInc/Roo-Code/main/apps/cli/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/RooCodeInc/Bitx/main/apps/cli/install.sh | sh
 \`\`\`
 
 Or install a specific version:
 \`\`\`bash
-ROO_VERSION=$VERSION curl -fsSL https://raw.githubusercontent.com/RooCodeInc/Roo-Code/main/apps/cli/install.sh | sh
+ROO_VERSION=$VERSION curl -fsSL https://raw.githubusercontent.com/RooCodeInc/Bitx/main/apps/cli/install.sh | sh
 \`\`\`
 
 ## Requirements
@@ -589,10 +589,10 @@ print_summary() {
     echo ""
     printf "${GREEN}${BOLD}✓ Release v$VERSION created successfully!${NC}\n"
     echo ""
-    echo "  Release URL: https://github.com/RooCodeInc/Roo-Code/releases/tag/$TAG"
+    echo "  Release URL: https://github.com/RooCodeInc/Bitx/releases/tag/$TAG"
     echo ""
     echo "  Install with:"
-    echo "    curl -fsSL https://raw.githubusercontent.com/RooCodeInc/Roo-Code/main/apps/cli/install.sh | sh"
+    echo "    curl -fsSL https://raw.githubusercontent.com/RooCodeInc/Bitx/main/apps/cli/install.sh | sh"
     echo ""
 }
 

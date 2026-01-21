@@ -1,7 +1,7 @@
 import * as vscode from "vscode"
 import * as os from "os"
 
-import { type ModeConfig, type PromptComponent, type CustomModePrompts, type TodoItem } from "@roo-code/types"
+import { type ModeConfig, type PromptComponent, type CustomModePrompts, type TodoItem } from "@bitx/types"
 
 import { Mode, modes, defaultModeSlug, getModeBySlug, getGroupName, getModeSelection } from "../../shared/modes"
 import { DiffStrategy } from "../../shared/tools"

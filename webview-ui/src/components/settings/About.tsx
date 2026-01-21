@@ -4,7 +4,7 @@ import { Trans } from "react-i18next"
 import { Download, Upload, TriangleAlert, Bug, Lightbulb, Shield, MessageCircle, MessagesSquare } from "lucide-react"
 import { VSCodeCheckbox, VSCodeLink } from "@vscode/webview-ui-toolkit/react"
 
-import type { TelemetrySetting } from "@roo-code/types"
+import type { TelemetrySetting } from "@bitx/types"
 
 import { Package } from "@roo/package"
 
@@ -66,7 +66,7 @@ export const About = ({ telemetrySetting, setTelemetrySetting, debug, setDebug, 
 						<Bug className="size-4 text-vscode-descriptionForeground shrink-0" />
 						<span>
 							{t("settings:about.bugReport.label")}{" "}
-							<VSCodeLink href="https://github.com/RooCodeInc/Roo-Code/issues/new?template=bug_report.yml">
+							<VSCodeLink href="https://github.com/RooCodeInc/Bitx/issues/new?template=bug_report.yml">
 								{t("settings:about.bugReport.link")}
 							</VSCodeLink>
 						</span>
@@ -75,7 +75,7 @@ export const About = ({ telemetrySetting, setTelemetrySetting, debug, setDebug, 
 						<Lightbulb className="size-4 text-vscode-descriptionForeground shrink-0" />
 						<span>
 							{t("settings:about.featureRequest.label")}{" "}
-							<VSCodeLink href="https://github.com/RooCodeInc/Roo-Code/issues/new?template=feature_request.yml">
+							<VSCodeLink href="https://github.com/RooCodeInc/Bitx/issues/new?template=feature_request.yml">
 								{t("settings:about.featureRequest.link")}
 							</VSCodeLink>
 						</span>
@@ -84,7 +84,7 @@ export const About = ({ telemetrySetting, setTelemetrySetting, debug, setDebug, 
 						<Shield className="size-4 text-vscode-descriptionForeground shrink-0" />
 						<span>
 							{t("settings:about.securityIssue.label")}{" "}
-							<VSCodeLink href="https://github.com/RooCodeInc/Roo-Code/security/policy">
+							<VSCodeLink href="https://github.com/RooCodeInc/Bitx/security/policy">
 								{t("settings:about.securityIssue.link")}
 							</VSCodeLink>
 						</span>

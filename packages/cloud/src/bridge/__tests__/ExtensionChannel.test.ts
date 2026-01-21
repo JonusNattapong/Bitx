@@ -9,7 +9,7 @@ import {
 	RooCodeEventName,
 	ExtensionBridgeEventName,
 	ExtensionSocketEvents,
-} from "@roo-code/types"
+} from "@bitx/types"
 
 import { ExtensionChannel } from "../ExtensionChannel.js"
 
@@ -21,7 +21,7 @@ describe("ExtensionChannel", () => {
 	const userId = "test-user-456"
 
 	const appProperties: StaticAppProperties = {
-		appName: "roo-code",
+		appName: "bitx",
 		appVersion: "1.0.0",
 		vscodeVersion: "1.0.0",
 		platform: "darwin",

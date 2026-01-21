@@ -60,7 +60,7 @@ Roo Code dostosowuje się do Twojego sposobu pracy, a nie odwrotnie:
 - Tryby niestandardowe: buduj specjalistyczne tryby dla swojego zespołu lub przepływu pracy
 - Roomote Control: Roomote Control pozwala zdalnie sterować zadaniami uruchomionymi na twojej lokalnej instancji VS Code.
 
-Więcej: [Korzystanie z trybów](https://docs.roocode.com/basic-usage/using-modes) • [Tryby niestandardowe](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/roo-code-cloud/roomote-control)
+Więcej: [Korzystanie z trybów](https://docs.roocode.com/basic-usage/using-modes) • [Tryby niestandardowe](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/bitx-cloud/roomote-control)
 
 ## Filmy instruktażowe i prezentujące funkcje
 
@@ -82,8 +82,8 @@ Więcej: [Korzystanie z trybów](https://docs.roocode.com/basic-usage/using-mode
 - **[Kanał YouTube](https://youtube.com/@roocodeyt?feature=shared):** Oglądaj samouczki i zobacz funkcje w akcji.
 - **[Serwer Discord](https://discord.gg/roocode):** Dołącz do społeczności, aby uzyskać pomoc i dyskutować w czasie rzeczywistym.
 - **[Społeczność Reddit](https://www.reddit.com/r/RooCode):** Dziel się swoimi doświadczeniami i zobacz, co budują inni.
-- **[Problemy na GitHub](https://github.com/RooCodeInc/Roo-Code/issues):** Zgłaszaj błędy i śledź rozwój.
-- **[Prośby o funkcje](https://github.com/RooCodeInc/Roo-Code/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** Masz pomysł? Podziel się nim z deweloperami.
+- **[Problemy na GitHub](https://github.com/RooCodeInc/Bitx/issues):** Zgłaszaj błędy i śledź rozwój.
+- **[Prośby o funkcje](https://github.com/RooCodeInc/Bitx/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** Masz pomysł? Podziel się nim z deweloperami.
 
 ---
 
@@ -92,7 +92,7 @@ Więcej: [Korzystanie z trybów](https://docs.roocode.com/basic-usage/using-mode
 1. **Sklonuj** repozytorium:
 
 ```sh
-git clone https://github.com/RooCodeInc/Roo-Code.git
+git clone https://github.com/RooCodeInc/Bitx.git
 ```
 
 2. **Zainstaluj zależności**:

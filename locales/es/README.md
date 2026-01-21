@@ -60,7 +60,7 @@ Roo Code se adapta a tu forma de trabajar, no al revés:
 - Modos Personalizados: crea modos especializados para tu equipo o flujo de trabajo
 - Roomote Control: Roomote Control te permite controlar de forma remota tareas que se ejecutan en tu instancia local de VS Code.
 
-Más info: [Usar Modos](https://docs.roocode.com/basic-usage/using-modes) • [Modos Personalizados](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/roo-code-cloud/roomote-control)
+Más info: [Usar Modos](https://docs.roocode.com/basic-usage/using-modes) • [Modos Personalizados](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/bitx-cloud/roomote-control)
 
 ## Tutoriales y vídeos de funcionalidades
 
@@ -82,8 +82,8 @@ Más info: [Usar Modos](https://docs.roocode.com/basic-usage/using-modes) • [M
 - **[Canal de YouTube](https://youtube.com/@roocodeyt?feature=shared):** Mira tutoriales y ve las funcionalidades en acción.
 - **[Servidor de Discord](https://discord.gg/roocode):** Únete a la comunidad para obtener ayuda y discutir en tiempo real.
 - **[Comunidad de Reddit](https://www.reddit.com/r/RooCode):** Comparte tus experiencias y ve lo que otros están construyendo.
-- **[Incidencias de GitHub](https://github.com/RooCodeInc/Roo-Code/issues):** Reporta errores y sigue el desarrollo.
-- **[Solicitudes de funcionalidades](https://github.com/RooCodeInc/Roo-Code/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** ¿Tienes una idea? Compártela con los desarrolladores.
+- **[Incidencias de GitHub](https://github.com/RooCodeInc/Bitx/issues):** Reporta errores y sigue el desarrollo.
+- **[Solicitudes de funcionalidades](https://github.com/RooCodeInc/Bitx/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** ¿Tienes una idea? Compártela con los desarrolladores.
 
 ---
 
@@ -92,7 +92,7 @@ Más info: [Usar Modos](https://docs.roocode.com/basic-usage/using-modes) • [M
 1. **Clona** el repositorio:
 
 ```sh
-git clone https://github.com/RooCodeInc/Roo-Code.git
+git clone https://github.com/RooCodeInc/Bitx.git
 ```
 
 2. **Instala las dependencias**:

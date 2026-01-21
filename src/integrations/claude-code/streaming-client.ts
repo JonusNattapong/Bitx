@@ -1,5 +1,5 @@
 import type { Anthropic } from "@anthropic-ai/sdk"
-import type { ClaudeCodeRateLimitInfo } from "@roo-code/types"
+import type { ClaudeCodeRateLimitInfo } from "@bitx/types"
 import { Package } from "../../shared/package"
 
 /**
@@ -163,7 +163,7 @@ export const CLAUDE_CODE_API_CONFIG = {
 		"interleaved-thinking-2025-05-14",
 		"fine-grained-tool-streaming-2025-05-14",
 	],
-	userAgent: `Roo-Code/${Package.version}`,
+	userAgent: `Bitx/${Package.version}`,
 } as const
 
 /**

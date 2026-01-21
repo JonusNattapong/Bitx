@@ -26,7 +26,7 @@ import type {
 	McpServer,
 	McpTool,
 	McpToolCallResponse,
-} from "@roo-code/types"
+} from "@bitx/types"
 
 import { t } from "../../i18n"
 

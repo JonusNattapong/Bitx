@@ -69,7 +69,7 @@ Mencione o alinhamento com essas áreas em seus PRs.
 
 Todas as contribuições começam com uma Issue do GitHub usando nossos modelos simplificados.
 
-- **Verifique as issues existentes**: Pesquise nas [Issues do GitHub](https://github.com/RooCodeInc/Roo-Code/issues).
+- **Verifique as issues existentes**: Pesquise nas [Issues do GitHub](https://github.com/RooCodeInc/Bitx/issues).
 - **Crie uma issue** usando:
     - **Melhorias:** modelo "Solicitação de melhoria" (linguagem simples focada no benefício do usuário).
     - **Bugs:** modelo "Relatório de bug" (reprodução mínima + esperado vs. real + versão).
@@ -79,16 +79,16 @@ Todas as contribuições começam com uma Issue do GitHub usando nossos modelos 
 ### Decidindo no que trabalhar
 
 - Verifique o [Projeto do GitHub](https://github.com/orgs/RooCodeInc/projects/1) para issues "Issue [Não atribuída]".
-- Para documentação, visite [Documentação do Roo Code](https://github.com/RooCodeInc/Roo-Code-Docs).
+- Para documentação, visite [Documentação do Roo Code](https://github.com/RooCodeInc/Bitx-Docs).
 
 ### Relatando bugs
 
 - Verifique primeiro os relatórios existentes.
-- Crie um novo bug usando o [modelo "Relatório de bug"](https://github.com/RooCodeInc/Roo-Code/issues/new/choose) com:
+- Crie um novo bug usando o [modelo "Relatório de bug"](https://github.com/RooCodeInc/Bitx/issues/new/choose) com:
     - Passos de reprodução claros e numerados
     - Resultado esperado vs. real
     - Versão do Roo Code (obrigatório); provedor/modelo de IA, se relevante
-- **Problemas de segurança**: Relate em particular através de [avisos de segurança](https://github.com/RooCodeInc/Roo-Code/security/advisories/new).
+- **Problemas de segurança**: Relate em particular através de [avisos de segurança](https://github.com/RooCodeInc/Bitx/security/advisories/new).
 
 ## Processo de desenvolvimento e envio
 
@@ -97,7 +97,7 @@ Todas as contribuições começam com uma Issue do GitHub usando nossos modelos 
 1. **Fork e Clone:**
 
 ```
-git clone https://github.com/SEU_NOME_DE_USUARIO/Roo-Code.git
+git clone https://github.com/SEU_NOME_DE_USUARIO/Bitx.git
 ```
 
 2. **Instale as dependências:**

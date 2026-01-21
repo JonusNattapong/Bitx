@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useMemo } from "react"
 
-import type { WorktreeDefaultsResponse, BranchInfo, WorktreeIncludeStatus } from "@roo-code/types"
+import type { WorktreeDefaultsResponse, BranchInfo, WorktreeIncludeStatus } from "@bitx/types"
 
 import { vscode } from "@/utils/vscode"
 import { useAppTranslation } from "@/i18n/TranslationContext"

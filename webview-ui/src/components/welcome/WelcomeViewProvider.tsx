@@ -7,7 +7,7 @@ import {
 	VSCodeTextField,
 } from "@vscode/webview-ui-toolkit/react"
 
-import type { ProviderSettings } from "@roo-code/types"
+import type { ProviderSettings } from "@bitx/types"
 
 import { useExtensionState } from "@src/context/ExtensionStateContext"
 import { validateApiConfiguration } from "@src/utils/validate"
@@ -255,7 +255,7 @@ const WelcomeViewProvider = () => {
 												components={{
 													DocsLink: (
 														<a
-															href={buildDocLink("roo-code-cloud/login", "setup")}
+															href={buildDocLink("bitx-cloud/login", "setup")}
 															target="_blank"
 															rel="noopener noreferrer"
 															className="text-vscode-textLink-foreground hover:underline">

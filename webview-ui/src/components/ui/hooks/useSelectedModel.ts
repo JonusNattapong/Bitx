@@ -36,7 +36,7 @@ import {
 	BEDROCK_1M_CONTEXT_MODEL_IDS,
 	isDynamicProvider,
 	getProviderDefaultModelId,
-} from "@roo-code/types"
+} from "@bitx/types"
 
 import { useRouterModels } from "./useRouterModels"
 import { useOpenRouterModelProviders } from "./useOpenRouterModelProviders"

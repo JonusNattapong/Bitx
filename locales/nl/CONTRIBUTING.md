@@ -69,7 +69,7 @@ Vermeld de afstemming met deze gebieden in je PR's.
 
 Alle bijdragen beginnen met een GitHub Issue met behulp van onze slanke sjablonen.
 
-- **Controleer bestaande issues**: Zoek in [GitHub Issues](https://github.com/RooCodeInc/Roo-Code/issues).
+- **Controleer bestaande issues**: Zoek in [GitHub Issues](https://github.com/RooCodeInc/Bitx/issues).
 - **Maak een issue** aan met:
     - **Verbeteringen:** sjabloon "Verbeteringsverzoek" (eenvoudige taal gericht op gebruikersvoordeel).
     - **Bugs:** sjabloon "Bugrapport" (minimale repro + verwacht vs. feitelijk + versie).
@@ -79,16 +79,16 @@ Alle bijdragen beginnen met een GitHub Issue met behulp van onze slanke sjablone
 ### Beslissen waaraan je wilt werken
 
 - Controleer het [GitHub Project](https://github.com/orgs/RooCodeInc/projects/1) voor "Issue [Niet-toegewezen]" issues.
-- Ga voor documentatie naar [Roo Code Docs](https://github.com/RooCodeInc/Roo-Code-Docs).
+- Ga voor documentatie naar [Roo Code Docs](https://github.com/RooCodeInc/Bitx-Docs).
 
 ### Bugs rapporteren
 
 - Controleer eerst bestaande rapporten.
-- Maak een nieuwe bug aan met het ["Bugrapport"-sjabloon](https://github.com/RooCodeInc/Roo-Code/issues/new/choose) met:
+- Maak een nieuwe bug aan met het ["Bugrapport"-sjabloon](https://github.com/RooCodeInc/Bitx/issues/new/choose) met:
     - Duidelijke, genummerde reproductiestappen
     - Verwacht vs. feitelijk resultaat
     - Roo Code-versie (vereist); API-provider/model indien relevant
-- **Beveiligingsproblemen**: Rapporteer privé via [beveiligingsadviezen](https://github.com/RooCodeInc/Roo-Code/security/advisories/new).
+- **Beveiligingsproblemen**: Rapporteer privé via [beveiligingsadviezen](https://github.com/RooCodeInc/Bitx/security/advisories/new).
 
 ## Ontwikkelings- en indieningsproces
 
@@ -97,7 +97,7 @@ Alle bijdragen beginnen met een GitHub Issue met behulp van onze slanke sjablone
 1. **Fork & Klonen:**
 
 ```
-git clone https://github.com/JOUW_GEBRUIKERSNAAM/Roo-Code.git
+git clone https://github.com/JOUW_GEBRUIKERSNAAM/Bitx.git
 ```
 
 2. **Afhankelijkheden installeren:**

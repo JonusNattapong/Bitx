@@ -69,7 +69,7 @@ Mentionnez l'alignement avec ces domaines dans vos PRs.
 
 Toutes les contributions commencent par une Issue GitHub en utilisant nos modèles simples.
 
-- **Vérifiez les issues existantes** : Recherchez dans les [Issues GitHub](https://github.com/RooCodeInc/Roo-Code/issues).
+- **Vérifiez les issues existantes** : Recherchez dans les [Issues GitHub](https://github.com/RooCodeInc/Bitx/issues).
 - **Créez une issue** en utilisant :
     - **Améliorations :** Modèle "Demande d'amélioration" (langage simple axé sur l'avantage pour l'utilisateur).
     - **Bugs :** Modèle "Rapport de bug" (reproduction minimale + attendu vs réel + version).
@@ -79,16 +79,16 @@ Toutes les contributions commencent par une Issue GitHub en utilisant nos modèl
 ### Décider sur quoi travailler
 
 - Consultez le [Projet GitHub](https://github.com/orgs/RooCodeInc/projects/1) pour les issues "Issue [Non assignée]".
-- Pour la documentation, visitez [Roo Code Docs](https://github.com/RooCodeInc/Roo-Code-Docs).
+- Pour la documentation, visitez [Roo Code Docs](https://github.com/RooCodeInc/Bitx-Docs).
 
 ### Signaler des bugs
 
 - Vérifiez d'abord les rapports existants.
-- Créez un nouveau bug en utilisant le [modèle "Rapport de bug"](https://github.com/RooCodeInc/Roo-Code/issues/new/choose) avec :
+- Créez un nouveau bug en utilisant le [modèle "Rapport de bug"](https://github.com/RooCodeInc/Bitx/issues/new/choose) avec :
     - Des étapes de reproduction claires et numérotées
     - Résultat attendu vs réel
     - Version de Roo Code (requise) ; fournisseur/modèle d'API si pertinent
-- **Problèmes de sécurité** : Signalez-les en privé via les [avis de sécurité](https://github.com/RooCodeInc/Roo-Code/security/advisories/new).
+- **Problèmes de sécurité** : Signalez-les en privé via les [avis de sécurité](https://github.com/RooCodeInc/Bitx/security/advisories/new).
 
 ## Processus de développement et de soumission
 
@@ -97,7 +97,7 @@ Toutes les contributions commencent par une Issue GitHub en utilisant nos modèl
 1. **Fork & Cloner :**
 
 ```
-git clone https://github.com/VOTRE_NOM_UTILISATEUR/Roo-Code.git
+git clone https://github.com/VOTRE_NOM_UTILISATEUR/Bitx.git
 ```
 
 2. **Installer les dépendances :**

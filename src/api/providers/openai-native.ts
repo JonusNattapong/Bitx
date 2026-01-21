@@ -15,8 +15,8 @@ import {
 	type ReasoningEffortExtended,
 	type ServiceTier,
 	ApiProviderError,
-} from "@roo-code/types"
-import { TelemetryService } from "@roo-code/telemetry"
+} from "@bitx/types"
+import { TelemetryService } from "@bitx/telemetry"
 
 import type { ApiHandlerOptions } from "../../shared/api"
 
@@ -85,12 +85,12 @@ export class OpenAiNativeHandler extends BaseProvider implements SingleCompletio
 		}
 		const apiKey = this.options.openAiNativeApiKey ?? "not-provided"
 		// Include originator, session_id, and User-Agent headers for API tracking and debugging
-		const userAgent = `roo-code/${Package.version} (${os.platform()} ${os.release()}; ${os.arch()}) node/${process.version.slice(1)}`
+		const userAgent = `bitx/${Package.version} (${os.platform()} ${os.release()}; ${os.arch()}) node/${process.version.slice(1)}`
 		this.client = new OpenAI({
 			baseURL: this.options.openAiNativeBaseUrl,
 			apiKey,
 			defaultHeaders: {
-				originator: "roo-code",
+				originator: "bitx",
 				session_id: this.sessionId,
 				"User-Agent": userAgent,
 			},
@@ -401,9 +401,9 @@ export class OpenAiNativeHandler extends BaseProvider implements SingleCompletio
 
 		// Build per-request headers using taskId when available, falling back to sessionId
 		const taskId = metadata?.taskId
-		const userAgent = `roo-code/${Package.version} (${os.platform()} ${os.release()}; ${os.arch()}) node/${process.version.slice(1)}`
+		const userAgent = `bitx/${Package.version} (${os.platform()} ${os.release()}; ${os.arch()}) node/${process.version.slice(1)}`
 		const requestHeaders: Record<string, string> = {
-			originator: "roo-code",
+			originator: "bitx",
 			session_id: taskId || this.sessionId,
 			"User-Agent": userAgent,
 		}
@@ -549,7 +549,7 @@ export class OpenAiNativeHandler extends BaseProvider implements SingleCompletio
 
 		// Build per-request headers using taskId when available, falling back to sessionId
 		const taskId = metadata?.taskId
-		const userAgent = `roo-code/${Package.version} (${os.platform()} ${os.release()}; ${os.arch()}) node/${process.version.slice(1)}`
+		const userAgent = `bitx/${Package.version} (${os.platform()} ${os.release()}; ${os.arch()}) node/${process.version.slice(1)}`
 
 		try {
 			const response = await fetch(url, {
@@ -557,7 +557,7 @@ export class OpenAiNativeHandler extends BaseProvider implements SingleCompletio
 				headers: {
 					"Content-Type": "application/json",
 					Authorization: `Bearer ${apiKey}`,
-					originator: "roo-code",
+					originator: "bitx",
 					session_id: taskId || this.sessionId,
 					"User-Agent": userAgent,
 				},

@@ -16,8 +16,8 @@ import type {
 	WorktreeIncludeStatus,
 	WorktreeListResponse,
 	WorktreeDefaultsResponse,
-} from "@roo-code/types"
-import { worktreeService, worktreeIncludeService } from "@roo-code/core"
+} from "@bitx/types"
+import { worktreeService, worktreeIncludeService } from "@bitx/core"
 
 import type { ClineProvider } from "../ClineProvider"
 

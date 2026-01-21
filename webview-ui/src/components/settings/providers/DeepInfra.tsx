@@ -6,7 +6,7 @@ import {
 	type ProviderSettings,
 	type RouterModels,
 	deepInfraDefaultModelId,
-} from "@roo-code/types"
+} from "@bitx/types"
 
 import { vscode } from "@src/utils/vscode"
 import { useAppTranslation } from "@src/i18n/TranslationContext"

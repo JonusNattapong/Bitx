@@ -5,10 +5,10 @@ on:
         branches-ignore:
             - main
         paths:
-            - "apps/web-roo-code/**"
+            - "apps/web-bitx/**"
     pull_request:
         paths:
-            - "apps/web-roo-code/**"
+            - "apps/web-bitx/**"
     workflow_dispatch:
 
 env:

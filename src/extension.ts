@@ -12,10 +12,10 @@ try {
 	console.warn("Failed to load environment variables:", e)
 }
 
-import type { CloudUserInfo, AuthState } from "@roo-code/types"
-import { CloudService, BridgeOrchestrator } from "@roo-code/cloud"
-import { TelemetryService, PostHogTelemetryClient } from "@roo-code/telemetry"
-import { customToolRegistry } from "@roo-code/core"
+import type { CloudUserInfo, AuthState } from "@bitx/types"
+import { CloudService, BridgeOrchestrator } from "@bitx/cloud"
+import { TelemetryService, PostHogTelemetryClient } from "@bitx/telemetry"
+import { customToolRegistry } from "@bitx/core"
 
 import "./utils/path" // Necessary to have access to String.prototype.toPosix.
 import { createOutputChannelLogger, createDualLogger } from "./utils/outputChannelLogger"
@@ -402,7 +402,7 @@ export async function activate(context: vscode.ExtensionContext) {
 			{ path: context.extensionPath, pattern: "**/*.ts" },
 			{ path: path.join(context.extensionPath, "../packages/types"), pattern: "**/*.ts" },
 			{ path: path.join(context.extensionPath, "../packages/telemetry"), pattern: "**/*.ts" },
-			{ path: path.join(context.extensionPath, "node_modules/@roo-code/cloud"), pattern: "**/*" },
+			{ path: path.join(context.extensionPath, "node_modules/@bitx/cloud"), pattern: "**/*" },
 		]
 
 		console.log(

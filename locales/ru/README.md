@@ -60,7 +60,7 @@ Roo Code адаптируется к вашему стилю работы, а н
 - Пользовательские режимы: создавайте специализированные режимы для вашей команды или рабочего процесса
 - Roomote Control: Roomote Control позволяет удаленно управлять задачами, запущенными в вашей локальной инстансе VS Code.
 
-Подробнее: [Использование режимов](https://docs.roocode.com/basic-usage/using-modes) • [Пользовательские режимы](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/roo-code-cloud/roomote-control)
+Подробнее: [Использование режимов](https://docs.roocode.com/basic-usage/using-modes) • [Пользовательские режимы](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/bitx-cloud/roomote-control)
 
 ## Обучающие видео и видео о функциях
 
@@ -82,8 +82,8 @@ Roo Code адаптируется к вашему стилю работы, а н
 - **[Канал на YouTube](https://youtube.com/@roocodeyt?feature=shared):** Смотрите обучающие видео и функции в действии.
 - **[Сервер Discord](https://discord.gg/roocode):** Присоединяйтесь к сообществу для получения помощи и обсуждений в реальном времени.
 - **[Сообщество Reddit](https://www.reddit.com/r/RooCode):** Делитесь своим опытом и смотрите, что создают другие.
-- **[Проблемы на GitHub](https://github.com/RooCodeInc/Roo-Code/issues):** Сообщайте об ошибках и отслеживайте разработку.
-- **[Запросы на новые функции](https://github.com/RooCodeInc/Roo-Code/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** Есть идея? Поделитесь ею с разработчиками.
+- **[Проблемы на GitHub](https://github.com/RooCodeInc/Bitx/issues):** Сообщайте об ошибках и отслеживайте разработку.
+- **[Запросы на новые функции](https://github.com/RooCodeInc/Bitx/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** Есть идея? Поделитесь ею с разработчиками.
 
 ---
 
@@ -92,7 +92,7 @@ Roo Code адаптируется к вашему стилю работы, а н
 1. **Клонируйте** репозиторий:
 
 ```sh
-git clone https://github.com/RooCodeInc/Roo-Code.git
+git clone https://github.com/RooCodeInc/Bitx.git
 ```
 
 2. **Установите зависимости**:

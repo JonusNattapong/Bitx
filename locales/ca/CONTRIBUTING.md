@@ -69,7 +69,7 @@ Mencioneu l'alineació amb aquestes àrees a les vostres sol·licituds d'extracc
 
 Totes les contribucions comencen amb una incidència de GitHub utilitzant les nostres plantilles bàsiques.
 
-- **Comproveu les incidències existents**: cerqueu a [Incidències de GitHub](https://github.com/RooCodeInc/Roo-Code/issues).
+- **Comproveu les incidències existents**: cerqueu a [Incidències de GitHub](https://github.com/RooCodeInc/Bitx/issues).
 - **Creeu una incidència** utilitzant:
     - **Millores:** plantilla "Sol·licitud de millora" (llenguatge senzill centrat en el benefici per a l'usuari).
     - **Errors:** plantilla "Informe d'error" (reproducció mínima + esperat vs real + versió).
@@ -79,16 +79,16 @@ Totes les contribucions comencen amb una incidència de GitHub utilitzant les no
 ### Decidir en què treballar
 
 - Consulteu el [Projecte de GitHub](https://github.com/orgs/RooCodeInc/projects/1) per a incidències "Incidència [No assignada]".
-- Per a documents, visiteu [Documents de Roo Code](https://github.com/RooCodeInc/Roo-Code-Docs).
+- Per a documents, visiteu [Documents de Roo Code](https://github.com/RooCodeInc/Bitx-Docs).
 
 ### Informar d'errors
 
 - Comproveu primer si hi ha informes existents.
-- Creeu un error nou utilitzant la [plantilla "Informe d'error"](https://github.com/RooCodeInc/Roo-Code/issues/new/choose) amb:
+- Creeu un error nou utilitzant la [plantilla "Informe d'error"](https://github.com/RooCodeInc/Bitx/issues/new/choose) amb:
     - Passos de reproducció clars i numerats
     - Resultat esperat vs real
     - Versió de Roo Code (obligatori); proveïdor/model d'API si és rellevant
-- **Problemes de seguretat**: informeu de manera privada a través d' [avisos de seguretat](https://github.com/RooCodeInc/Roo-Code/security/advisories/new).
+- **Problemes de seguretat**: informeu de manera privada a través d' [avisos de seguretat](https://github.com/RooCodeInc/Bitx/security/advisories/new).
 
 ## Procés de desenvolupament i submissió
 
@@ -97,7 +97,7 @@ Totes les contribucions comencen amb una incidència de GitHub utilitzant les no
 1. **Bifurcació i clonació:**
 
 ```
-git clone https://github.com/EL_TEU_NOM_USUARI/Roo-Code.git
+git clone https://github.com/EL_TEU_NOM_USUARI/Bitx.git
 ```
 
 2. **Instal·leu les dependències:**

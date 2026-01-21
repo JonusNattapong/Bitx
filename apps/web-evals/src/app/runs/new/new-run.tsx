@@ -27,7 +27,7 @@ import {
 	providerSettingsSchema,
 	getModelId,
 	EVALS_SETTINGS,
-} from "@roo-code/types"
+} from "@bitx/types"
 
 import { createRun } from "@/actions/runs"
 import { getExercises } from "@/actions/exercises"
@@ -52,7 +52,7 @@ import { loadRooLastModelSelection, saveRooLastModelSelection } from "@/lib/roo-
 import { normalizeCreateRunForSubmit } from "@/lib/normalize-create-run"
 
 import { useOpenRouterModels } from "@/hooks/use-open-router-models"
-import { useRooCodeCloudModels } from "@/hooks/use-roo-code-cloud-models"
+import { useRooCodeCloudModels } from "@/hooks/use-bitx-cloud-models"
 
 import {
 	Button,
@@ -792,7 +792,7 @@ export function NewRun() {
 													decryption key for the .env.* files, generate a token with:
 												</p>
 												<code className="text-xs block mt-1">
-													pnpm --filter @roo-code-cloud/auth production:create-auth-token
+													pnpm --filter @bitx-cloud/auth production:create-auth-token
 													[email] [org] [ttl]
 												</code>
 											</TooltipContent>

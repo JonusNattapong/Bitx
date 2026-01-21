@@ -92,8 +92,8 @@
 - Chore: Stop overriding tool allow/deny lists for Gemini (PR #10592 by @hannesrudolph)
 - Chore: Change default CLI model to anthropic/claude-opus-4.5 (PR #10544 by @mrubens)
 - Chore: Update Terms of Service effective January 9, 2026 (PR #10568 by @mrubens)
-- Chore: Move more types to @roo-code/types for CLI support (PR #10583 by @cte)
-- Chore: Add functionality to @roo-code/core for CLI support (PR #10584 by @cte)
+- Chore: Move more types to @bitx/types for CLI support (PR #10583 by @cte)
+- Chore: Add functionality to @bitx/core for CLI support (PR #10584 by @cte)
 - Chore: Add slash commands useful for CLI development (PR #10586 by @cte)
 
 ## [3.39.1] - 2026-01-08
@@ -1961,7 +1961,7 @@
 - Improve command execution UI
 - Add more in-app links to relevant documentation
 - Update the new task tool description and the ask mode custom instructions in the system prompt
-- Add IPC types to roo-code.d.ts
+- Add IPC types to bitx.d.ts
 - Add build VSIX workflow to pull requests (thanks @SmartManoj!)
 - Improve apply_diff tool to intelligently deduce line numbers (thanks @samhvw8!)
 - Fix command validation for shell array indexing (thanks @KJ7LNW!)
@@ -2602,7 +2602,7 @@
 
 ## [3.7.5] - 2025-02-26
 
-- Fix context window truncation math (see [#1173](https://github.com/RooCodeInc/Roo-Code/issues/1173))
+- Fix context window truncation math (see [#1173](https://github.com/RooCodeInc/Bitx/issues/1173))
 - Fix various issues with the model picker (thanks @System233!)
 - Fix model input / output cost parsing (thanks @System233!)
 - Add drag-and-drop for files
@@ -3031,7 +3031,7 @@ Join us at https://www.reddit.com/r/RooCode to share your custom modes and be pa
 
 ## [2.2.16]
 
-- Incorporate Premshay's [PR](https://github.com/RooCodeInc/Roo-Code/pull/60) to add support for Amazon Nova and Meta Llama Models via Bedrock (3, 3.1, 3.2) and unified Bedrock calls using BedrockClient and Bedrock Runtime API
+- Incorporate Premshay's [PR](https://github.com/RooCodeInc/Bitx/pull/60) to add support for Amazon Nova and Meta Llama Models via Bedrock (3, 3.1, 3.2) and unified Bedrock calls using BedrockClient and Bedrock Runtime API
 
 ## [2.2.14 - 2.2.15]
 
@@ -3103,7 +3103,7 @@ Join us at https://www.reddit.com/r/RooCode to share your custom modes and be pa
 
 ## [2.1.15]
 
-- Incorporate dbasclpy's [PR](https://github.com/RooCodeInc/Roo-Code/pull/54) to add support for gemini-exp-1206
+- Incorporate dbasclpy's [PR](https://github.com/RooCodeInc/Bitx/pull/54) to add support for gemini-exp-1206
 - Make it clear that diff editing is very experimental
 
 ## [2.1.14]
@@ -3113,7 +3113,7 @@ Join us at https://www.reddit.com/r/RooCode to share your custom modes and be pa
 
 ## [2.1.13]
 
-- Fix https://github.com/RooCodeInc/Roo-Code/issues/50 where sound effects were not respecting settings
+- Fix https://github.com/RooCodeInc/Bitx/issues/50 where sound effects were not respecting settings
 
 ## [2.1.12]
 
@@ -3121,7 +3121,7 @@ Join us at https://www.reddit.com/r/RooCode to share your custom modes and be pa
 
 ## [2.1.11]
 
-- Incorporate lloydchang's [PR](https://github.com/RooCodeInc/Roo-Code/pull/42) to add support for OpenRouter compression
+- Incorporate lloydchang's [PR](https://github.com/RooCodeInc/Bitx/pull/42) to add support for OpenRouter compression
 
 ## [2.1.10]
 

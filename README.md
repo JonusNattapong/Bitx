@@ -60,7 +60,7 @@ Roo Code adapts to how you work:
 - Custom Modes: build specialized modes for your team or workflow
 - Roomote Control: Roomote Control lets you remotely control tasks running in your local VS Code instance.
 
-Learn more: [Using Modes](https://docs.roocode.com/basic-usage/using-modes) • [Custom Modes](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/roo-code-cloud/roomote-control)
+Learn more: [Using Modes](https://docs.roocode.com/basic-usage/using-modes) • [Custom Modes](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/bitx-cloud/roomote-control)
 
 ## Tutorial & Feature Videos
 
@@ -82,8 +82,8 @@ Learn more: [Using Modes](https://docs.roocode.com/basic-usage/using-modes) • 
 - **[YouTube Channel](https://youtube.com/@roocodeyt?feature=shared):** Watch tutorials and see features in action.
 - **[Discord Server](https://discord.gg/roocode):** Join the community for real-time help and discussion.
 - **[Reddit Community](https://www.reddit.com/r/RooCode):** Share your experiences and see what others are building.
-- **[GitHub Issues](https://github.com/RooCodeInc/Roo-Code/issues):** Report bugs and track development.
-- **[Feature Requests](https://github.com/RooCodeInc/Roo-Code/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** Have an idea? Share it with the developers.
+- **[GitHub Issues](https://github.com/RooCodeInc/Bitx/issues):** Report bugs and track development.
+- **[Feature Requests](https://github.com/RooCodeInc/Bitx/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** Have an idea? Share it with the developers.
 
 ---
 
@@ -92,7 +92,7 @@ Learn more: [Using Modes](https://docs.roocode.com/basic-usage/using-modes) • 
 1. **Clone** the repo:
 
 ```sh
-git clone https://github.com/RooCodeInc/Roo-Code.git
+git clone https://github.com/RooCodeInc/Bitx.git
 ```
 
 2. **Install dependencies**:

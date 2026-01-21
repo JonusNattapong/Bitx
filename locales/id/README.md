@@ -60,7 +60,7 @@ Roo Code beradaptasi dengan cara Anda bekerja, bukan sebaliknya:
 - Mode Kustom: buat mode khusus untuk tim atau alur kerja Anda
 - Roomote Control: Roomote Control memungkinkan kamu mengontrol dari jarak jauh tugas yang berjalan di VS Code lokalmu.
 
-Pelajari lebih lanjut: [Menggunakan Mode](https://docs.roocode.com/basic-usage/using-modes) • [Mode Kustom](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/roo-code-cloud/roomote-control)
+Pelajari lebih lanjut: [Menggunakan Mode](https://docs.roocode.com/basic-usage/using-modes) • [Mode Kustom](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/bitx-cloud/roomote-control)
 
 ## Video Tutorial & Fitur
 
@@ -82,8 +82,8 @@ Pelajari lebih lanjut: [Menggunakan Mode](https://docs.roocode.com/basic-usage/u
 - **[Saluran YouTube](https://youtube.com/@roocodeyt?feature=shared):** Tonton tutorial dan lihat fitur-fitur dalam aksi.
 - **[Server Discord](https://discord.gg/roocode):** Bergabunglah dengan komunitas untuk bantuan dan diskusi real-time.
 - **[Komunitas Reddit](https://www.reddit.com/r/RooCode):** Bagikan pengalaman Anda dan lihat apa yang sedang dibangun orang lain.
-- **[Masalah GitHub](https://github.com/RooCodeInc/Roo-Code/issues):** Laporkan bug dan lacak pengembangan.
-- **[Permintaan Fitur](https://github.com/RooCodeInc/Roo-Code/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** Punya ide? Bagikan dengan para pengembang.
+- **[Masalah GitHub](https://github.com/RooCodeInc/Bitx/issues):** Laporkan bug dan lacak pengembangan.
+- **[Permintaan Fitur](https://github.com/RooCodeInc/Bitx/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** Punya ide? Bagikan dengan para pengembang.
 
 ---
 
@@ -92,7 +92,7 @@ Pelajari lebih lanjut: [Menggunakan Mode](https://docs.roocode.com/basic-usage/u
 1. **Clone** repo:
 
 ```sh
-git clone https://github.com/RooCodeInc/Roo-Code.git
+git clone https://github.com/RooCodeInc/Bitx.git
 ```
 
 2. **Instal dependensi**:

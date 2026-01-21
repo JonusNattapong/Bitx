@@ -3,7 +3,7 @@ import {
 	type FeatherlessModelId,
 	featherlessDefaultModelId,
 	featherlessModels,
-} from "@roo-code/types"
+} from "@bitx/types"
 import { Anthropic } from "@anthropic-ai/sdk"
 import OpenAI from "openai"
 

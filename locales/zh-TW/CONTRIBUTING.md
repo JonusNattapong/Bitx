@@ -69,7 +69,7 @@ Roo Code 是一個由社群驅動的專案，我們非常重視每一份貢獻�
 
 所有貢獻都始於使用我們精簡範本的 GitHub 問題。
 
-- **檢查現有問題**：在 [GitHub 問題](https://github.com/RooCodeInc/Roo-Code/issues) 中搜尋。
+- **檢查現有問題**：在 [GitHub 問題](https://github.com/RooCodeInc/Bitx/issues) 中搜尋。
 - **使用以下範本建立問題**：
     - **增強功能：** 「增強請求」範本（著重於使用者利益的簡單語言）。
     - **錯誤：** 「錯誤報告」範本（最少的重現步驟 + 預期與實際 + 版本）。
@@ -79,16 +79,16 @@ Roo Code 是一個由社群驅動的專案，我們非常重視每一份貢獻�
 ### 決定做什麼
 
 - 查看 [GitHub 專案](https://github.com/orgs/RooCodeInc/projects/1) 中的「問題 [未分配]」問題。
-- 如需文件，請造訪 [Roo Code 文件](https://github.com/RooCodeInc/Roo-Code-Docs)。
+- 如需文件，請造訪 [Roo Code 文件](https://github.com/RooCodeInc/Bitx-Docs)。
 
 ### 報告錯誤
 
 - 首先檢查現有的報告。
-- 使用 [「錯誤報告」範本](https://github.com/RooCodeInc/Roo-Code/issues/new/choose) 建立一個新錯誤，並提供：
+- 使用 [「錯誤報告」範本](https://github.com/RooCodeInc/Bitx/issues/new/choose) 建立一個新錯誤，並提供：
     - 清晰、編號的重現步驟
     - 預期與實際結果
     - Roo Code 版本（必需）；如果相關，還需提供 API 提供商/模型
-- **安全問題**：透過 [安全公告](https://github.com/RooCodeInc/Roo-Code/security/advisories/new) 私下報告。
+- **安全問題**：透過 [安全公告](https://github.com/RooCodeInc/Bitx/security/advisories/new) 私下報告。
 
 ## 開發和提交流程
 
@@ -97,7 +97,7 @@ Roo Code 是一個由社群驅動的專案，我們非常重視每一份貢獻�
 1. **複製和克隆：**
 
 ```
-git clone https://github.com/您的使用者名稱/Roo-Code.git
+git clone https://github.com/您的使用者名稱/Bitx.git
 ```
 
 2. **安裝依賴項：**

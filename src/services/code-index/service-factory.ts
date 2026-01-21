@@ -1,9 +1,9 @@
 import * as vscode from "vscode"
 import { Ignore } from "ignore"
 
-import type { EmbedderProvider } from "@roo-code/types"
-import { TelemetryService } from "@roo-code/telemetry"
-import { TelemetryEventName } from "@roo-code/types"
+import type { EmbedderProvider } from "@bitx/types"
+import { TelemetryService } from "@bitx/telemetry"
+import { TelemetryEventName } from "@bitx/types"
 
 import { t } from "../../i18n"
 

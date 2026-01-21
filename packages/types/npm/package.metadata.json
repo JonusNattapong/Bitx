@@ -1,22 +1,22 @@
 {
-	"name": "@roo-code/types",
+	"name": "@bitx/types",
 	"version": "1.106.0",
 	"description": "TypeScript type definitions for Roo Code.",
 	"publishConfig": {
 		"access": "public",
-		"name": "@roo-code/types",
+		"name": "@bitx/types",
 		"registry": "https://registry.npmjs.org/"
 	},
 	"author": "Roo Code Team",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/RooCodeInc/Roo-Code.git"
+		"url": "git+https://github.com/RooCodeInc/Bitx.git"
 	},
 	"bugs": {
-		"url": "https://github.com/RooCodeInc/Roo-Code/issues"
+		"url": "https://github.com/RooCodeInc/Bitx/issues"
 	},
 	"homepage": "https://roocode.com",
-	"keywords": ["roo", "roo-code", "ai"],
+	"keywords": ["roo", "bitx", "ai"],
 	"files": ["dist"]
 }

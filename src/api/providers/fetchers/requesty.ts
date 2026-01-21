@@ -1,6 +1,6 @@
 import axios from "axios"
 
-import type { ModelInfo } from "@roo-code/types"
+import type { ModelInfo } from "@bitx/types"
 
 import { parseApiPrice } from "../../../shared/cost"
 import { toRequestyServiceUrl } from "../../../shared/utils/requesty"

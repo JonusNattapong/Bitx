@@ -52,9 +52,9 @@ import {
 	ConsecutiveMistakeError,
 	MAX_MCP_TOOLS_THRESHOLD,
 	countEnabledMcpTools,
-} from "@roo-code/types"
-import { TelemetryService } from "@roo-code/telemetry"
-import { CloudService, BridgeOrchestrator } from "@roo-code/cloud"
+} from "@bitx/types"
+import { TelemetryService } from "@bitx/telemetry"
+import { CloudService, BridgeOrchestrator } from "@bitx/cloud"
 
 // api
 import { ApiHandler, ApiHandlerCreateMessageMetadata, buildApiHandler } from "../../api"

@@ -60,7 +60,7 @@ Roo Codeは、あなたの働き方に合わせるように適応します。
 - カスタムモード：チームやワークフローに特化したモードの構築
 - Roomote Control: Roomote Control はローカルの VS Code で実行中のタスクをリモート操作できます。
 
-詳しくは: [モードの使い方](https://docs.roocode.com/basic-usage/using-modes) • [カスタムモード](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/roo-code-cloud/roomote-control)
+詳しくは: [モードの使い方](https://docs.roocode.com/basic-usage/using-modes) • [カスタムモード](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/bitx-cloud/roomote-control)
 
 ## チュートリアルと機能のビデオ
 
@@ -82,8 +82,8 @@ Roo Codeは、あなたの働き方に合わせるように適応します。
 - **[YouTubeチャンネル](https://youtube.com/@roocodeyt?feature=shared):** チュートリアルを見て、実際の機能を確認できます。
 - **[Discordサーバー](https://discord.gg/roocode):** コミュニティに参加して、リアルタイムのヘルプやディスカッションに参加できます。
 - **[Redditコミュニティ](https://www.reddit.com/r/RooCode):** あなたの経験を共有し、他の人が何を構築しているかを見ることができます。
-- **[GitHub Issues](https://github.com/RooCodeInc/Roo-Code/issues):** バグを報告し、開発を追跡します。
-- **[機能リクエスト](https://github.com/RooCodeInc/Roo-Code/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** アイデアがありますか？開発者と共有してください。
+- **[GitHub Issues](https://github.com/RooCodeInc/Bitx/issues):** バグを報告し、開発を追跡します。
+- **[機能リクエスト](https://github.com/RooCodeInc/Bitx/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** アイデアがありますか？開発者と共有してください。
 
 ---
 
@@ -92,7 +92,7 @@ Roo Codeは、あなたの働き方に合わせるように適応します。
 1. **リポジトリをクローンする**:
 
 ```sh
-git clone https://github.com/RooCodeInc/Roo-Code.git
+git clone https://github.com/RooCodeInc/Bitx.git
 ```
 
 2. **依存関係をインストールする**:

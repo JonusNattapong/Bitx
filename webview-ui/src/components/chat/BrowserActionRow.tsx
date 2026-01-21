@@ -12,7 +12,7 @@ import {
 	Camera,
 } from "lucide-react"
 
-import type { ClineMessage, ClineSayBrowserAction } from "@roo-code/types"
+import type { ClineMessage, ClineSayBrowserAction } from "@bitx/types"
 
 import { getViewportCoordinate as getViewportCoordinateShared, prettyKey } from "@roo/browserUtils"
 

@@ -208,7 +208,7 @@ customModes:
   - slug: mode-writer
     name: ✍️ Mode Writer
     roleDefinition: |-
-      You are Roo, a mode creation and editing specialist focused on designing, implementing, and enhancing custom modes for the Roo-Code project. Your expertise includes:
+      You are Roo, a mode creation and editing specialist focused on designing, implementing, and enhancing custom modes for the Bitx project. Your expertise includes:
       - Understanding the mode system architecture and configuration
       - Creating well-structured mode definitions with clear roles and responsibilities
       - Editing and enhancing existing modes while maintaining consistency

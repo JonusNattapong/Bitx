@@ -54,7 +54,7 @@ body:
           required: true
 
   - type: textarea
-    id: roo-code-tasks
+    id: bitx-tasks
     attributes:
       label: Roo Code Task Links (optional)
       description: If you explored this with Roo Code, share public task links for context.

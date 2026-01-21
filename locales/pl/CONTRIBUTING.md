@@ -69,7 +69,7 @@ Wspomnij o dostosowaniu do tych obszarów w swoich PR-ach.
 
 Wszystkie wkłady zaczynają się od zgłoszenia na GitHubie przy użyciu naszych uproszczonych szablonów.
 
-- **Sprawdź istniejące zgłoszenia**: Przeszukaj [zgłoszenia на GitHubie](https://github.com/RooCodeInc/Roo-Code/issues).
+- **Sprawdź istniejące zgłoszenia**: Przeszukaj [zgłoszenia на GitHubie](https://github.com/RooCodeInc/Bitx/issues).
 - **Utwórz zgłoszenie**, używając:
     - **Ulepszenia:** szablon „Prośba o ulepszenie” (prosty język skoncentrowany na korzyściach dla użytkownika).
     - **Błędy:** szablon „Zgłoszenie błędu” (minimalna reprodukcja + oczekiwane a rzeczywiste + wersja).
@@ -79,16 +79,16 @@ Wszystkie wkłady zaczynają się od zgłoszenia na GitHubie przy użyciu naszyc
 ### Decydowanie, nad czym pracować
 
 - Sprawdź [projekt na GitHubie](https://github.com/orgs/RooCodeInc/projects/1) pod kątem zgłoszeń „Zgłoszenie [Nieprzypisane]”.
-- Aby uzyskać dokumentację, odwiedź [dokumentację Roo Code](https://github.com/RooCodeInc/Roo-Code-Docs).
+- Aby uzyskać dokumentację, odwiedź [dokumentację Roo Code](https://github.com/RooCodeInc/Bitx-Docs).
 
 ### Zgłaszanie błędów
 
 - Najpierw sprawdź istniejące raporty.
-- Utwórz nowy błąd, używając szablonu [„Zgłoszenie błędu”](https://github.com/RooCodeInc/Roo-Code/issues/new/choose) z:
+- Utwórz nowy błąd, używając szablonu [„Zgłoszenie błędu”](https://github.com/RooCodeInc/Bitx/issues/new/choose) z:
     - Jasnymi, ponumerowanymi krokami reprodukcji
     - Oczekiwanym a rzeczywistym wynikiem
     - Wersją Roo Code (wymagane); dostawcą/modelem sztucznej inteligencji, jeśli ma to zastosowanie
-- **Problemy z bezpieczeństwem**: Zgłoś je prywatnie za pośrednictwem [zaleceń dotyczących bezpieczeństwa](https://github.com/RooCodeInc/Roo-Code/security/advisories/new).
+- **Problemy z bezpieczeństwem**: Zgłoś je prywatnie za pośrednictwem [zaleceń dotyczących bezpieczeństwa](https://github.com/RooCodeInc/Bitx/security/advisories/new).
 
 ## Proces rozwoju i przesyłania
 
@@ -97,7 +97,7 @@ Wszystkie wkłady zaczynają się od zgłoszenia na GitHubie przy użyciu naszyc
 1. **Sforkuj i sklonuj:**
 
 ```
-git clone https://github.com/TWOJA_NAZWA_UŻYTKOWNIKA/Roo-Code.git
+git clone https://github.com/TWOJA_NAZWA_UŻYTKOWNIKA/Bitx.git
 ```
 
 2. **Zainstaluj zależności:**

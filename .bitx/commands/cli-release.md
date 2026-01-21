@@ -112,9 +112,9 @@ mode: code
     - Create the GitHub release with the tarball attached
 
 9. After a successful release, verify:
-    - Check the release page: https://github.com/RooCodeInc/Roo-Code/releases
+    - Check the release page: https://github.com/RooCodeInc/Bitx/releases
     - Verify the "What's New" section contains the changelog content
-    - Test installation: `curl -fsSL https://raw.githubusercontent.com/RooCodeInc/Roo-Code/main/apps/cli/install.sh | sh`
+    - Test installation: `curl -fsSL https://raw.githubusercontent.com/RooCodeInc/Bitx/main/apps/cli/install.sh | sh`
 
 **Notes:**
 

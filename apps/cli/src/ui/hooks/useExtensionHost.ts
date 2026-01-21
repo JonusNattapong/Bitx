@@ -1,7 +1,7 @@
 import { useEffect, useRef, useCallback, useMemo } from "react"
 import { useApp } from "ink"
 import { randomUUID } from "crypto"
-import type { ExtensionMessage, WebviewMessage } from "@roo-code/types"
+import type { ExtensionMessage, WebviewMessage } from "@bitx/types"
 
 import { ExtensionHostInterface, ExtensionHostOptions } from "@/agent/index.js"
 

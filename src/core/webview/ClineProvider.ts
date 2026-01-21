@@ -46,10 +46,10 @@ import {
 	DEFAULT_MODES,
 	DEFAULT_CHECKPOINT_TIMEOUT_SECONDS,
 	getModelId,
-} from "@roo-code/types"
+} from "@bitx/types"
 import { aggregateTaskCostsRecursive, type AggregatedCosts } from "./aggregateTaskCosts"
-import { TelemetryService } from "@roo-code/telemetry"
-import { CloudService, BridgeOrchestrator, getRooCodeApiUrl } from "@roo-code/cloud"
+import { TelemetryService } from "@bitx/telemetry"
+import { CloudService, BridgeOrchestrator, getRooCodeApiUrl } from "@bitx/cloud"
 
 import { Package } from "../../shared/package"
 import { findLast } from "../../shared/array"
@@ -96,7 +96,7 @@ import { Task } from "../task/Task"
 import { getSystemPromptFilePath } from "../prompts/sections/custom-system-prompt"
 
 import { webviewMessageHandler } from "./webviewMessageHandler"
-import type { ClineMessage, TodoItem } from "@roo-code/types"
+import type { ClineMessage, TodoItem } from "@bitx/types"
 import { readApiMessages, saveApiMessages, saveTaskMessages } from "../task-persistence"
 import { readTaskMessages } from "../task-persistence/taskMessages"
 import { getNonce } from "./getNonce"
@@ -1574,21 +1574,21 @@ export class ClineProvider
 		// Get platform-specific application data directory
 		let mcpServersDir: string
 		if (process.platform === "win32") {
-			// Windows: %APPDATA%\Roo-Code\MCP
-			mcpServersDir = path.join(os.homedir(), "AppData", "Roaming", "Roo-Code", "MCP")
+			// Windows: %APPDATA%\Bitx\MCP
+			mcpServersDir = path.join(os.homedir(), "AppData", "Roaming", "Bitx", "MCP")
 		} else if (process.platform === "darwin") {
 			// macOS: ~/Documents/Cline/MCP
 			mcpServersDir = path.join(os.homedir(), "Documents", "Cline", "MCP")
 		} else {
 			// Linux: ~/.local/share/Cline/MCP
-			mcpServersDir = path.join(os.homedir(), ".local", "share", "Roo-Code", "MCP")
+			mcpServersDir = path.join(os.homedir(), ".local", "share", "Bitx", "MCP")
 		}
 
 		try {
 			await fs.mkdir(mcpServersDir, { recursive: true })
 		} catch (error) {
 			// Fallback to a relative path if directory creation fails
-			return path.join(os.homedir(), ".roo-code", "mcp")
+			return path.join(os.homedir(), ".bitx", "mcp")
 		}
 		return mcpServersDir
 	}

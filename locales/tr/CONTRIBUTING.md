@@ -69,7 +69,7 @@ PR'lerinizde bu alanlarla uyumu belirtin.
 
 Tüm katkılar, basit şablonlarımızı kullanarak bir GitHub Sorunu ile başlar.
 
-- **Mevcut sorunları kontrol edin**: [GitHub Sorunları](https://github.com/RooCodeInc/Roo-Code/issues)nda arama yapın.
+- **Mevcut sorunları kontrol edin**: [GitHub Sorunları](https://github.com/RooCodeInc/Bitx/issues)nda arama yapın.
 - **Bir sorun oluşturun**:
     - **İyileştirmeler:** "İyileştirme İsteği" şablonu (kullanıcı yararına odaklanan sade bir dil).
     - **Hatalar:** "Hata Raporu" şablonu (minimum yeniden oluşturma + beklenen vs gerçek + sürüm).
@@ -79,16 +79,16 @@ Tüm katkılar, basit şablonlarımızı kullanarak bir GitHub Sorunu ile başla
 ### Ne Üzerinde Çalışılacağına Karar Verme
 
 - "Sorun [Atanmamış]" sorunları için [GitHub Projesi](https://github.com/orgs/RooCodeInc/projects/1)'ni kontrol edin.
-- Belgeler için [Roo Code Belgeleri](https://github.com/RooCodeInc/Roo-Code-Docs)ni ziyaret edin.
+- Belgeler için [Roo Code Belgeleri](https://github.com/RooCodeInc/Bitx-Docs)ni ziyaret edin.
 
 ### Hataları Bildirme
 
 - Önce mevcut raporları kontrol edin.
-- Aşağıdakilerle ["Hata Raporu" şablonunu](https://github.com/RooCodeInc/Roo-Code/issues/new/choose) kullanarak yeni bir hata oluşturun:
+- Aşağıdakilerle ["Hata Raporu" şablonunu](https://github.com/RooCodeInc/Bitx/issues/new/choose) kullanarak yeni bir hata oluşturun:
     - Açık, numaralandırılmış yeniden oluşturma adımları
     - Beklenen vs gerçek sonuç
     - Roo Code sürümü (gerekli); ilgiliyse API sağlayıcısı/modeli
-- **Güvenlik sorunları**: [Güvenlik tavsiyeleri](https://github.com/RooCodeInc/Roo-Code/security/advisories/new) aracılığıyla özel olarak bildirin.
+- **Güvenlik sorunları**: [Güvenlik tavsiyeleri](https://github.com/RooCodeInc/Bitx/security/advisories/new) aracılığıyla özel olarak bildirin.
 
 ## Geliştirme ve Gönderme Süreci
 
@@ -97,7 +97,7 @@ Tüm katkılar, basit şablonlarımızı kullanarak bir GitHub Sorunu ile başla
 1. **Çatallayın ve Klonlayın:**
 
 ```
-git clone https://github.com/KULLANICI_ADINIZ/Roo-Code.git
+git clone https://github.com/KULLANICI_ADINIZ/Bitx.git
 ```
 
 2. **Bağımlılıkları Yükleyin:**

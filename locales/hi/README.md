@@ -60,7 +60,7 @@
 - कस्टम मोड: अपनी टीम या वर्कफ़्लो के लिए विशेष मोड बनाएं
 - Roomote Control: Roomote Control से तुम अपनी लोकल VS Code इंस्टेंस में चल रही टास्क को रिमोट से कंट्रोल कर सकते हो।
 
-और जानो: [मोड्स का इस्तेमाल](https://docs.roocode.com/basic-usage/using-modes) • [कस्टम मोड्स](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/roo-code-cloud/roomote-control)
+और जानो: [मोड्स का इस्तेमाल](https://docs.roocode.com/basic-usage/using-modes) • [कस्टम मोड्स](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/bitx-cloud/roomote-control)
 
 ## ट्यूटोरियल और फ़ीचर वीडियो
 
@@ -82,8 +82,8 @@
 - **[यूट्यूब चैनल](https://youtube.com/@roocodeyt?feature=shared):** ट्यूटोरियल देखें और सुविधाओं को एक्शन में देखें।
 - **[डिस्कॉर्ड सर्वर](https://discord.gg/roocode):** रीयल-टाइम सहायता और चर्चा के लिए समुदाय में शामिल हों।
 - **[रेडिट समुदाय](https://www.reddit.com/r/RooCode):** अपने अनुभव साझा करें और देखें कि दूसरे क्या बना रहे हैं।
-- **[गिटहब मुद्दे](https://github.com/RooCodeInc/Roo-Code/issues):** बग की रिपोर्ट करें और विकास को ट्रैक करें।
-- **[सुविधा अनुरोध](https://github.com/RooCodeInc/Roo-Code/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** क्या आपके पास कोई विचार है? इसे डेवलपर्स के साथ साझा करें।
+- **[गिटहब मुद्दे](https://github.com/RooCodeInc/Bitx/issues):** बग की रिपोर्ट करें और विकास को ट्रैक करें।
+- **[सुविधा अनुरोध](https://github.com/RooCodeInc/Bitx/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** क्या आपके पास कोई विचार है? इसे डेवलपर्स के साथ साझा करें।
 
 ---
 
@@ -92,7 +92,7 @@
 1. **क्लोन** करें रेपो:
 
 ```sh
-git clone https://github.com/RooCodeInc/Roo-Code.git
+git clone https://github.com/RooCodeInc/Bitx.git
 ```
 
 2. **निर्भरताएँ स्थापित करें**:

@@ -5,7 +5,7 @@ import {
 	type ExperimentId,
 	type ExtensionState,
 	DEFAULT_CHECKPOINT_TIMEOUT_SECONDS,
-} from "@roo-code/types"
+} from "@bitx/types"
 
 import { ExtensionStateContextProvider, useExtensionState, mergeExtensionState } from "../ExtensionStateContext"
 

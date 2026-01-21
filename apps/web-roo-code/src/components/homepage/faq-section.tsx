@@ -158,7 +158,7 @@ const faqs: FAQItem[] = [
 			<>
 				Yes, please do! Roo Code is open-source on{" "}
 				<a
-					href="https://github.com/RooCodeInc/Roo-Code"
+					href="https://github.com/RooCodeInc/Bitx"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="text-primary underline-offset-4 hover:underline">
